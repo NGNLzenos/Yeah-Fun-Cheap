@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>collection</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <%- include('./layout/header'); -%>  
+    <Section class="collecttion-container py-64">
+        <div class="d-flex justify-center mb-32 mb-md-24">
+            <i class="bi bi-check2 check-style me-16"></i>
+            <h1 class="h3">我的收藏</h1>
+        </div>
+        <div class="coll-banner d-flex mb-32 mb-md-24">
+            <i class="bi bi-truck truck-style me-12"></i>
+            <p class="text-md d-md-flex flex-col-md">
+                <span>門市營業時間：</span>
+                <span>週一至週五 10:00 - 22:00</span>
+            </p>
+        </div>
+        <ul>
+            <li>
+                <div class="pd-info d-flex justify-between pb-32 mb-32 mb-md-24">
+                    <img class="me-16" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product.png?raw=true" alt="">
+                    <div>
+                        <h4 class="h5 mb-8">PLATFORM 404</h4>
+                        <div class="pd-info-size d-flex mb-8">
+                            <p class="text-md text-neutral-600 me-12">尺寸</p><p class="text-md">38</p>
+                        </div>
+                        <div class="pd-info-color d-flex mb-8">
+                            <p class="text-md text-neutral-600 me-12">顏色</p><p class="text-md">NavyG</p>
+                        </div>
+                        <p class="h6 text-end ml-auto">NT$2,600</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="pd-info d-flex justify-between pb-32 mb-32 mb-md-24">
+                    <img class="me-16" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-9.png?raw=true" alt="">
+                    <div>
+                        <h4 class="h5 mb-8">BOOMLOK</h4>
+                        <div class="pd-info-color d-flex mb-8">
+                            <p class="text-md text-neutral-600 me-12">顏色</p><p class="text-md">NavyG</p>
+                        </div>
+                        <p class="h6 text-end ml-auto">NT$3,200</p>
+                    </div>
+                </div>
+            </li>
+             <li>
+                <div class="pd-info d-flex justify-between pb-32 mb-32 mb-md-24">
+                    <img class="me-16" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week2/product-3.png?raw=true" alt="">
+                    <div>
+                        <h4 class="h5 mb-8">MELTY KISS</h4>
+                        <div class="pd-info-color d-flex mb-8">
+                            <p class="text-md text-neutral-600 me-12">顏色</p><p class="text-md">NavyG</p>
+                        </div>
+                        <p class="h6 text-end ml-auto">NT$4,000</p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="d-flex justify-center">
+            <button type="button" class="btn btn-dark">立即預約門市試穿</button>
+        </div>
+    </Section>
+    <!-- 無banner表尾 表尾 -->
+     <div class="footer col-md-4 py-64 py-md-32">
+            <div class="container link d-flex justify-between align-center pb-24 flex-col-md align-start-md">
+                <div class="logo"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/14f2133cdd6d831a3acb833025093d4fcbffc381/2025-week1/logo.svg" alt=""></div>
+                <ul class="d-flex flex-col-md">
+                    <li><a href="product-list.html" target="_blank" class="text-neutral-900 py-12 me-40">商品列表</a></li>
+                    <li><a href="brand-story.html" target="_blank" class="text-neutral-900 py-12">品牌故事</a></li>
+                </ul>
+            </div>
+            <div class="copyright pt-32 ">
+                <p class="mb-4">Copyright ©2025 URBNSTYLE</p>
+                <p class="">All Rights Reserved.</p>
+            </div>
+            
+    </div>
+     <script type="module" src="../main.js"></script>
+</body>
+</html>

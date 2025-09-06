@@ -1,0 +1,64 @@
+
+.header ul{
+    margin-right: auto;
+}
+.container .nav a{
+    display: block;
+    padding: 12px;
+}
+.card{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+.breadcrumb span{
+    color: $neutral-300;
+    padding-left: 12px;
+    margin-right: 12px;
+    font-weight: 700;
+}
+@media(max-width:767px){
+    .breadcrumb span{
+    color: $neutral-300;
+    padding-left: 8px;
+    margin-right: 8px;
+    font-weight: 700;
+}
+}
+.price p{
+    max-width: 100%;
+}
+.pd-card img{
+    width: 64px; 
+}
+
+.btn-pd-size{
+    border: 1px solid $neutral-300;
+    width: 160px;
+}
+.btn-pd-size p{
+   color: $neutral-900;
+   font-weight: 500;
+}
+.active{
+    border-color:$neutral-900;
+}
+.btn-pd-size:hover{
+      border-color:$neutral-900;
+}
+@media(max-width:767px){
+    .heart-md{
+        width: 48px;
+        height: 48px;
+        border: none;
+    }
+}
+.pd-action{
+    gap: 8px;
+}
+.pd-action .btn{
+    width: 50%;
+}
+.pd-detail {
+    border-bottom:1px solid $neutral-300 ;
+}
+

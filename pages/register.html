@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>產品詳情頁</title>
+    <link rel="stylesheet" href="register.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <%- include('./layout/header'); -%>
+    <main>
+        <div class="container py-64 py-md-0">
+            <div class="row">
+                <div class="col-5 col-md-4">
+                    <img class="d-md-none" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login.png?raw=true" alt="">
+                    <img class="d-none d-md-flex mb-32" src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-sm.png?raw=true" alt="">
+                </div>
+                <div class="col-7 col-md-4">
+                    <div class="welcome">
+                        <h2 class="h3 h4-md mb-32 text-center mb-md-24">歡迎！</h2>
+                        <div class="login-tablist d-flex mb-32 mb-md-24">
+                            <div class="log-in">
+                                <p class="h6 text-neutral-600">登入</p>
+                            </div>
+                            <div class="reg">
+                               <p class="h6 ">註冊</p> 
+                            </div>
+                        </div>
+                        <div class="another-login">
+                            <div class="d-flex justify-start login-item mb-8">
+                                <img class="me-12" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/14f2133cdd6d831a3acb833025093d4fcbffc381/2025-week3-4/facebook.svg" alt="Facebook 註冊">
+                                <p>Facebook 註冊</p>
+                            </div>
+                            <div class="d-flex login-item mb-8">
+                                <img class="me-12" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/14f2133cdd6d831a3acb833025093d4fcbffc381/2025-week3-4/apple.svg" alt="Apple 註冊">
+                                <p>Apple 註冊</p>
+                            </div>
+                            <div class="d-flex login-item ">
+                                <img class="me-12" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/14f2133cdd6d831a3acb833025093d4fcbffc381/2025-week3-4/google.svg" alt="Google 註冊">
+                                <p>Google 註冊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- 無banner表尾 表尾 -->
+     <div class="footer col-md-4 py-64 py-md-32">
+            <div class="container link d-flex justify-between align-center pb-24 flex-col-md align-start-md">
+                <div class="logo"><img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/14f2133cdd6d831a3acb833025093d4fcbffc381/2025-week1/logo.svg" alt=""></div>
+                <ul class="d-flex flex-col-md">
+                    <li><a href="product-list.html" target="_blank" class="text-neutral-900 py-12 me-40">商品列表</a></li>
+                    <li><a href="brand-story.html" target="_blank" class="text-neutral-900 py-12">品牌故事</a></li>
+                </ul>
+            </div>
+            <div class="copyright pt-32 ">
+                <p class="mb-4">Copyright ©2025 URBNSTYLE</p>
+                <p class="">All Rights Reserved.</p>
+            </div>
+            
+</div>
+    <script type="module" src="../main.js"></script>
+</body>
+</html>

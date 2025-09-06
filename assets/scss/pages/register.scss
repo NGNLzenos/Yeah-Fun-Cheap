@@ -1,0 +1,40 @@
+.welcome{
+    padding: 120px 80px;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/login-bg.png?raw=true);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+    height: 100%;
+    border-radius: 12px;
+}   
+@media (max-width:767px){
+    .welcome{
+        background-image: none;
+        padding: 0px;
+    }
+}
+.log-in{
+    border-bottom: 2px solid $neutral-300;
+    width: 50%;
+    text-align: center;
+    padding: 12px 130px;
+    white-space: nowrap;
+}
+.reg{
+    border-bottom: 2px solid $neutral-900;
+    width: 50%;
+    text-align: center;
+    padding: 12px 130px;
+    white-space: nowrap;
+}
+.another-login img{
+    max-width: 35px;
+    display: block;
+}
+.login-item{
+    background-color: $neutral-0;
+    padding: 20px 12px;
+    border: 1px solid $neutral-300;
+    border-radius: 8px;
+    justify-content: start;
+}

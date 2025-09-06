@@ -1,0 +1,18 @@
+/* 元件 */
+.btn {
+    border-radius: 4px;
+    padding: 12px 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    background-color:transparent;
+}
+.btn-dark{
+	background-color: $neutral-900;
+	color: $neutral-0;
+}
+.btn-light{
+	border: 1px solid $neutral-900;
+}
