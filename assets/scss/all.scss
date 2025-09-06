@@ -1,3 +1,14 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "./utils/variables";
+// 3. Include remainder of required Bootstrap stylesheets (including any separate color mode stylesheets)
+@import "../../node_modules/bootstrap";
+@import "./utils/utilities";
+
+
+
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
