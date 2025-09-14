@@ -1,7 +1,7 @@
 # 如需開啟網站 => npm install
 npm run dev
 把網址改成自己想看的網址
-# 不清楚bootstrap變數可參考bootstrap.html
+# 不清楚bootstrap變數可參考bootstrap.htmljb6vu84 (如下)
 <a>https://ngnlzenos.github.io/Yeah-Fun-Cheap/boostrap-demo
 
 
