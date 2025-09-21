@@ -1,4 +1,21 @@
-.footer{
-  background: #69F0AE;
-  font-size: 64px;
-}
+   .footer {
+      background-color: $primary-300;
+      color: white;
+    }
+
+.footer-copyright {
+      background-color: #00000033; /* 半透明黑色 */
+      padding: 8px 0;           /* 上下留白 */
+      font-size: 0.9rem;         /* 字體稍微小一點 */
+    }
+
+    .footer-Container{
+      padding: 64px 0px;
+    }
+    .footer a {
+      color: white;
+      margin-right: 10px;
+      font-size: 1.5rem;
+    }
+
+    
