@@ -452,13 +452,42 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  // 0: 0,
+  // 1: $spacer * 0.25,
+  // 2: $spacer * 0.5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
   0: 0,
-  1: $spacer * .25,
-  2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
-  ) !default;
+  1: $spacer * 0.25,
+  // 4
+  2: $spacer * 0.5,
+  // 8
+  3: $spacer * 0.75,
+  // 12
+  4: $spacer,
+  // 16
+  5: $spacer * 1.25,
+  // 20
+  6: $spacer * 1.5,
+  // 24
+  7: $spacer * 2,
+  // 32
+  8: $spacer * 2.5,
+  // 40
+  9: $spacer * 3,
+  // 48
+  10: $spacer * 3.5,
+  // 56
+  11: $spacer * 4,
+  // 64
+  12: $spacer * 5,
+  // 80
+  // 其他間距變數
+  1p: 1px,
+  6p: 6px) !default;
+// scss-docs-end spacer-variables-maps
+
 // scss-docs-end spacer-variables-maps
 
 // Position
@@ -1826,5 +1855,16 @@ $kbd-bg: var(--#{$prefix}body-color) !default;
 $nested-kbd-font-weight: null !default; // Deprecated in v5.2.0, removing in v6
 
 $pre-color: null !default;
-
+// 按鈕尺寸
+$btn-sizes: (
+  "lg": (padding-y: 0.75rem,
+    padding-x: 1.5rem,
+    font-size: 1.25rem),
+  "md": (padding-y: 0.5rem,
+    padding-x: 1rem,
+    font-size: 1rem),
+  "sm": (padding-y: 0.25rem,
+    padding-x: 0.75rem,
+    font-size: 0.875rem)
+);
 @import "variables-dark"; // TODO: can be removed safely in v6, only here to avoid breaking changes in v5.3

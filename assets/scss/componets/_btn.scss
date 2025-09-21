@@ -1,0 +1,51 @@
+//此設定按鈕大小的map 其大小的樣式寫在var檔底下 總共有btn-sm、md、lg三種大小
+@mixin button-size($name, $settings) {
+    .btn-#{$name} {
+        padding: map-get($settings, padding-y) map-get($settings, padding-x);
+        font-size: map-get($settings, font-size);
+    }
+}
+
+@each $name, $settings in $btn-sizes {
+    @include button-size($name, $settings);
+}
+
+.btn-pr {
+    color: $white;
+    background-color: $primary-200;
+
+    &:hover {
+        color: $white;
+        background-color: $primary-300;
+    }
+
+    &:active {
+        color: $white;
+        background-color: $secondary-300;
+    }
+
+    &:disabled {
+        background-color: $neutral-200;
+    }
+}
+
+.btn-pr-outline {
+    color: $primary-200;
+    background-color: transparent;
+    border: 1px solid $primary-200;
+
+    &:hover {
+        background-color: rgba($primary-200, 0.2);
+    }
+
+    &:active {
+        background-color: transparent;
+        border-color: $secondary-300 ;
+        color: $secondary-300;
+    }
+
+    &:disabled {
+        border-color: $neutral-200;
+        color: $neutral-200;
+    }
+}
