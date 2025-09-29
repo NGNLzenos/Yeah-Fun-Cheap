@@ -9,11 +9,14 @@
 //bootstrap icon
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
+@import './layout/header';
+@import './layout/footer';
+@import './layout/pagination';
 
 
 @import './pages/index.scss';
 @import './pages/search.scss';
 
 @import './componets/btn';
+@import './componets/card';
+@import './componets/search-bar';

@@ -1,0 +1,16 @@
+.card {
+    border-radius: 16px;
+    overflow: hidden;
+
+}
+
+.card-body {
+    padding: 16px;
+}
+
+.card-img-top {
+    border-radius: 16px; // 避免和父層重複/衝突
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}

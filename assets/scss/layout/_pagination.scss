@@ -1,0 +1,34 @@
+.page-item {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    place-content: center;
+    color: $neutral-900;
+
+    a:hover {
+        background-color: $primary-200;
+        color: $white;
+    }
+}
+
+.page-link {
+    color: $black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border: 0px;
+}
+
+.disabled-link {
+    pointer-events: none;
+    /* 阻止滑鼠事件 */
+    cursor: not-allowed;
+    /* 滑鼠游標變灰 */
+    color: $neutral-200;
+    /* 顯示灰色（可改成 Bootstrap 的 $gray-600） */
+    text-decoration: none;
+    /* 去掉底線 */
+}
