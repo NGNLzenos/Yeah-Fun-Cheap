@@ -13,6 +13,7 @@
 .btn-pr {
     color: $white;
     background-color: $primary-200;
+    font-weight: 700;
 
     &:hover {
         color: $white;
@@ -33,6 +34,29 @@
     color: $primary-200;
     background-color: transparent;
     border: 1px solid $primary-200;
+    font-weight: 700;
+
+    &:hover {
+        background-color: rgba($primary-200, 0.2);
+    }
+
+    &:active {
+        background-color: transparent;
+        border-color: $secondary-300 ;
+        color: $secondary-300;
+    }
+
+    &:disabled {
+        border-color: $neutral-200;
+        color: $neutral-200;
+    }
+}
+
+.btn-pr-noneline {
+    border: none;
+    color: $primary-200;
+    background-color: transparent;
+    font-weight: 700;
 
     &:hover {
         background-color: rgba($primary-200, 0.2);
