@@ -1,0 +1,20 @@
+// 熱搜 綠底綠字 .btn .tag
+.tag {
+    padding: 4px 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $primary-300;
+    background-color: rgba(#609451, 0.15);
+}
+
+// 檢索 外框綠字
+.tag-outline {
+    border: 1px solid rgba($primary-200, 0.5);
+    background-color: transparent;
+}
+
+// 詳情 選取綠背白字
+.tag-checked {
+    color: $white;
+    background-color: $primary-300;
+}
