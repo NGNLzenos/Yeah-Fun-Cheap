@@ -1,34 +1,175 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zh-TW">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>index</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>野fun趣 - 露營生活提案</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-
 <body>
-  <%- include('./layout/header'); -%>
-    <button class="btn btn-primary">test</button>
-    <h1 >我是首頁</h1>
-   <p>目前架構<br>
-    1. 首頁-`Home Page`(index.html)<br>
-    2. 營地列表<br>
-    -`檢索頁 (search.html)<br>
-    -`營地詳細頁 (camp_detail.html)<br>
-    3.知識<br>
-    -`知識庫列表頁 (info_list.html)<br>
-    -`知識詳細頁 (info.html)<br>
-    4.產品列表<br>
-    -`登入頁 (login.html)<br>
-    -`註冊頁 (register.html)<br>
-    -`會員中心頁(member.html)<br></p>
-    <a href=" /Yeah-Fun-Cheap/pages/boostrap-demo.html">點我點我 boostrap-demo.html</a> 
 
-    <%- include('./layout/footer'); -%>
+    <header class="main-header">
+        <div class="logo-area">
+            <span class="logo-icon"><i class="fas fa-mountain"></i></span>
+            <span class="logo-text">野fun趣</span>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="#">首頁</a></li>
+                <li><a href="#">野樂體驗</a></li>
+                <li><a href="#">營區介紹</a></li>
+                <li><a href="#">夥伴招募</a></li>
+                <li><a href="#">關於我們</a></li>
+            </ul>
+        </nav>
 
-      <script type="module" src="../main.js"></script>
+        <div class="utility-nav">
+            <a href="#" class="search-icon"><i class="fas fa-search"></i></a>
+            <a href="#" class="login-btn">登入/註冊</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+    
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1 class="site-logo">野fun趣</h1>
+            <p class="slogan">探索戶外生活的美好</p>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="輸入營地名稱、地區或關鍵字">
+                <button type="submit"><i class="fas fa-search"></i> 搜尋</button>
+            </div>
+            
+            <div class="hot-keywords">
+                <span>熱門搜尋:</span>
+                <a href="#">免裝備</a>
+                <a href="#">海邊</a>
+                <a href="#">4人帳</a>
+                <a href="#">豪華露營</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section class="features-section">
+            <h2>我們的特色</h2>
+            <div class="feature-cards">
+                <div class="card">
+                    <div class="card-img placeholder-1"></div>
+                    <h3>一帳一廳</h3>
+                    <p>專業級配備，輕鬆享受露營樂趣。</p>
+                </div>
+                <div class="card">
+                    <div class="card-img placeholder-2"></div>
+                    <h3>免裝備入住</h3>
+                    <p>拎包就走，露營新手也能輕鬆入門。</p>
+                </div>
+                <div class="card">
+                    <div class="card-img placeholder-3"></div>
+                    <h3>月租型營地</h3>
+                    <p>長期駐紮，享受大自然的長期陪伴。</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="campsites-section hot-campsites">
+            <h2>熱門營地</h2>
+            <div class="campsite-cards">
+                <div class="campsite-card">
+                    <div class="card-img placeholder-campsite"></div>
+                    <h3>星空下的約定</h3>
+                    <p>地點：南投 / 設施：衛浴、炊事</p>
+                </div>
+                <div class="campsite-card">
+                    <div class="card-img placeholder-campsite"></div>
+                    <h3>森林秘境</h3>
+                    <p>地點：宜蘭 / 特色：自然、生態</p>
+                </div>
+                 <div class="campsite-card">
+                    <div class="card-img placeholder-campsite"></div>
+                    <h3>湖畔悠遊</h3>
+                    <p>地點：苗栗 / 體驗：划船、親水</p>
+                </div>
+                 <div class="campsite-card">
+                    <div class="card-img placeholder-campsite"></div>
+                    <h3>高山雲海</h3>
+                    <p>地點：花蓮 / 景色：雲海、日出</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="campsites-section new-campsites">
+            <h2>最新營地</h2>
+            <div class="campsite-cards">
+                <div class="campsite-card small">
+                    <div class="card-img placeholder-new"></div>
+                    <h3>溪谷微風</h3>
+                    <p>地點：新竹</p>
+                </div>
+                <div class="campsite-card small">
+                    <div class="card-img placeholder-new"></div>
+                    <h3>山海之間</h3>
+                    <p>地點：台東</p>
+                </div>
+                <div class="campsite-card small">
+                    <div class="card-img placeholder-new"></div>
+                    <h3>離島星辰</h3>
+                    <p>地點：澎湖</p>
+                </div>
+                <div class="campsite-card small">
+                    <div class="card-img placeholder-new"></div>
+                    <h3>城市綠洲</h3>
+                    <p>地點：桃園</p>
+                </div>
+            </div>
+             <a href="#" class="more-btn">查看更多營地</a>
+        </section>
+
+        <hr>
+
+        <section class="knowledge-section">
+            <div class="image-placeholder placeholder-knowledge"></div>
+            <div class="knowledge-content">
+                <h2>露營知識</h2>
+                <p>探索露營技巧、裝備選擇和戶外安全須知，讓您的野外生活更豐富、更安全。我們定期更新文章，涵蓋從基礎入門到進階挑戰的各種主題。</p>
+                <a href="#" class="more-btn">閱讀更多知識文章</a>
+            </div>
+        </section>
+
+    </main>
+    
+    <section class="start-section">
+        <h2>開始我們的野fun旅程</h2>
+        <a href="#" class="start-btn">了解更多</a>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon"><i class="fas fa-mountain"></i></span> 野fun趣
+            </div>
+            <div class="footer-info">
+                <p>&copy; 2025 野fun趣. All rights reserved.</p>
+                <p>聯繫我們 | 服務條款 | 隱私政策</p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
