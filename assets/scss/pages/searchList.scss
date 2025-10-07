@@ -2,3 +2,35 @@
     padding-top: 70px;
     padding-bottom: 70px;
 }
+
+.hero-decoration {
+    width: 728px;
+    height: auto;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    pointer-events: none; // 裝飾圖不影響互動
+}
+
+.bg-primary-50 {
+    background-color: $primary-50;
+}
+
+.card.selectable {
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+    &:hover {
+        box-shadow: $box-shadow-lg;
+    }
+}
+
+/* 當 input 被選中，對應的 label 加陰影 */
+.card-input:checked+.card.selectable {
+    box-shadow: $box-shadow-lg;
+    border-color: var(--bs-primary); // 可加邊框顏色強調
+}
+
+.card img {
+    display: block;
+}

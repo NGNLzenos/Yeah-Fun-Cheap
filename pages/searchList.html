@@ -3,96 +3,147 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 
 <body>
-    <%- include('./layout/header'); -%>
-        <div class="container">
-            <div class="py-70px">
-                
-                <div class="input-group mb-3 border border-primary-200 mb-4">
-                    <select class="form-select" aria-label="選擇地區">
-                        <option selected class="text-neutral-200 h6">請選擇地區</option>
-                        <option value="1" class="h6">新北市</option>
-                        <option value="2" class="h6">臺北市</option>
-                        <option value="3" class="h6">桃園市</option>
-                        <option value="4" class="h6">苗栗市</option>
-                        <option value="5" class="h6">新竹市</option>
-                        <option value="6" class="h6">台中市</option>
-                        <option value="7" class="h6">臺南市</option>
-                        <option value="8" class="h6">高雄市</option>
-                        <option value="9" class="h6">宜蘭縣</option>
-                        <option value="10" class="h6">彰化縣</option>
-                        <option value="11" class="h6">雲林縣</option>
-                        <option value="12" class="h6">嘉義縣</option>
-                        <option value="13" class="h6">屏東縣</option>
-                        <option value="14" class="h6">花蓮縣</option>
-                        <option value="15" class="h6">臺東縣</option>
-                    </select>
-                    <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
-                        placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
-                    <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
-                </div>
-                <div class="searchListTags flex-wrap gap-2">
-                    <a href="#" class="btn tag tag-outline">#可帶寵物</a>
-                    <a href="#" class="btn tag tag-outline">#免搭棚帳</a>
-                    <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
-                    <a href="#" class="btn tag tag-outline">#適合親子</a>
-                    <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
-                    <a href="#" class="btn tag tag-outline">#機車友善</a>
-                    <a href="#" class="btn tag tag-outline">#車泊友善</a>
-                    <a href="#" class="btn tag tag-outline">#單人友善</a>
-                </div>
+  <%- include('./layout/header'); -%>
+
+
+    <section class=" hero position-relative py-70px d-flex justify-content-start align-items-center">
+      <div class="container">
+        <div class="me-6">
+          <h3 class="h2 mb-6">從這裡開始計畫露營之旅</h3>
+          <div class="input-group mb-3 border border-primary-200 mb-4">
+            <select class="form-select" aria-label="選擇地區">
+              <option selected class="text-neutral-200 h6">請選擇地區</option>
+              <option value="1" class="h6">新北市</option>
+              <option value="2" class="h6">臺北市</option>
+              <option value="3" class="h6">桃園市</option>
+              <option value="4" class="h6">苗栗市</option>
+              <option value="5" class="h6">新竹市</option>
+              <option value="6" class="h6">台中市</option>
+              <option value="7" class="h6">臺南市</option>
+              <option value="8" class="h6">高雄市</option>
+              <option value="9" class="h6">宜蘭縣</option>
+              <option value="10" class="h6">彰化縣</option>
+              <option value="11" class="h6">雲林縣</option>
+              <option value="12" class="h6">嘉義縣</option>
+              <option value="13" class="h6">屏東縣</option>
+              <option value="14" class="h6">花蓮縣</option>
+              <option value="15" class="h6">臺東縣</option>
+            </select>
+            <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
+              placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
+            <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
+          </div>
+          <div class="searchListTags flex-wrap gap-2">
+            <a href="#" class="btn tag tag-outline">#可帶寵物</a>
+            <a href="#" class="btn tag tag-outline">#免搭棚帳</a>
+            <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
+            <a href="#" class="btn tag tag-outline">#適合親子</a>
+            <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
+            <a href="#" class="btn tag tag-outline">#機車友善</a>
+            <a href="#" class="btn tag tag-outline">#車泊友善</a>
+            <a href="#" class="btn tag tag-outline">#單人友善</a>
+          </div>
+        </div>
+        <div>
+          <img class="hero-decoration position-absolute" src="/assets/images/searchList/Frame 01.png" alt="">
+        </div>
+      </div>
+
+    </section>
+    <section class="bg-primary-50 py-11">
+      <div class="container">
+        <div class="d-flex align-items-end mb-7">
+          <img src="/assets/images/LOGO.png" alt="herologo" class="me-3">
+          <h2 class="h2 mb-0">為您帶來精彩的露營體驗</h2>
+        </div>
+        <div class="crad-wrapper d-flex flex-wrap gap-6 justify-content-center align-items-center">
+          <div class="card shadow-lg border-0 gap-6 position-relative" style="width: 26rem;">
+
+            <div class="card-body p-0">
+              <div class="p-6">
+                <h4 class="h7 card-title fw-medium text-primary-200">幫你找到理想營地</h4>
+                <h6 class="card-subtitle mb-2 text-body-secondary h5 text-neutral-900">多種多樣的詳細標籤</h6>
+              </div>
+              <img src="/assets/images/searchList/Frame 1430107670.png" alt="">
 
             </div>
-                <div class="row row-cols-1 row-cols-md-2 g-4 p32">
+            <a href="#" class="stretched-link"
+              style="display: block;height: 0;  width: 0; overflow: visible;  inset: 0;  "></a>
+          </div>
+          <div class="card shadow-lg border-0 gap-6" style="width: 26rem;">
+            <div class="card-body p-0">
+              <div class="p-6">
+                <h4 class="h7 card-title fw-medium text-primary-200">選擇你喜愛的搜尋方式</h4>
+                <h6 class="card-subtitle mb-2 text-body-secondary h5 text-neutral-900">可切換清單與地圖模式</h6>
+              </div>
+              <img src="/assets/images/searchList/image 38.png" alt="">
+            </div>
+          </div>
+          <div class="card shadow-lg border-0 gap-6" style="width: 26rem;">
+            <div class="card-body p-0">
+              <div class="p-6">
+                <h4 class="h7 card-title fw-medium text-primary-200">看大家的體驗</h4>
+                <h6 class="card-subtitle mb-2 text-body-secondary h5 text-neutral-900">真實且自由的使用者評價</h6>
+              </div>
+              <img src="/assets/images/searchList/Frame 1430107670 (2).png" alt="">
+            </div>
+          </div>
+        </div>
+    </section>
+    <div class="row row-cols-1 row-cols-md-2 g-4 p32">
       <div class="col">
         <div class="card d-flex">
-          <img src="https://images.unsplash.com/photo-1698521660341-2392b5639034?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">森日快樂露營區</h5>
-                  <p class="card-text">ICON +苗栗縣卓蘭鎮 西坪里三鄰西坪36-29號</p>
-                  <p class="card-text">★★★★☆</p>
-                  <button class="btn btn-primary text-white">#親子要上透明度 </button>  
-                  <button class="btn btn-primary text-white">查看更多 →</button>  
-            </div>
+          <img
+            src="https://images.unsplash.com/photo-1698521660341-2392b5639034?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">森日快樂露營區</h5>
+            <p class="card-text">ICON +苗栗縣卓蘭鎮 西坪里三鄰西坪36-29號</p>
+            <p class="card-text">★★★★☆</p>
+            <button class="btn btn-primary text-white">#親子要上透明度 </button>
+            <button class="btn btn-primary text-white">查看更多 →</button>
+          </div>
         </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
       </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-</div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
         </div>
-
-        <%- include('./layout/footer'); -%>
-            <script type="module" src="../main.js"></script>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="..." class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+              content. This content is a little bit longer.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
 </body>
 
 </html>

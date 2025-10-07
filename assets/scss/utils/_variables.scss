@@ -303,6 +303,7 @@ $cyans: (
 $primary-300: #4F6947;
 $primary-200: #609451;
 $primary-100: #CBEAC2;
+$primary-50: #f4f5f0;
 $primary: $primary-200;
 
 $secondary-300: #F9BC3E;
@@ -728,7 +729,11 @@ $h4-font-size: $font-size-base * 1.75 !default;
 $h5-font-size: $font-size-base * 1.5 !default;
 $h6-font-size: $font-size-base * 1.25 !default;
 $h7-font-size: $font-size-base * 1.125 !default;
+
 // scss-docs-end font-variables
+.h7 {
+  font-size: $h7-font-size;
+}
 
 // scss-docs-start font-sizes
 $font-sizes: (
