@@ -3,21 +3,267 @@
 
 <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+  <title>search</title>
 </head>
 
 <body>
-    <%- include('./layout/header'); -%>
-        <div class="container">
-            <h1 class="p-1 mb-5">測試</h1>
-            <p class="text-primary">內文段落測試</p>
-            <div class="search-box"></div>
-        </div>
+  <%- include('./layout/header'); -%>
 
-        <%- include('./layout/footer'); -%>
-            <script type="module" src="../main.js"></script>
+
+    <section class=" hero position-relative py-70px d-flex justify-content-start align-items-center">
+      <div class="container">
+        <div class="me-6">
+          <div class="input-group mb-3 border border-primary-200 mb-4">
+            <select class="form-select" aria-label="選擇地區">
+              <option selected class="text-neutral-200 h6">請選擇地區</option>
+              <option value="1" class="h6">新北市</option>
+              <option value="2" class="h6">臺北市</option>
+              <option value="3" class="h6">桃園市</option>
+              <option value="4" class="h6">苗栗市</option>
+              <option value="5" class="h6">新竹市</option>
+              <option value="6" class="h6">台中市</option>
+              <option value="7" class="h6">臺南市</option>
+              <option value="8" class="h6">高雄市</option>
+              <option value="9" class="h6">宜蘭縣</option>
+              <option value="10" class="h6">彰化縣</option>
+              <option value="11" class="h6">雲林縣</option>
+              <option value="12" class="h6">嘉義縣</option>
+              <option value="13" class="h6">屏東縣</option>
+              <option value="14" class="h6">花蓮縣</option>
+              <option value="15" class="h6">臺東縣</option>
+            </select>
+            <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
+              placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
+            <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
+          </div>
+          <div class="searchListTags flex-wrap gap-2">
+            <a href="#" class="btn tag tag-outline">#可帶寵物</a>
+            <a href="#" class="btn tag tag-outline">#免搭棚帳</a>
+            <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
+            <a href="#" class="btn tag tag-outline">#適合親子</a>
+            <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
+            <a href="#" class="btn tag tag-outline">#機車友善</a>
+            <a href="#" class="btn tag tag-outline">#車泊友善</a>
+            <a href="#" class="btn tag tag-outline">#單人友善</a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section >
+        <div class="container">
+          <div class="d-flex justify-content-between mb-4">
+            <h3 class="h5 text-neutral-900">找到 24 個你可能喜歡的營地</h3>
+          <div>
+            <button class="btn btn-pr-noneline" type="button">地圖</button>
+            <button class="btn btn-pr" type="button">列表</button>
+          </div>
+          </div>
+          <!--搜尋結果，用卡片模式-->
+            <div class="d-flex flex-wrap justify-content-between align-items-center mb-7">
+            <div class="card mb-3 "><!--第一張-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp01.jpg" 
+                    alt="searchCamp01" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">森日快樂露營區</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>苗栗縣卓蘭鎮 西坪里三鄰西坪36-29號</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#可帶寵物</a>
+                    <a href="#" class="btn tag ms-2">#適合親子</a>
+                    <a href="#" class="btn tag ms-2">#車泊友善</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="card mb-3 "><!--第二張卡片-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp02.jpg" 
+                    alt="searchCamp02" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">享露菲菲露營區</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>苗栗縣泰安鄉 大興村高熊段</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#雨天也不怕</a>
+                    <a href="#" class="btn tag ms-2">#適合親子</a>
+                    <a href="#" class="btn tag ms-2">#車泊友善</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 "><!--第三張卡片-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp03.jpg" 
+                    alt="searchCamp03" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">布拉布拉 BulaBula</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>宜蘭縣南澳鄉 東岳路81巷</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#親子同樂</a>
+                    <a href="#" class="btn tag ms-2">#仲夏戲水</a>
+                    <a href="#" class="btn tag ms-2">#輕鬆露營</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 "><!--第四張卡片-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp04.jpg" 
+                    alt="searchCamp04" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">跑馬古道露營區</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>宜蘭縣礁溪鄉 白石腳路157巷90號</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#可帶寵物</a>
+                    <a href="#" class="btn tag ms-2">#日出美景</a>
+                    <a href="#" class="btn tag ms-2">#車泊友善</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="card mb-3 "><!--第五張卡片-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp05.jpg" 
+                    alt="searchCamp05" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">星語森林露營區</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>台中市和平區 森林小徑旁</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#適合觀星</a>
+                    <a href="#" class="btn tag ms-2">#適合親子</a>
+                    <a href="#" class="btn tag ms-2">#大片草地</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="card mb-3 "><!--第六張卡片-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp06.jpg" 
+                    alt="searchCamp06" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">清溪谷露營園地</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>南投縣仁愛鄉 清澈溪流旁</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#可帶寵物</a>
+                    <a href="#" class="btn tag ms-2">#溪邊玩水</a>
+                    <a href="#" class="btn tag ms-2">#車泊友善</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="card mb-3 "><!--第七張卡片-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp07.jpg" 
+                    alt="searchCamp07" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">曙光高地營區</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>新竹縣五峰鄉 高山觀景台附近</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#可帶寵物</a>
+                    <a href="#" class="btn tag ms-2">#適合親子</a>
+                    <a href="#" class="btn tag ms-2">#日出美景</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+             <div class="card mb-3 "><!--第八張卡片-->
+              <div class="d-flex justify-content-between p-4">
+                <div>
+                  <img src="/assets/images/search/searchCamp08.jpg" 
+                    alt="searchCamp08" style="height: 160px;width: 160px; border-radius: 8px;">
+                </div>
+                <div>
+                  <div class="card-body p-0 ps-3 ">
+                    <h5 class="card-title h7 mb-2">雲海松林露營區</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200"><span class="material-symbols-outlined">distance</span>嘉義縣阿里山鄉 松林步道旁</p>
+                    <p class="card-text fs-sm mb-10 text-primary-200">★★★☆</p>
+                 <div class=" d-flex">
+                    <a href="#" class="btn tag ">#可帶寵物</a>
+                    <a href="#" class="btn tag ms-2">#森林步道</a>
+                    <a href="#" class="btn tag ms-2">#車泊友善</a>  
+                    <div class="ms-4">
+                        <button class="btn btn-pr " type="button">查看更多 <span class="material-symbols-outlined">arrow_forward</span></button>
+                    </div>
+                </div>
+                </div>
+                </div>
+              </div>
+            </div>
+            </div>
+            <!--頁碼切換-->
+            <div class="text-center d-flex justify-content-center mb-11 align-items-center">
+                <span class="material-symbols-outlined mr-3 text-neutral-200">chevron_left</span>
+                <button class="btn btn-pr">1</button>
+                <button class="btn btn-pr-noneline">2</button>
+                <button class="btn btn-pr-noneline">3</button>
+                <span class="material-symbols-outlined">chevron_right</span>
+            </div>
+        </div>
+              
+    </section>
+    <%- include('./layout/footer'); -%>
+      <script type="module" src="../main.js"></script>
 </body>
 
 </html>
