@@ -73,3 +73,22 @@
         color: $neutral-200;
     }
 }
+//用在search網頁上
+.btn-toggle {
+    min-width: 80px;
+    width: 200 px;
+    color: $black;
+    background-color: $neutral-50;
+    font-weight: 500;
+    border-radius: 100px;
+    padding: 6px 8px;
+    text-align: center;
+}
+
+.btn-check:checked + .btn-toggle {
+  background-color: #4F8A5B; /* 綠底 */
+  padding: 4px 24px;
+  border-radius: 100px;
+  color: white;
+  border-color: #4F8A5B;
+}

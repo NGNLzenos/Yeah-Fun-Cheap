@@ -11,3 +11,15 @@ border-radius: 8px;
 
 }
 
+
+.camp-card {
+  width: 640px;
+}
+
+@media (max-width: 576px) {
+  .camp-card {
+    width: 100%; /* 或改成 100% 以滿版更好 */
+    margin-right: 0; /* 避免手機太擠 */
+  }
+}
+
