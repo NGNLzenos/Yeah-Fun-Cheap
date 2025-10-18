@@ -1,0 +1,43 @@
+@import url('https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css');
+
+.camp-card {
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.thumb-slide {
+    cursor: pointer;
+}
+
+.thumb-slide img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.thumbs-rail .swiper-slide {
+    opacity: .6;
+    transition: opacity .2s;
+}
+
+.thumbs-rail .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-nav-btn {
+    color: #fff;
+}
+
+.ratio-21x9 {
+    --bs-aspect-ratio: calc(9 / 21 * 100%);
+}
+
+/* 主圖長橫比，可自行換 */
+/* 手機時縮圖在主圖下方橫向 */
+@media (min-width: 768px) {
+    .thumbs-rail {
+        height: 420px;
+    }
+
+    /* 直向縮圖區高度 */
+}

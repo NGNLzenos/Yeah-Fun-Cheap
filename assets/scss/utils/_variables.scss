@@ -486,10 +486,17 @@ $spacers: (
   // 80
   // 其他間距變數
   1p: 1px,
+  2p: 2px,
   6p: 6px,
   10p:10px) !default;
 // scss-docs-end spacer-variables-maps
 
+$spacers: map-merge($spacers,
+    ("1px": 1px,
+      "2px": 2px,
+      "6px": 6px,
+      "10px": 10px)
+);
 // scss-docs-end spacer-variables-maps
 
 // Position
