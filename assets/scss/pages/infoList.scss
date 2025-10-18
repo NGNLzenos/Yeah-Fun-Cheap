@@ -1,0 +1,28 @@
+.infoList-bg{
+    background-image: url("/assets/images/background01.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 152px 400px;
+    max-width: 100%;
+    opacity: 0.5;
+}
+
+.info-card {
+  width: 90%;
+}
+
+@media (max-width: 576px) {
+  .info-card {
+    width: 100%; /* 或改成 100% 以滿版更好 */
+    margin-right: 0; /* 避免手機太擠 */
+  }
+}
+
+.info-icon{
+  width: 10%;
+position: absolute;
+    top: 80%;
+    right: 2%;
+  z-index: 10; /* 改成正值 */
+  pointer-events: none; /* 不影響點擊事件 */
+    }

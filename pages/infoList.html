@@ -10,41 +10,50 @@
 
 <body>
   <%- include('./layout/header'); -%>
-    <h1 >野fun趣 | 知識庫</h1>
+    <div class="container bg-primary-100 .infoList-bg">
+        <h1 >野fun趣 | 知識庫</h1>
     <p> -知識庫列表頁 (info_list.html)<br>
        </p>
-    <div class="container">
-    <div class="row row-cols-1 row-cols-md-2 g-4">
-      <div class="col flex-wrap">
-        <div class="card">
-          <img src="https://images.unsplash.com/photo-1698521660341-2392b5639034?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">生活的小冒險-深入山林，與大地對話</h5>
-                  <p class="card-text">來自山海的未讀訊息｜肥沃土地的守護者：小安｜在地創生與永續旅遊人物專欄
-</p>
- 
-            </div>
-        </div>
-          <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title"> 文章一</h5>
-        <p class="card-text">內文一</p>
+    <div class="row ">
+
+      <!--左邊文章-->
+      <div class="col-8 bg-primary-50 py-12">
+      <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-7">
+              <!--第一張-->
+            <div class="card mb-3 mr-4 info-card"  >
+                <img src="/assets/images/info/裝飾1.png" alt="" class="info-icon">
+
+              <div class="row  border-primary-200 border">
+
+                <div class="col-md-4 py-4 "><!--圖片160px-->
+                  <img src="/assets/images/search/searchCamp01.jpg" class="searchImg ms-4 " alt="searchCamp01">
+                </div>
+                <div class="col-md-8 py-4 ps-4">
+                  <div class="card-body p-0 ps-3">
+                    <h5 class="fs-6 fw-bold mb-2">新手也能秒懂！第一次露營怎麼準備？<br>從選營地到裝備清單一次搞懂</h5>
+                    <p class="fs-sm fw-medium mb-2 p-0">第一次露營就上手！這篇文章教你從挑選適合的新手營地開始，到帳篷、睡袋、照明等基礎裝備怎麼挑、怎麼打包，幫助你避免新手常見失誤，快樂出門、安心回家。
+                    </p>
+                  
+                 <div class=" d-flex align-items-center flex-wrap">
+                    <button class="btn btn-pr d-flex  ms-4" type="button">查看更多
+                    <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    </div>
+                </div>
+                  </div>
+                </div>
+              </div>
+      </div>
+
+
+        
+      </div>
+
+       <!--右邊查詢區-->
+      <div class="col-4 bg-primary-200">
+        1112
       </div>
     </div>
-  </div>
-  </div>
-  <div class="col">
-    <div class="card">
-      <img src="..." class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
- </div>
+
     </div>
 
     <%- include('./layout/footer'); -%>
