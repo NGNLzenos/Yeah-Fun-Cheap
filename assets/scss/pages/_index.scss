@@ -190,7 +190,7 @@ hr {
 }
 
 .campsite-cards {
-  display: grid;
+  display: flex;
   gap: 20px;
   margin-bottom: 20px;
 }
@@ -232,6 +232,7 @@ hr {
 /* 最新營地 (較小卡片) */
 .new-campsites .campsite-cards {
   grid-template-columns: repeat(4, 1fr);
+
 }
 
 .campsite-card.small .placeholder-new {
