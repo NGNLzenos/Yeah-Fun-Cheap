@@ -1,36 +1,45 @@
-<nav class="border-bottom navbar navbar-expand-lg border-neutral-50">
+<nav class="navbar navbar-expand-lg border-bottom border-neutral-50">
     <div class="container d-flex justify-content-between align-items-center py-4">
         <div class="d-flex justify-content-between align-items-center flex-nowrap">
-            <a class="d-block me-8" href="/pages/index.html">
+            <a class="d-block me-8 navbar-brand" href="/pages/index.html">
                 <img src="/assets/images/LOGO_96x60.png" alt="logo">
             </a>
-            <ul class="nav" style="height: 45px;">
-                <li class="nav-item border-right border-primary ps-0 pe-7">
-                    <a class="nav-link text-center" href="#">
-                        <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
-                        <p class="fs-ssm text-primary-300 mb-0">Newest</p>
-                    </a>
-                </li>
-                <li class="nav-item border-start border-primary-200 px-7">
-                    <a class="nav-link text-center" href="#">
-                        <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
-                        <p class="fs-ssm text-primary-300 mb-0">Popular</p>
-                    </a>
-                </li>
-                <li class="nav-item border-start border-primary-200 px-7">
-                    <a class="nav-link text-center" href="../pages/infoList.html">
-                        <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
-                        <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
-                    </a>
-                </li>
-                <li class="nav-item border-start border-primary-200 ps-7 pe-0">
-                    <a class="nav-link text-center" href="../pages/about.html">
-                        <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
-                        <p class="fs-ssm text-primary-300 mb-0">About Us</p>
-                    </a>
-                </li>
-            </ul>
-            <a href="searchList.html" class="btn btn-md btn-pr-outline ms-7">野fun去～</a>
+            <!-- 漢堡按鈕：在小螢幕出現 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav" style="height: 45px;">
+                    <li class="nav-item border-end border-primary ps-0 pe-7">
+                        <a class="nav-link text-center" href="#">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Newest</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="#">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Popular</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="../pages/infoList.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 ps-7 pe-0">
+                        <a class="nav-link text-center" href="../pages/about.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">About Us</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="searchList.html" class="btn btn-md btn-pr-outline ms-7">野fun去～</a>
+            </div>
+
+
 
         </div>
         <div class="d-flex justify-content-center">

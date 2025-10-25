@@ -4,7 +4,6 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js";
 console.log('Hello world');
 
 
-
 // main.js
 
 // 引入 Bootstrap 的 JS
@@ -32,7 +31,7 @@ const generateTableOfContents = () => {
     if (!navList) return; // 如果導覽容器不存在，則不執行
 
     mainContentSections = document.querySelectorAll('.article-content-section section[id^="section-"]'); // 選擇所有帶有 id="section-X" 的 section
-    
+
     mainContentSections.forEach(section => {
         const title = section.querySelector('.section-title').textContent;
         const id = section.id;
@@ -42,7 +41,7 @@ const generateTableOfContents = () => {
         link.href = `#${id}`;
         link.textContent = title;
         link.classList.add('scroll-link'); // 添加 class 方便事件監聽
-        
+
         listItem.appendChild(link);
         navList.appendChild(listItem);
     });
@@ -73,7 +72,7 @@ const updateReadProgress = () => {
         const section = mainContentSections[i];
         const sectionTop = section.offsetTop;
         const sectionHeight = section.offsetHeight;
-        
+
         // 當章節頂部進入視窗的 1/3 或底部還在視窗內時，視為活躍
         // 調整這個閾值可以改變活躍狀態的敏感度
         if (scrollY >= sectionTop - viewportHeight / 3 && scrollY < sectionTop + sectionHeight - viewportHeight / 3) {
@@ -157,4 +156,21 @@ toggleBtn.addEventListener('click', () => {
     // 切換隱藏類別
     nav.classList.toggle('hidden');
     contentSection.classList.toggle('nav-hidden');
+});
+// 建議：整個檔案都放在 DOMContentLoaded 後再跑
+document.addEventListener('DOMContentLoaded', () => {
+    // 如果你想完全交給 Bootstrap 的 data-bs-* 來切換：
+    // 什麼都不用寫，刪掉你原本對 .navbar-toggler 的 addEventListener。
+
+    // 如果你硬要用 JS 自己控制，再這樣寫：
+    const toggler = document.querySelector('.navbar-toggler');
+    const target = document.querySelector('#navbarNav');
+
+    if (toggler && target && window.bootstrap?.Collapse) {
+        const bsCollapse = new bootstrap.Collapse(target, { toggle: false });
+        toggler.addEventListener('click', () => bsCollapse.toggle());
+    } else {
+        // 在沒有 navbar 的頁面不要報錯
+        console.debug('[navbar] skip binding: toggler/target not found or bootstrap missing');
+    }
 });
