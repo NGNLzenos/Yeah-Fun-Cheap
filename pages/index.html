@@ -10,15 +10,19 @@
 
 <body>
     <%- include('./layout/header'); -%>
-        <section class="hero-section">
-            <div class="hero-content">
-                <img src="/assets/images/LOGO_320x200.png" alt="">
+    <section class="hero-section">
+    <div class="hero-content">
+        <img src="/assets/images/LOGO_320x200.png" alt="">
 
-                <div class="search-bar">
-                <div class="py-6 d-flex justify-content-center align-items-center">
-                <div>
-                    <div class="input-group mb-3 border border-primary-200 mb-4">
-                        <select class="form-select" aria-label="選擇地區">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    
+                    <div class="d-flex flex-column flex-md-row mb-3 border border-primary-200 p-0 overflow-hidden">
+                        
+                        <select class="form-select h6 border-0 mb-3 mb-md-0 flex-grow-0" 
+                                style="min-width: 150px;" 
+                                aria-label="選擇地區">
                             <option selected class="text-neutral-200 h6">請選擇地區</option>
                             <option value="1" class="h6">新北市</option>
                             <option value="2" class="h6">臺北市</option>
@@ -36,39 +40,34 @@
                             <option value="14" class="h6">花蓮縣</option>
                             <option value="15" class="h6">臺東縣</option>
                         </select>
-                        <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
-                            placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
-                        <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
-                    </div>
-                    <div class="searchListTags flex-wrap gap-2">
-                        <a href="#" class="btn tag tag-checked">#可帶寵物</a>
-                        <a href="#" class="btn tag tag-checked">#免搭棚帳</a>
-                        <a href="#" class="btn tag tag-checked">#獨立衛浴</a>
-                        <a href="#" class="btn tag tag-outline">#適合親子</a>
-                        <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
-                        <a href="#" class="btn tag tag-outline">#機車友善</a>
-                        <a href="#" class="btn tag tag-outline">#車泊友善</a>
-                        <a href="#" class="btn tag tag-outline">#單人友善</a>
-                    </div>
+
+                        <input type="text" 
+                            class="form-control h6 ps-2 border-0 border-md-start mb-3 mb-md-0 flex-grow-1" 
+                            placeholder="輸入營地名稱或條件" 
+                            aria-label="營地搜尋">
+                        
+                        <button class="btn btn-pr w-100 w-md-auto" 
+                                style="min-width: 100px;" 
+                                type="button">搜尋</button>
                 </div>
 
-
-            </div>
-                </div>
-
-                <div class="searchListTags flex-wrap gap-2">
-                    <span>熱門搜尋:</span>
+                    <div class="searchListTags d-flex flex-wrap gap-2 justify-content-start mb-4">
+                        <span class="w-100 text-center mb-2 d-md-none fw-bold">熱門搜尋:</span>
+                        <span class="d-none d-md-inline fw-bold me-2">熱門搜尋:</span>
                     <a href="#" class="btn tag">#可帶寵物</a>
-                    <a href="#" class="btn tag tag-outline">#免搭棚帳</a>
-                    <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
-                    <a href="#" class="btn tag tag-outline">#適合親子</a>
-                    <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
-                    <a href="#" class="btn tag tag-outline">#機車友善</a>
-                    <a href="#" class="btn tag tag-outline">#車泊友善</a>
-                    <a href="#" class="btn tag tag-outline">#單人友善</a>
-                </div>
+                    <a href="#" class="btn tag">#免搭棚帳</a>
+                    <a href="#" class="btn tag">#獨立衛浴</a>
+                    <a href="#" class="btn tag">#適合親子</a>
+                    <a href="#" class="btn tag">#4.5顆星以上</a>
+                    <a href="#" class="btn tag">#機車友善</a>
+                    <a href="#" class="btn tag">#車泊友善</a>
+                    <a href="#" class="btn tag">#單人友善</a>
+                    </div>  
             </div>
-        </section>
+        </div>
+
+
+    </section>
 
         <main class="container">
             <section class="features-section">
@@ -116,87 +115,213 @@
 
             <hr>
 
-            <section class="campsites-section hot-campsites">
-                <h2>熱門營地</h2>
-                <div class=" flex-nowrap d-flex justify-content-center overflow-auto">
-                    <div class="vstack">
-                        <div class="card-img placeholder-campsite"></div>
-                        <h3 class="fs-md fw-bold text-primary-300">暮光山丘露營地</h3>
-                        <p>地點：南投魚池鄉</p>
-                        <p>眺望日月潭全景、提供懶人帳篷、夜晚可觀星拍銀河</p>
+            
+    <section class="campsites-section new-campsites">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="h3 fw-bold mb-1">熱門營地</h2>
+                <p class="fs-6 text-neutral-500 border-bottom pb-2">Hot Campsites</p> 
+            </div>
+        </div>
+    
+        <div class="row g-4 flex-nowrap flex-md-wrap overflow-x-auto pb-3"> 
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;"> 
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp01.png" alt="暮光山丘露營地" class="w-100 h-100 object-fit-cover">
                     </div>
-                    <div class="">
-                        <div class="card-img placeholder-campsite"></div>
-                        <h3>松風谷野營場</h3>
-                        <p>地點：花蓮壽豐鄉</p>
-                        <p>原始林地環繞，可帶毛孩，有簡易步道直達溪谷</p>
+                
+                    <h3 class="fs-md fw-bold text-primary-300">暮光山丘露營地</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>南投魚池鄉
                     </div>
-                    <div class="vstack">
-                        <div class="card-img placeholder-campsite"></div>
-                        <h3>草原之心 Glamping</h3>
-                        <p>地點：台中東勢區</p>
-                        <p>獨立衛浴豪華帳，適合親子共遊，草原放風大空閒</p>
-                    </div>
-                    <div class="vstack">
-                        <div class="card-img placeholder-campsite"></div>
-                        <h3>水影森森營地</h3>
-                        <p>地點：宜蘭大同鄉</p>
-                        <p>湖畔景緻、森林浴營位，夏季可戲水划獨木舟</p>
-                    </div>
+                    <p class="fs-sm">眺望日月潭全景、提供懶人帳篷、夜晚可觀星拍銀河</p>
                 </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;">  
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp02.png" alt="松風谷野營場" class="w-100 h-100 object-fit-cover">
+                    </div>
+                
+                    <h3 class="fs-md fw-bold text-primary-300">松風谷野營場</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>花蓮壽豐鄉
+                    </div>
+                    <p class="fs-sm">原始林地環繞，可帶毛孩，有簡易步道直達溪谷</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;">  
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp03.png" alt="草原之心 Glamping" class="w-100 h-100 object-fit-cover">
+                    </div>
+
+                    <h3 class="fs-md fw-bold text-primary-300">草原之心 Glamping</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>台中東勢區
+                    </div>
+                    <p class="fs-sm">獨立衛浴豪華帳，適合親子共遊，草原放風大空閒</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;"> 
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp08.png" alt="水影森森營地" class="w-100 h-100 object-fit-cover">
+                    </div>
+
+                    <h3 class="fs-md fw-bold text-primary-300">水影森森營地</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>宜蘭大同鄉
+                    </div>
+                    <p class="fs-sm">湖畔景緻、森林浴營位，夏季可戲水划獨木舟</p>
+                </div>
+            </div>
             </section>
 
             <hr>
 
-            <section class="campsites-section new-campsites">
-                <h2>最新營地</h2>
-                <div class="campsite-cards">
-                    <div class="campsite-card small">
-                        <div class="card-img placeholder-new"></div>
-                        <h3>路徑森林帳篷村</h3>
-                        <p>地點：苗栗泰安鄉</p>
-                        <p>偶遇山鹿，提供星空晚餐體驗、冷泉溪畔玩水</p>
+    <section class="campsites-section new-campsites">
+        <div class="row mb-4">
+            <div class="col-12">
+                <h2 class="h3 fw-bold mb-1">最新營地</h2>
+                <p class="fs-6 text-neutral-500 border-bottom pb-2">Newest Campsites</p> 
+            </div>
+        </div>
+    
+        <div class="row g-4 flex-nowrap flex-md-wrap overflow-x-auto pb-3"> 
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;"> 
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp05.png" alt="路徑森林帳篷村" class="w-100 h-100 object-fit-cover">
                     </div>
-                    <div class="campsite-card small">
-                        <div class="card-img placeholder-new"></div>
-                        <h3>靜謐原野。野宿基地</h3>
-                        <p>地點：屏東霧台鄉</p>
-                        <p>高山原民風格、無光害觀星，限量營位私密性高</p>
+                
+                    <h3 class="fs-md fw-bold text-primary-300">路徑森林帳篷村</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>苗栗泰安鄉
                     </div>
-                    <div class="campsite-card small">
-                        <div class="card-img placeholder-new"></div>
-                        <h3>藍岸微風營地</h3>
-                        <p>地點：澎湖白沙鄉</p>
-                        <p>面海帳篷，步行直達沙灘，附設BBQ料理區</p>
-                    </div>
-                    <div class="campsite-card small">
-                        <div class="card-img placeholder-new"></div>
-                        <h3>雲上小徑露營地</h3>
-                        <p>地點：阿里山石棹</p>
-                        <p>雲海日出美景、森林步道包圍，提供茶席體驗</p>
-                    </div>
+                    <p class="fs-sm">偶遇山鹿，提供星空晚餐體驗、冷泉溪畔玩水</p>
                 </div>
-                <a href="#" class="more-btn">查看更多營地</a>
-            </section>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;">  
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp06.png" alt="靜謐原野。野宿基地" class="w-100 h-100 object-fit-cover">
+                    </div>
+                
+                    <h3 class="fs-md fw-bold text-primary-300">靜謐原野。野宿基地</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>屏東霧台鄉
+                    </div>
+                    <p class="fs-sm">高山原民風格、無光害觀星，限量營位私密性高</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;">  
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp07.png" alt="藍岸微風營地" class="w-100 h-100 object-fit-cover">
+                    </div>
+                
+                    <h3 class="fs-md fw-bold text-primary-300">藍岸微風營地</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>澎湖白沙鄉
+                    </div>
+                    <p class="fs-sm">面海帳篷，步行直達沙灘，附設BBQ料理區</p>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 306px;"> 
+                <div class="card h-100 campsite-card small border-0">
+                
+                    <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio" style="--bs-aspect-ratio: 70.3%;">
+                        <img src="/assets/images/index/camp08.png" alt="雲上小徑露營地" class="w-100 h-100 object-fit-cover">
+                    </div>
+                
+                    <h3 class="fs-md fw-bold text-primary-300">雲上小徑露營地</h3>
+                    <div class="fs-sm text-primary-200 mb-2">
+                        <span class="f-block material-symbols-outlined me-1" style="transform: translateY(5px);">distance</span>阿里山石棹
+                    </div>
+                    <p class="fs-sm">雲海日出美景、森林步道包圍，提供茶席體驗</p>
+                </div>
+            </div>
+    </section>
+        <div class="text-center mt-5">
+            <a href="/pages/campDetail.html" class="btn btn-pr btn-lg more-btn d-inline-block">
+                查看更多 <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+
 
             <hr>
 
-            <section class="knowledge-section">
-                <div class="image-placeholder placeholder-knowledge"></div>
-                <div class="knowledge-content">
-                    <h2>露營知識</h2>
-                    <p>選擇營地、備妥裝備，到了瞭解天氣、動物與急救常識，每個細節都是安心出遊的基礎。</p>
-                    <a href="#" class="more-btn">更多露營知識好文</a>
+    <section class="knowledge-section">
+    <div class="container"> <div class="row align-items-center g-4"> 
+            
+            <div class="col-12 col-md-6">
+                <div class="image-placeholder placeholder-knowledge rounded overflow-hidden ratio ratio-4x3">
+                    <img src="/assets/images/index/info.png" alt="露營知識" class="w-100 h-100 object-fit-cover">
                 </div>
-            </section>
+            </div>
+
+            <div class="col-12 col-md-6">
+                <div class="knowledge-content text-center text-md-start">
+                    <h2 class="fw-bold">露營知識</h2> 
+                    <p class="mb-4 text-center text-md-start">
+                        選擇營地、備妥裝備，到了瞭解天氣、動物與急救常識，每個細節都是安心出遊的基礎。
+                    </p>
+                    
+                    <a href="/pages/infoList.html" class="btn btn-pr more-btn d-inline-block">
+                        更多露營知識好文 <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
 
         </main>
 
-        <section class="start-section">
-            <h2>關於我們</h2>
-            <p>探索露營技巧、裝備選擇和戶外安全須知，讓您的野外生活更豐富、更安全。我們定期更新文章，涵蓋從入門到進階挑戰的各種主題。</p> -->
-            <a href="#" class="start-btn">查看更多</a>
-        </section>
+    <section class="start-section position-relative text-white text-center py-7 py-md-10" 
+            style="
+            min-height: 400px; 
+            background-image: url('../assets/images/background02.png');
+            background-size: cover; 
+            background-position: center center;
+            background-color: rgba(0, 0, 0, 0.4); 
+            background-blend-mode: multiply;
+        ">
+
+        <div class="d-flex flex-column align-items-center justify-content-center h-100">
+        
+            <h2 class="display-4 fw-bold mb-3 text-white">關於我們</h2> 
+        
+            <div class="text-center mb-5">
+                <p class="fs-4 d-inline-block text-white">
+                    介紹理念、願景，提供使用者未來預想
+                </p>
+            </div>
+
+            <a href="/pages/about.html" class="btn btn-lg btn-pr start-btn">
+                查看更多 <i class="bi bi-arrow-right"></i>
+            </a>
+        
+        </div>
+    </section>
         <%- include('./layout/footer'); -%>
             <script type="module" src="../main.js"></script>
             <script src="script.js"></script>
