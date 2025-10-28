@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script type="module" crossorigin src="/Yeah-Fun-Cheap/assets/main-CSZoTEOx.js"></script>
+  <link rel="stylesheet" crossorigin href="/Yeah-Fun-Cheap/assets/main-tT7ZJ1Bc.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom border-neutral-50">
+    <div class="container d-flex justify-content-between align-items-center py-4">
+        <div class="d-flex justify-content-between align-items-center flex-nowrap">
+            <a class="d-block me-8 navbar-brand" href="index.html">
+                <img src="/Yeah-Fun-Cheap/assets/LOGO_96x60-D1tBEaAT.png" alt="logo">
+            </a>
+            <!-- 漢堡按鈕：在小螢幕出現 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav" style="height: 45px;">
+                    <li class="nav-item border-end border-primary ps-0 pe-7">
+                        <a class="nav-link text-center" href="/index.html#latest-posts">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Newest</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="/index.html#hottest-posts">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Popular</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="../pages/infoList.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 ps-7 pe-0">
+                        <a class="nav-link text-center" href="../pages/about.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">About Us</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="searchList.html" class="btn btn-md btn-pr-outline ms-7">野fun去～</a>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-center">
+            <a class="p-0" href="#">
+                <button type="button" class="btn btn-md btn-pr-noneline"><img class="pe-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVHgB7ZTBDUBAEEX/sAUoQUl0sHd6QAUcONMBJSlBB2NXJEQiJLObOHin2cuf/3eST7pLNJhqABEkEGYiLpWZCrGYhREzU6PsYN9DPhIE6DZlayyAY9TNptdck/l3KP3LP/Jz5KeF34/sz+HeOj0kMObDoVxsoXCrrxOmz4ZsqiAgcCl2CDoS2zDHKOCQFdoLN61ECN5eAAAAAElFTkSuQmCC"
+                        alt="">營地討論</button>
+            </a>
+            <a class="p-0" href="#">
+                <button type="button" class="btn btn-md btn-pr-noneline"><img class="pe-2"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJLSURBVHgBnVRtbtNAEJ3ZNKg/2xOQ3sDcIJygLheokfgDBJGcoO0JEiCIX8ibC7S+Ab4B7gmanoBIiEoI4uHNeB3FThrRjuR8jGfezrx5O0xbLEnjA7qjUyLXp1IiYurZC6E5OS6Yyyx9k8225fIG2Oc4IeExfh7QLmOaM8t5G9g1wD6dTACWVmCSM0nS2eeeH1yxPsTyDBW/1Heoticl+2Qaj5vnrIMxvUfggpyc+7fZB9phyfTFEMBn4fCJH2SjFWBoMzWwv/Lcj7LC/F/iHi2t4sgSWTx6uvCvs3nIi5D3Td+xk0TbDy3zWUUAKgtgZqUF96nmUzhRXzKO7T+6QCxf2KuSJ+p3VXU6RcnX21z5dbJ/5BDPEdyF+rhLx3WcH1xO8JXboU/oFBW649C7b9H0NFTtUfUCzxwtZ1WhQUarTqSedH8v6EyDrhtBS7o1DQjH4HJG++D3Di3r4Vr1unVR4dIoilwt2oqPBmBGVWKEwdzQL/5RU5AOmtqrh6RYDR02gtCmThxR3hyqANWf+e43hv5uFFkF/PXV5S09woJ8vmv1Tu+mdfi7jOnxFtmnk2IPTOYoNFby4TLZ2HL4STF1oID/Wg6VjjGsjE2kXZBeXaERkhcPWQ5SukPkjfUw/+7qyBn5pYxC1Hh9OZDIcOty0ErDcjAwzQR4dU5NrG0NHoa/OQB2TjOZntTXkjaWw1bQuiWh61qjtixKXLuK7w2wDUBL+og7zCC5fb3aBl3iwGFb5HxfvAF3UA2uU3PKUqBKCJxmxn/L/gGOmTQL97Z83gAAAABJRU5ErkJggg==" alt="">登入/註冊</button>
+            </a>
+        </div>
+    </div>
+</nav>
+<script>
+    const BASE = (import.meta?.env?.BASE_URL) ?? '/';
+
+
+    if (latestLink) {
+        latestLink.addEventListener('click', function (e) {
+            const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
+
+            e.preventDefault(); // 兩邊都先擋預設行為
+
+            if (isHomePage) {
+                document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // ⚠️ 關鍵：用 BASE 拼，不要寫 '/index.html'
+                location.href = BASE + 'index.html#latest-posts';
+                // 若你的主機支援目錄預設文件，也可用： location.href = BASE + '#latest-posts';
+            }
+        });
+    }
+
+    // ✅ 首頁載入時偵測 hash，自動滾動（重整或跨頁返回都會啟動）
+    window.addEventListener('load', () => {
+        const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
+        if (isHomePage && location.hash === '#latest-posts') {
+            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    const latestLink = document.querySelector('a[href="#latest-posts"], a[href="/index.html#latest-posts"]');
+
+    latestLink.addEventListener('click', function (e) {
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+        if (isHomePage) {
+            e.preventDefault();
+            document.querySelector('#latest-posts').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            e.preventDefault();
+            window.location.href = '/index.html#latest-posts';
+        }
+    });
+    // ✅ 首頁載入時偵測 hash，自動滾動（避免重整後 hash 無效）
+    window.addEventListener('load', () => {
+        if (window.location.hash === '#latest-posts') {
+            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+
+    const hottestLink = document.querySelector('a[href="#hottest-posts"], a[href="/index.html#hottest-posts"]');
+
+    hottestLink.addEventListener('click', function (r) {
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+        if (isHomePage) {
+            r.preventDefault();
+            document.querySelector('#hottest-posts').scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+
+    <section class=" hero position-relative py-70px d-flex justify-content-start align-items-center">
+      <div class="container">
+        <div class="me-6">
+          <h3 class="h2 mb-6">從這裡開始計畫露營之旅</h3>
+          <div class="input-group mb-3 border border-primary-200 mb-4">
+            <select class="form-select" aria-label="選擇地區">
+              <option selected class="text-neutral-200 h6">請選擇地區</option>
+              <option value="1" class="h6">新北市</option>
+              <option value="2" class="h6">臺北市</option>
+              <option value="3" class="h6">桃園市</option>
+              <option value="4" class="h6">苗栗市</option>
+              <option value="5" class="h6">新竹市</option>
+              <option value="6" class="h6">台中市</option>
+              <option value="7" class="h6">臺南市</option>
+              <option value="8" class="h6">高雄市</option>
+              <option value="9" class="h6">宜蘭縣</option>
+              <option value="10" class="h6">彰化縣</option>
+              <option value="11" class="h6">雲林縣</option>
+              <option value="12" class="h6">嘉義縣</option>
+              <option value="13" class="h6">屏東縣</option>
+              <option value="14" class="h6">花蓮縣</option>
+              <option value="15" class="h6">臺東縣</option>
+            </select>
+            <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
+              placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
+            <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
+          </div>
+          <div class="searchListTags flex-wrap gap-2">
+            <a href="#" class="btn tag tag-outline">#可帶寵物</a>
+            <a href="#" class="btn tag tag-outline">#免搭棚帳</a>
+            <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
+            <a href="#" class="btn tag tag-outline">#適合親子</a>
+            <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
+            <a href="#" class="btn tag tag-outline">#機車友善</a>
+            <a href="#" class="btn tag tag-outline">#車泊友善</a>
+            <a href="#" class="btn tag tag-outline">#單人友善</a>
+          </div>
+        </div>
+        <div>
+          <img class="hero-decoration position-absolute" src="/Yeah-Fun-Cheap/assets/Frame%2001-CK9X-Tfy.png" alt="">
+        </div>
+      </div>
+
+    </section>
+    <section class="bg-primary-50 py-11">
+      <div class="container">
+        <div class="d-flex align-items-end mb-7">
+          <img src="data:image/png;base64,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" alt="herologo" class="me-3">
+          <h3 class="h2 mb-0 pb-0">為您帶來精彩的露營體驗</h2>
+        </div>
+        <div class="crad-wrapper d-flex flex-wrap gap-6 justify-content-center align-items-center mb-6">
+          <div class="card shadow-lg border-0 gap-6 position-relative" style="width: 26rem;">
+            <div class="card-body p-0">
+              <div class="p-6">
+                <h4 class="h7 card-title fw-medium text-primary-200">幫你找到理想營地</h4>
+                <h6 class="card-subtitle mb-2 text-body-secondary h5 text-neutral-900">多種多樣的詳細標籤</h6>
+              </div>
+              <img src="/Yeah-Fun-Cheap/assets/Frame%201430107670-BMMj5_86.png" alt="">
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+          <div class="card shadow-lg border-0 gap-6" style="width: 26rem;">
+            <div class="card-body p-0">
+              <div class="p-6">
+                <h4 class="h7 card-title fw-medium text-primary-200">選擇你喜愛的搜尋方式</h4>
+                <h6 class="card-subtitle mb-2 text-body-secondary h5 text-neutral-900">可切換清單與地圖模式</h6>
+                <img src="/Yeah-Fun-Cheap/assets/image%2038-_WMUR6_1.png" alt="">
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+          <div class="card shadow-lg border-0 gap-6" style="width: 26rem;">
+            <div class="card-body p-0">
+              <div class="p-6">
+                <h4 class="h7 card-title fw-medium text-primary-200">看大家的體驗</h4>
+                <h6 class="card-subtitle mb-2 text-body-secondary h5 text-neutral-900">真實且自由的使用者評價</h6>
+              </div>
+              <img src="/Yeah-Fun-Cheap/assets/Frame%201430107670%20(2)-K8Fpbkv3.png" alt="">
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-3 border bg-white p-6">
+          <div class="d-flex justify-content-between mb-4">
+            <h3 class="h5 text-neutral-900">精選文章</h3>
+            <button class="btn btn-pr-noneline h7 fw-medium">看更多文章</button>
+          </div>
+          <div class="card-wrapper d-flex justify-content-between align-items-center">
+            <div class="card mb-3 w-50" style="max-width: 612px;max-height: 160px;">
+              <div class="d-flex justify-content-start">
+                <div>
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_YSN4xhXuPig-BAe4JXrK.png" class="img-fluid rounded-start"
+                    alt="..." style="width: 240px;">
+                </div>
+                <div>
+                  <div class="card-body py-4 px-5">
+                    <h5 class="card-title h7 mb-1">第一次露營新手指南</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200" style="padding: 0px;">行前必讀，避開新手容易踩的坑</p>
+                    <ul class="mb-0">
+                      <li>行前須知</li>
+                      <li>必備清單</li>
+                      <li>常見雷區</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3 w-50" style="max-width: 612px;max-height: 160px;">
+              <div class="d-flex justify-content-start">
+                <div>
+                  <img src="/Yeah-Fun-Cheap/assets/image%2039-GN6QGxv5.png" class="img-fluid rounded-start" alt="..."
+                    style="width: 240px;">
+                </div>
+                <div>
+                  <div class="card-body py-4 px-5">
+                    <h5 class="card-title h7 mb-1">露營懶人包：一鍵搞定行程</h5>
+                    <p class="card-text fs-sm mb-2 text-primary-200" style="padding: 0px;">從規劃到裝備，省時省力不踩雷</p>
+                    <ul class="mb-0">
+                      <li>釐清條件</li>
+                      <li>優先排序</li>
+                      <li>行前準備</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+    </section>
+    <section>
+      <div class="container">
+        <div class="py-11">
+          <div class=" d-flex justify-content-center gap-6 mb-9">
+            <!-- 北部推薦 -->
+            <div>
+              <div class="mb-6 d-flex">
+                <h3 class="h5 text-primary-200 me-6">北部推薦</h3>
+                <hr class="border-primary" style="width: 516px; opacity: 1;">
+              </div>
+              <div class="card-wrapper d-flex">
+                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_xS_Ayok1WWY%20(1)-D9ETABiL.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">俯瞰城市夜景，輕鬆上山露一晚
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台北內湖 碧山露營場</p>
+                  </div>
+                </div>
+                <div class="card text-bg-dark gradient-overlay" style="max-width: 310px;max-height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_TcgASSD5G04-C8yg_4Sa.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">市中心唯一合法露營空間
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台北萬華 茄中露營場</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 中部推薦 -->
+            <div>
+              <div class="mb-6 d-flex">
+                <h3 class="h5 text-primary-200 me-6">中部推薦</h3>
+                <hr class="border-primary" style="width: 516px; opacity: 1;">
+              </div>
+              <div class="card-wrapper d-flex">
+                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_BPCsppbNRMI-CWDm-QtT.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">深山秘境，雲海日出一次擁有
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">南投仁愛 樟木老營區</p>
+                  </div>
+                </div>
+                <div class="card text-bg-dark gradient-overlay" style="width: 310px;height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_XJuhZqEE4Go-M3WdxEN7.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">山景與農趣共融的親子營地
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台中和平 德美隱農場</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class=" d-flex justify-content-center gap-6">
+            <!-- 南部推薦 -->
+            <div>
+              <div class="mb-6 d-flex">
+                <h3 class="h5 text-primary-200 me-6">南部推薦</h3>
+                <hr class="border-primary" style="width: 516px; opacity: 1;">
+              </div>
+              <div class="card-wrapper d-flex">
+                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_ESNV6KmLJMg-6GagTxwq.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">咖啡香與森林浴的療癒時光
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">嘉義阿里山 高美休閒營區</p>
+                  </div>
+                </div>
+                <div class="card text-bg-dark gradient-overlay" style="max-width: 310px;max-height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_MlCaPR4UTSw-BeWWwJoG.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">南台灣最齊全的豪華營地體驗
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台南左鎮 露營樂旗艦店</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- 東部推薦 -->
+            <div>
+              <div class="mb-6 d-flex">
+                <h3 class="h5 text-primary-200 me-6">東部推薦</h3>
+                <hr class="border-primary" style="width: 516px; opacity: 1;">
+              </div>
+              <div class="card-wrapper d-flex">
+                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_zBkVp3E2CnE-zlL6HWWW.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">被山林擁抱的童話系露營地
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">宜蘭大同 夏綠營露營區</p>
+                  </div>
+                </div>
+                <div class="card text-bg-dark gradient-overlay" style="max-width: 310px;max-height: 212px;">
+                  <img src="/Yeah-Fun-Cheap/assets/unsplash_JI4NwVAB1fM-O8MhQg_K.png" class="card-img" alt="...">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end">
+                    <h5 class="card-title h7 text-white">望海露營，讓心情也跟著 chill
+                    </h5>
+                    <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">花蓮新城 Ocean Chill</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+  <div class="footer-Container text-center">
+    <div class="row align-items-center ">
+      <!-- 左側 LOGO + 品牌介紹 -->
+      <div class="col-md-8 ">
+        <div class="footer-logo mb-6 p-3 py-4 ms-7">
+          <img src="/Yeah-Fun-Cheap/assets/LOGO_150X100-DehojGIA.png" alt="網站LOGO">
+        </div>
+        <p>在野Fun趣，找地方不只是準備做飯！更是開始親近自然的第一步。</p>
+      </div>
+
+      <!-- 右側 聯絡方式 + icon -->
+      <div class="col-md-4 text-md-start">
+        <div class="pd-12 mb-20">
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgBvZf/dYIwEMcPnv+XEbJB2wlMJ6gbaDdgA3GCdgNfJ6gbiBPUToAbyAbXixw2WvILCJ/37mngLvnmcoSQQE8QMaMfQZbxpTpJkiPERA1KtiL7IjujmW+yDzIBY8GDrx0Dm9iTPcEQqANJVuFwtr0yw7MfkypICDm/YxwqLyE4fgbChGBT/X3YYlM/QjNp6W9vEiAwvAgrtFQ/92kiH2sZJNiX1iZCPfKZ7pxheBZKcOAQoSiU34z9F9BswSHsDAOv6GfOzQzsLMmKNnCH4cgOATmGI1KOn8M4vEI4ixSb4nClLSaXTAx7wYwgYhbg/ENWa+3a4JNo7QdwTzJr35S9CtGFZ6GWajlOEA/h4VMrETXE49HD55jSuVCJiHU29Cn6Y1uYB4+ANa3fUmtvaAIn3YHur+F2CXwe/bIN9i1Oa6Fic6YMYaviLjsmzai8KpqWz6sIZgPTcuDJ/4ngCzuYjlX7J7278QZx942Wm6K+EcGP6wvE3TuUgEK/cJ8JYIXPECcj/wRYQffBV3bE7A2+6jyZQ18ouDCIkZ4iShz6Pcqdq6zkd2KkRcSZB5cQAzUrFiQ67qmPnQXqR3kPfgE211YZiuETGAAAAABJRU5ErkJggg==" alt="Facebook"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJsSURBVHgBtVeBVYNADA0+B2ADzwnUCcQJ7AZ2BJ1AnKB1gtYN6gTgBNYJwAl0g5jYIOGAyxXb/14ex13u8i/JhSMBA4iY0sORpNLlwMa3yG87SZIt7Asy7EiWJBUeDgXJPJbAAo+LisRpm4lHYEWPucfrk2Sr3avaY3DyTEUuoA1ns8ZNL0xE4NFjvPQZ/wccCuyG9wt3+fan4DwC93AEiJ13ZSfXg0s1sIIDgXcqaxckM0Wk7w2P3SUcCN7msDEopBpkp6LfGI4+0zxZ5jVx5Xlbml8HpjnReyXJpC/z3VOCbdxPMB8rlISWtSs//hwarc8dl7EkxEAMKgyElb2oSXA49PmtAhMX0K0hbyQbaGtGRnInbUdS0JyrkfDovvMeKxgmMPd2ej+ip93PKAJ6rfcjSeiFcwhggEgGBokTMCCxdfJak3vzkL64/1l1mYXPJAHt8WW8QhzWqn1hKceQcKodVUPIG5ysnwPzJ5PQX8wU4nE2MH8yCb372wh98JLxw9KPJfFXC4ayfQCPqr22lE0SEl+d7SsM3DNojAlk8lqTlGAhsk6k2L+QLOT4NuO8ToFdzEfW6xUr/e3YBMj6RchCDnEb33A4orJfitANyQuEwes9WEVN4esUuiTOQtpChL8jS9h9zHQ15QQuSdaSRyHoze7qCS1aK/fsUwsmgWyslb1Zczp0LhzlkqsIOHpcq65tM5B5me/gSMDuz1XpDxZqsEK5HR/QeIr9vzvHY4lS4g6+hDg1l131Js8a9oeD9g9sBt2EfBo8QRNqwVTkJn20b9RTUeLAtycxyHAdyMSNDvYH14tapByrHz8didSsTsRBdwAAAABJRU5ErkJggg==" alt="Ins"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGKSURBVHgBvZfxVYMwEMaPPv+3IzACI+AEuoFsoBuUTiBOUJxAnYA6QXEC2IBucH5nwJfGQkMa8nvvezQkl/seORIa0QIwc4KL6AjVURS1FAokf4Y6/s8BSo2xqYw3J8igDTmC2B1f5qU3WvXtxJxk6JhtRGJ4PnkfG+sTtdoAayMyCc+n6o1XUyaE5mTAuImM3cnMyaqRgZspM+greT6dbmClzfc1kieHGlaFl5IfXvHalkPjRusooCdoPRKYiWCkxbWGviH5fUs+QYIHDsPJ/rDSDBxwuYc+aXlqvaEvh2yxGYXhqDf0wgzxBIQWRVmPmShJFdrS7M0bfybgTh7RXQAjbxdHsNqGXTYgG5pzOVdn7snJ1kIfZBSQB7ZWo1id88GewpSRgv2T0lwQlLM/cnIFwQmrIu3YnXfyAaszxcWIfFuur8k9FGnFbpS2BqIhmXYvJvWaPtL4sT6FvNZbbH7FrCj2t0Ht2OKT0NZMY5/399s05yvWPpowJEsSk1qa2Ohue+19/Lv6AToQ9QrApXL2AAAAAElFTkSuQmCC" alt="Twitter"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJZSURBVHgBtViNlZswDBZZoIzgDcoGZYQbgW6QToA7wWUDrhNcNwg3QW4D2IDbwJUf0ntC2NhA+r2nl8TWz2fJliEFHIRzzuBHhVKifJF8FkXxBf8LGLREuaLcUSYXx4DSobzAs0DB20TgLUJNKkaRIOBX08GccokPlE8Shtfx5fmBYpR+j/ITSzXCHtDqJXwmrM9Mhm2F8hbISgW5CBC45QQP+DEUXC4kTUQRmNwTNhgtQvo0kGAukZ++NBEr/D6imVWpu8KT4ebjzbAhhUYodIH5lpy0cBCU6UmUpdQKgyBhAgQkdm9S4csGs4E/6lgW3NysNCwcBPnjbAxyQu7eWhnVARITnIBb9hBzofHvrIBdrVc2oQupPFMSmDsoo2YSfBQ/AgZjgMjvk7dlL75XTIJXtXJMwf6IoRHHLJyDjPPtoiZjtbbC0B+zUz1EZ/Gyw+iXGHrVG/g0xJF5JPT0HVAHdF5c4hnCzbcs48aD99yj59ZXdOuoubllRxxiZIgoowmtsD5AxAfs3LLrulh2lX3Fg/UqPWki1uWhV3bhjkmT8YslTsSnv0+QaJSNvCivWyvrYAcokz7Fg/AxBQjoJy2jHcmL6gEHQYFMZO5dxLAQWQ0ja1/sJNcK/0NMSZajhicC/b2qMpmY4p211LhP76GHXbK9KwJVTHmxH9y8g29qEw00nvveIXvPJoGCjPxK3yEfPczX/khSwvINTAfzus3mG5hbd0DJ/m1jPoXVMd0iMQijv25++zZKx1A5Us2JfdSQCS6HxY8+8GgXI82p5zJ48P8TI+zEP4g4QFXFG712AAAAAElFTkSuQmCC" alt="WhatApp"></i></a>
+        </div>
+        <div>信箱：<a href="mailto:funcamping@gmail.com" class="text-white text-decoration-none">funcamping@gmail.com</a>
+        </div>
+        <div>地址：台北市中正區重慶南路一段122號</div>
+      </div>
+    </div>
+
+    <!-- 版權聲明 -->
+  </div>
+  <div class=" footer-copyright text-center ">
+    © 2025 COPYRIGHT | 本網站圖片及文字僅供個人信息使用 禁止轉載
+  </div>
+</footer>      
+</body>
+
+</html>

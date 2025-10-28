@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <script type="module" crossorigin src="/Yeah-Fun-Cheap/assets/main-CSZoTEOx.js"></script>
+  <link rel="stylesheet" crossorigin href="/Yeah-Fun-Cheap/assets/main-tT7ZJ1Bc.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg border-bottom border-neutral-50">
+    <div class="container d-flex justify-content-between align-items-center py-4">
+        <div class="d-flex justify-content-between align-items-center flex-nowrap">
+            <a class="d-block me-8 navbar-brand" href="index.html">
+                <img src="/Yeah-Fun-Cheap/assets/LOGO_96x60-D1tBEaAT.png" alt="logo">
+            </a>
+            <!-- 漢堡按鈕：在小螢幕出現 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav" style="height: 45px;">
+                    <li class="nav-item border-end border-primary ps-0 pe-7">
+                        <a class="nav-link text-center" href="/index.html#latest-posts">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Newest</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="/index.html#hottest-posts">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Popular</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="../pages/infoList.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 ps-7 pe-0">
+                        <a class="nav-link text-center" href="../pages/about.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">About Us</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="searchList.html" class="btn btn-md btn-pr-outline ms-7">野fun去～</a>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-center">
+            <a class="p-0" href="#">
+                <button type="button" class="btn btn-md btn-pr-noneline"><img class="pe-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVHgB7ZTBDUBAEEX/sAUoQUl0sHd6QAUcONMBJSlBB2NXJEQiJLObOHin2cuf/3eST7pLNJhqABEkEGYiLpWZCrGYhREzU6PsYN9DPhIE6DZlayyAY9TNptdck/l3KP3LP/Jz5KeF34/sz+HeOj0kMObDoVxsoXCrrxOmz4ZsqiAgcCl2CDoS2zDHKOCQFdoLN61ECN5eAAAAAElFTkSuQmCC"
+                        alt="">營地討論</button>
+            </a>
+            <a class="p-0" href="#">
+                <button type="button" class="btn btn-md btn-pr-noneline"><img class="pe-2"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJLSURBVHgBnVRtbtNAEJ3ZNKg/2xOQ3sDcIJygLheokfgDBJGcoO0JEiCIX8ibC7S+Ab4B7gmanoBIiEoI4uHNeB3FThrRjuR8jGfezrx5O0xbLEnjA7qjUyLXp1IiYurZC6E5OS6Yyyx9k8225fIG2Oc4IeExfh7QLmOaM8t5G9g1wD6dTACWVmCSM0nS2eeeH1yxPsTyDBW/1Heoticl+2Qaj5vnrIMxvUfggpyc+7fZB9phyfTFEMBn4fCJH2SjFWBoMzWwv/Lcj7LC/F/iHi2t4sgSWTx6uvCvs3nIi5D3Td+xk0TbDy3zWUUAKgtgZqUF96nmUzhRXzKO7T+6QCxf2KuSJ+p3VXU6RcnX21z5dbJ/5BDPEdyF+rhLx3WcH1xO8JXboU/oFBW649C7b9H0NFTtUfUCzxwtZ1WhQUarTqSedH8v6EyDrhtBS7o1DQjH4HJG++D3Di3r4Vr1unVR4dIoilwt2oqPBmBGVWKEwdzQL/5RU5AOmtqrh6RYDR02gtCmThxR3hyqANWf+e43hv5uFFkF/PXV5S09woJ8vmv1Tu+mdfi7jOnxFtmnk2IPTOYoNFby4TLZ2HL4STF1oID/Wg6VjjGsjE2kXZBeXaERkhcPWQ5SukPkjfUw/+7qyBn5pYxC1Hh9OZDIcOty0ErDcjAwzQR4dU5NrG0NHoa/OQB2TjOZntTXkjaWw1bQuiWh61qjtixKXLuK7w2wDUBL+og7zCC5fb3aBl3iwGFb5HxfvAF3UA2uU3PKUqBKCJxmxn/L/gGOmTQL97Z83gAAAABJRU5ErkJggg==" alt="">登入/註冊</button>
+            </a>
+        </div>
+    </div>
+</nav>
+<script>
+    const BASE = (import.meta?.env?.BASE_URL) ?? '/';
+
+
+    if (latestLink) {
+        latestLink.addEventListener('click', function (e) {
+            const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
+
+            e.preventDefault(); // 兩邊都先擋預設行為
+
+            if (isHomePage) {
+                document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // ⚠️ 關鍵：用 BASE 拼，不要寫 '/index.html'
+                location.href = BASE + 'index.html#latest-posts';
+                // 若你的主機支援目錄預設文件，也可用： location.href = BASE + '#latest-posts';
+            }
+        });
+    }
+
+    // ✅ 首頁載入時偵測 hash，自動滾動（重整或跨頁返回都會啟動）
+    window.addEventListener('load', () => {
+        const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
+        if (isHomePage && location.hash === '#latest-posts') {
+            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    const latestLink = document.querySelector('a[href="#latest-posts"], a[href="/index.html#latest-posts"]');
+
+    latestLink.addEventListener('click', function (e) {
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+        if (isHomePage) {
+            e.preventDefault();
+            document.querySelector('#latest-posts').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            e.preventDefault();
+            window.location.href = '/index.html#latest-posts';
+        }
+    });
+    // ✅ 首頁載入時偵測 hash，自動滾動（避免重整後 hash 無效）
+    window.addEventListener('load', () => {
+        if (window.location.hash === '#latest-posts') {
+            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+
+    const hottestLink = document.querySelector('a[href="#hottest-posts"], a[href="/index.html#hottest-posts"]');
+
+    hottestLink.addEventListener('click', function (r) {
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+        if (isHomePage) {
+            r.preventDefault();
+            document.querySelector('#hottest-posts').scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>
+        <section class="border-bottom border-neutail-50">
+            <div class="py-6 d-flex justify-content-center align-items-center">
+                <div>
+                    <div class="input-group mb-3 border border-primary-200 mb-4">
+                        <select class="form-select" aria-label="選擇地區">
+                            <option selected class="text-neutral-200 h6">請選擇地區</option>
+                            <option value="1" class="h6">新北市</option>
+                            <option value="2" class="h6">臺北市</option>
+                            <option value="3" class="h6">桃園市</option>
+                            <option value="4" class="h6">苗栗市</option>
+                            <option value="5" class="h6">新竹市</option>
+                            <option value="6" class="h6">台中市</option>
+                            <option value="7" class="h6">臺南市</option>
+                            <option value="8" class="h6">高雄市</option>
+                            <option value="9" class="h6">宜蘭縣</option>
+                            <option value="10" class="h6">彰化縣</option>
+                            <option value="11" class="h6">雲林縣</option>
+                            <option value="12" class="h6">嘉義縣</option>
+                            <option value="13" class="h6">屏東縣</option>
+                            <option value="14" class="h6">花蓮縣</option>
+                            <option value="15" class="h6">臺東縣</option>
+                        </select>
+                        <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
+                            placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
+                        <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
+                    </div>
+                    <div class="searchListTags flex-wrap gap-2">
+                        <a href="#" class="btn tag tag-checked">#可帶寵物</a>
+                        <a href="#" class="btn tag tag-checked">#免搭棚帳</a>
+                        <a href="#" class="btn tag tag-checked">#獨立衛浴</a>
+                        <a href="#" class="btn tag tag-outline">#適合親子</a>
+                        <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
+                        <a href="#" class="btn tag tag-outline">#機車友善</a>
+                        <a href="#" class="btn tag tag-outline">#車泊友善</a>
+                        <a href="#" class="btn tag tag-outline">#單人友善</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <div class="container py-5">
+            <div class="row g-4">
+                <!-- 左邊縮圖（md 以上顯示直向） -->
+                <div class="col-md-2 d-none d-md-block">
+                    <div class="swiper thumbs-rail camp-card">
+                        <div class="swiper-wrapper">
+                            <!-- 依你的圖片數量複製多份 -->
+                            <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                <img src="/Yeah-Fun-Cheap/assets/unsplash_uY2UIyO5o5c-BK0ccRga.png" alt="thumb">
+                            </div>
+                            <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                <img src="/Yeah-Fun-Cheap/assets/unsplash_JiGBfW7vK3g-DacEID1_.png" alt="thumb">
+                            </div>
+                            <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                <img src="/Yeah-Fun-Cheap/assets/unsplash_VDYAsdbHVhc-Bf1qpvHB.png" alt="thumb">
+                            </div>
+                            <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                <img src="/Yeah-Fun-Cheap/assets/unsplash_yXx6GTDhMHY-B84JcuEa.png" alt="thumb">
+                            </div>
+                        </div>
+                        <!-- 可加 scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+
+                <!-- 中間主圖 -->
+                <div class="col-md-6">
+                    <div class="position-relative">
+                        <div class="swiper main-rail camp-card ratio ratio-21x9">
+                            <div class="swiper-wrapper">
+                                <!-- 與縮圖對應順序 -->
+                                <div class="swiper-slide">
+                                    <img class="w-100 h-100 object-fit-cover"
+                                        src="https://images.unsplash.com/photo-1545165375-1a6c3dc76de0?q=80&w=1600"
+                                        alt="camp-1">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="w-100 h-100 object-fit-cover"
+                                        src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f8?q=80&w=1600"
+                                        alt="camp-2">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="w-100 h-100 object-fit-cover"
+                                        src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600"
+                                        alt="camp-3">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img class="w-100 h-100 object-fit-cover"
+                                        src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?q=80&w=1600"
+                                        alt="camp-4">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 左右箭頭 -->
+                        <button class="swiper-button-prev swiper-nav-btn"></button>
+                        <button class="swiper-button-next swiper-nav-btn"></button>
+                    </div>
+
+                    <!-- 手機：縮圖橫向放主圖下方 -->
+                    <div class="d-md-none mt-3">
+                        <div class="swiper thumbs-rail-mobile">
+                            <div class="swiper-wrapper">
+                                <!-- 與上方同組圖片 -->
+                                <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                    <img src="https://images.unsplash.com/photo-1545165375-1a6c3dc76de0?q=80&w=800"
+                                        alt="thumb">
+                                </div>
+                                <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                    <img src="https://images.unsplash.com/photo-1499696010180-025ef6e1a8f8?q=80&w=800"
+                                        alt="thumb">
+                                </div>
+                                <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=800"
+                                        alt="thumb">
+                                </div>
+                                <div class="swiper-slide thumb-slide ratio ratio-1x1">
+                                    <img src="https://images.unsplash.com/photo-1477414348463-c0eb7f1359b6?q=80&w=800"
+                                        alt="thumb">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 右邊文字 -->
+                <div class="col-md-4">
+                    <div class="d-flex flex-column justify-content-between">
+                        <div>
+                            <h2 class="h2 fw-bold mb-3">森日快樂露營區</h2>
+                            <div class="fs-sm text-primary-200 mb-6 align-self-end"> <span
+                                    class="f-block material-symbols-outlined" style="transform: translateY(5px);">
+                                    distance
+                                </span>西門里三鄰西坪36-29號</div>
+                            <p class="fs-md text-neutral-700 mb-0">森日快樂位於苗栗縣卓蘭鎮的壢西坪休閒農業區</p>
+                            <p class="fs-md text-neutral-700 mb-0">海拔約五百公尺高，曾經是日治時代的飛機場，進而轉變成農村休閒農業區。</p>
+                            <br class="mb-0">
+                            <p class="fs-md text-neutral-700 mb-0">距離卓蘭鎮上車程約 10 分鐘，方便補給及用餐。</p>
+                            <p class="fs-md text-neutral-700">營區內營帳及車位分開，可在臨停處下行李，營區有提供推車使用。</p>
+                        </div>
+                        <div class="d-flex gap-2 mt-3 flex-wrap">
+                            <a href="#" class="btn tag">#可帶寵物</a>
+                            <a href="#" class="btn tag">#適合親子</a>
+                            <a href="#" class="btn tag">#車泊友善</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <section class="bg-primary-50">
+            <div class="container py-7">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-6">
+                    <!-- 1 card -->
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4 h-100">
+                            <div class="card-body p-4">
+                                <!-- 頭像 + 名稱 + 星等 + 入住日 -->
+                                <div class="d-flex align-items-center gap-3 mb-4">
+                                    <div class="ratio ratio-1x1 bg-primary-100 rounded-2" style="width: 48px;">
+                                        <span class="fs-5 material-symbols-outlined text-primary-200"
+                                            style="transform: translateX(12px)  translateY(12px);">
+                                            face
+                                        </span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="fs-md mb-1 fw-bold text-start p-0 text-primary-300">阿志大叔</h3>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="d-flex align-items-center text-primary-200 gap-2px">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill text-neutral-100"></i>
+                                            </div>
+                                            <small class="text-neutral-200 ms-2 fw-bold fs-ssm">2025/09/02 入住</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 內容 -->
+                                <p class="mb-4 fs-md text-neutral-900 fw-bold p-0">阿里山空氣超棒，營主也親切。</p>
+                                <small class="fs-ssm text-neutral-200 m-0">2025/09/21 評價</small>
+
+                                <hr class="my-4">
+
+                                <!-- 四項分數 -->
+                                <div class="vstack gap-3">
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 交通 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">交通</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">3.5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:70%;height: 4px;"
+                                                    aria-label="交通 3.5/5">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 設施 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">設施</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">4</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:80%;height: 4px;"
+                                                    aria-label="設施 4/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 景觀 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">景觀</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="景觀 5/5"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 服務 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">服務</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="服務 5/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4 h-100">
+                            <div class="card-body p-4">
+                                <!-- 頭像 + 名稱 + 星等 + 入住日 -->
+                                <div class="d-flex align-items-center gap-3 mb-4">
+                                    <div class="ratio ratio-1x1 bg-primary-100 rounded-2" style="width: 48px;">
+                                        <span class="fs-5 material-symbols-outlined text-primary-200"
+                                            style="transform: translateX(12px)  translateY(12px);">
+                                            face
+                                        </span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="fs-md mb-1 fw-bold text-start p-0 text-primary-300">阿志大叔</h3>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="d-flex align-items-center text-primary-200 gap-2px">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill text-neutral-100"></i>
+                                            </div>
+                                            <small class="text-neutral-200 ms-2 fw-bold fs-ssm">2025/09/02 入住</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 內容 -->
+                                <p class="mb-4 fs-md text-neutral-900 fw-bold p-0">阿里山空氣超棒，營主也親切。</p>
+                                <small class="fs-ssm text-neutral-200 m-0">2025/09/21 評價</small>
+
+                                <hr class="my-4">
+
+                                <!-- 四項分數 -->
+                                <div class="vstack gap-3">
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 交通 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">交通</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">3.5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:70%;height: 4px;"
+                                                    aria-label="交通 3.5/5">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 設施 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">設施</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">4</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:80%;height: 4px;"
+                                                    aria-label="設施 4/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 景觀 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">景觀</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="景觀 5/5"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 服務 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">服務</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="服務 5/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4 h-100">
+                            <div class="card-body p-4">
+                                <!-- 頭像 + 名稱 + 星等 + 入住日 -->
+                                <div class="d-flex align-items-center gap-3 mb-4">
+                                    <div class="ratio ratio-1x1 bg-primary-100 rounded-2" style="width: 48px;">
+                                        <span class="fs-5 material-symbols-outlined text-primary-200"
+                                            style="transform: translateX(12px)  translateY(12px);">
+                                            face
+                                        </span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="fs-md mb-1 fw-bold text-start p-0 text-primary-300">阿志大叔</h3>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="d-flex align-items-center text-primary-200 gap-2px">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill text-neutral-100"></i>
+                                            </div>
+                                            <small class="text-neutral-200 ms-2 fw-bold fs-ssm">2025/09/02 入住</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 內容 -->
+                                <p class="mb-4 fs-md text-neutral-900 fw-bold p-0">阿里山空氣超棒，營主也親切。</p>
+                                <small class="fs-ssm text-neutral-200 m-0">2025/09/21 評價</small>
+
+                                <hr class="my-4">
+
+                                <!-- 四項分數 -->
+                                <div class="vstack gap-3">
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 交通 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">交通</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">3.5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:70%;height: 4px;"
+                                                    aria-label="交通 3.5/5">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 設施 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">設施</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">4</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:80%;height: 4px;"
+                                                    aria-label="設施 4/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 景觀 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">景觀</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="景觀 5/5"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 服務 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">服務</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="服務 5/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow-sm border-0 rounded-4 h-100">
+                            <div class="card-body p-4">
+                                <!-- 頭像 + 名稱 + 星等 + 入住日 -->
+                                <div class="d-flex align-items-center gap-3 mb-4">
+                                    <div class="ratio ratio-1x1 bg-primary-100 rounded-2" style="width: 48px;">
+                                        <span class="fs-5 material-symbols-outlined text-primary-200"
+                                            style="transform: translateX(12px)  translateY(12px);">
+                                            face
+                                        </span>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <h3 class="fs-md mb-1 fw-bold text-start p-0 text-primary-300">阿志大叔</h3>
+                                        <div class="d-flex flex-wrap align-items-center">
+                                            <div class="d-flex align-items-center text-primary-200 gap-2px">
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill"></i>
+                                                <i class="bi bi-star-fill text-neutral-100"></i>
+                                            </div>
+                                            <small class="text-neutral-200 ms-2 fw-bold fs-ssm">2025/09/02 入住</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 內容 -->
+                                <p class="mb-4 fs-md text-neutral-900 fw-bold p-0">阿里山空氣超棒，營主也親切。</p>
+                                <small class="fs-ssm text-neutral-200 m-0">2025/09/21 評價</small>
+
+                                <hr class="my-4">
+
+                                <!-- 四項分數 -->
+                                <div class="vstack gap-3">
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 交通 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">交通</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">3.5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:70%;height: 4px;"
+                                                    aria-label="交通 3.5/5">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 設施 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">設施</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">4</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:80%;height: 4px;"
+                                                    aria-label="設施 4/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-between align-items-center gap-4">
+                                        <!-- 景觀 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">景觀</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="景觀 5/5"></div>
+                                            </div>
+                                        </div>
+
+                                        <!-- 服務 -->
+                                        <div class="w-50">
+                                            <div class="d-flex justify-content-between mb-1">
+                                                <span class="fs-ssm fw-bold">服務</span>
+                                                <span class="fs-ssm fw-bold text-primary-200">5</span>
+                                            </div>
+                                            <div class="progress progress-pill" style="height: 4px;">
+                                                <div class="progress-bar" style="width:100%;height: 4px;"
+                                                    aria-label="服務 5/5"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <div class="container py-11">
+            <!-- 交通資訊 -->
+            <section class="section mb-11">
+                <div class="section-heading">
+                    <h3 class="h5 fw-bold mb-0">交通資訊</h3>
+                </div>
+
+
+                <div class="row g-4 align-items-start">
+                    <!-- 地圖 -->
+                    <div class="col-lg-6">
+                        <div class="detail-map rounded-4 overflow-hidden shadow-sm bg-body-secondary">
+
+                            <img src="/Yeah-Fun-Cheap/assets/image%2035-dlvZDtI_.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- 文字路線 -->
+                    <div class="col-lg-6">
+                        <div class="vstack">
+                            <div class="border-start border-3 border-primary-200 px-4 py-1 mb-6">
+                                <h4 class="fs-lg fw-bold mb-3">南下</h4>
+                                <ul class="list-unstyled fs-md text-neutral-700 mb-0">
+                                    <li>國道1號三義交流道<i class="bi bi-arrow-right px-1"></i>往卓蘭方向接140縣道</li>
+                                    <li><i class="bi bi-arrow-right pe-1"></i>台3線往卓蘭方向<i
+                                            class="bi bi-arrow-right px-1"></i>台3線(146.1K處)</li>
+                                    <li><i class="bi bi-arrow-right pe-1"></i>中坪道路<i
+                                            class="bi bi-arrow-right px-1"></i>壢西坪遊客中心<i
+                                            class="bi bi-arrow-right px-1"></i>松山農路<i
+                                            class="bi bi-arrow-right px-1"></i>森日快樂露營區</li>
+                                </ul>
+                            </div>
+
+                            <div class="border-start border-3 border-primary-200 px-4 py-1">
+                                <h4 class="fs-lg fw-bold mb-3">北上</h4>
+                                <ul class="list-unstyled fs-md text-neutral-700 mb-0">
+                                    <li>國道1號台中系統交流道<i class="bi bi-arrow-right px-1"></i>接國道4號往東勢方向</li>
+                                    <li><i class="bi bi-arrow-right pe-1"></i>台3線往石崗、卓蘭方向<i
+                                            class="bi bi-arrow-right px-1"></i> 台3線(146.1K處)</li>
+                                    <li><i class="bi bi-arrow-right pe-1"></i>中坪道路<i
+                                            class="bi bi-arrow-right px-1"></i>壢西坪遊客中心<i
+                                            class="bi bi-arrow-right px-1"></i>松山農路<i
+                                            class="bi bi-arrow-right px-1"></i>森日快樂露營區</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 營區配置圖 -->
+            <section class="section mb-11">
+                <div class="section-heading">
+                    <h3 class="h5 fw-bold mb-6">營區配置圖</h3>
+                </div>
+
+                <div class="card border-0 ">
+                    <div class="card-body p-0 w-60">
+
+                        <img src="/Yeah-Fun-Cheap/assets/image_png%201-DQ-34-wa.png" alt="營區配置圖"
+                            class="w-100 h-100 object-fit-cover">
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 營區資訊介紹 -->
+            <section class="section mb-11">
+                <div class="section-heading">
+                    <h3 class="h5 fw-bold mb-6">營區資訊介紹</h3>
+                </div>
+
+                <div class="card info-panel border-0 rounded-4 shadow-sm">
+                    <div class="card-body d-flex">
+                        <div class="vstack">
+
+                            <div class="d-flex py-2 ">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">海拔</div>
+                                <div class="text-neutral-700 fw-medium fs-md">1001–1500 公尺</div>
+                            </div>
+
+
+
+                            <div class="d-flex py-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">營區特色</div>
+                                <div class="text-neutral-700 fw-medium fs-md">免裝備系列、可車露、螢火蟲季</div>
+                            </div>
+
+
+
+                            <div class="d-flex py-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">衛浴配置</div>
+                                <div class="text-neutral-700 fw-medium fs-md">集中浴廁</div>
+                            </div>
+
+
+
+                            <div class="d-flex py-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">附屬設施</div>
+                                <div class="text-neutral-700 fw-medium fs-md">裝備出租、冷凍、冷藏</div>
+                            </div>
+
+
+                            <div class="d-flex pt-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">附屬服務</div>
+                                <div class="text-neutral-700 fw-medium fs-md"> 營區導覽、食材代訂／直配、季節農特產</div>
+                            </div>
+
+                        </div>
+                        <div class="vstack">
+
+                            <div class="d-flex py-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">無線通訊</div>
+                                <div class="text-neutral-700 fw-medium fs-md">中華電信有訊號、遠傳有訊號、台哥大有訊號</div>
+                            </div>
+
+
+                            <div class="d-flex py-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">停車方式</div>
+                                <div class="text-neutral-700 fw-medium fs-md">車停營位旁</div>
+                            </div>
+
+
+                            <div class="d-flex py-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">營業時間</div>
+                                <div class="text-neutral-700 fw-medium fs-md">平日、假日皆營業</div>
+                            </div>
+
+
+                            <div class="d-flex pt-2">
+                                <div class="text-neutral-700 me-2 fs-md" style="width: 100px;">攜帶寵物規定</div>
+                                <ul class="text-neutral-700 fw-medium fs-md mb-0">
+                                    <li>自搭帳可帶寵物，需注意清潔、需繫繩或放置籠內</li>
+                                    <li>需先取得營主同意</li>
+                                    <li>免裝備及室內禁止寵物</li>
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 營地須知 -->
+            <section class="section mb-11">
+                <div class="section-heading">
+                    <h3 class="h5 fw-bold mb-6">營地須知</h3>
+                </div>
+                <div class="vstack">
+                    <h5 class="fs-md fw-bold mb-1 text-neutral-700">退訂規定</h5>
+                    <p class="fs-md text-neutral-700 mb-0"><i
+                            class="bi bi-star-fill text-neutral-700 fs-md pe-1px"></i><i
+                            class="bi bi-star-fill text-neutral-700 fs-md"></i>
+                        如遇颱風、地震等天災、交通因中斷，經政府或旅客服務所在之地方政府發布停止上班上課，皆可延期或
+                        100% 退費</p>
+                    <p class="fs-md text-neutral-700 mb-0">(如選擇退費，訂位者需負擔退款手續費每帳 50 元/天，退款手續費將從退款金額中扣除）。</p>
+                    <p class="fs-md text-neutral-700 mb-0">匯款後若因故欲改日期，請於 7 日前通知，可保留房間 三個月，否則訂金沒收，恕不另行通知。</p>
+                    <p class="fs-md text-neutral-700 mb-0">如遇天災、交通中斷等情況，經由當地政府認定後，方可 退還訂金或保留訂金三個月並擇期入住。</p>
+                    <p class="fs-md text-neutral-700 mb-0"><i class="bi bi-telephone-fill fs-md text-neutral-700"></i>
+                        如需訂房或進一步洽詢問題，請與「松畫居露營會館」聯繫，電話：【0978-872825】</p>
+                    <!-- … -->
+                </div>
+            </section>
+
+            <!-- 相關營地 -->
+            <section class="section mb-11">
+                <div class="section-heading">
+                    <h3 class="h5 fw-bold mb-6">類似營地</h3>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 g-6">
+                    <!-- 卡片 1 -->
+                    <div class="col">
+                        <div class="card camp-card border-1 border-neutail-100 rounded-4 w-100 h-100 p-4">
+                            <div class="row g-0">
+
+                                <div class="rounded-4 overflow-hidden me-3" style="width:160px;height: 160px;">
+                                    <img src="/Yeah-Fun-Cheap/assets/Rectangle%205831-BJyagJht.png"
+                                        class="w-100 h-100 object-fit-cover" alt="">
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="card-body p-0 vstack h-100">
+                                        <h4 class="fs-6 mb-2 text-neutral-900">布拉拉拉 BulaBula</h4>
+                                        <div class="fs-sm text-primary-200 mb-2 fw-bold"><span
+                                                class="material-symbols-outlined fs-md"
+                                                style="transform: translateY(3px);">
+                                                distance
+                                            </span>宜蘭縣南澳鄉 東岳路81巷</div>
+                                        <div class="d-flex align-items-center text-primary-200 gap-2px">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill text-neutral-100"></i>
+                                        </div>
+
+                                        <div class="mt-auto d-flex align-items-end">
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <div class="searchListTags flex-wrap gap-2">
+                                                    <a href="#" class="btn tag mb-0">#親子同樂</a>
+                                                    <a href="#" class="btn tag mb-0">#仲夏戲水</a>
+                                                    <a href="#" class="btn tag mb-0">#輕鬆露營</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-pr ms-auto fs-md">查看更多 <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 卡片 2 -->
+                    <div class="col">
+                        <div class="card camp-card border-1 border-neutail-100 rounded-4 w-100 h-100 p-4">
+                            <div class="row g-0">
+
+                                <div class="rounded-4 overflow-hidden me-3" style="width:160px;height: 160px;">
+                                    <img src="/Yeah-Fun-Cheap/assets/Rectangle%205832-CuhuMBcG.png"
+                                        class="w-100 h-100 object-fit-cover" alt="">
+                                </div>
+
+                                <div class="col-8">
+                                    <div class="card-body p-0 vstack h-100">
+                                        <h4 class="fs-6 mb-2 text-neutral-900">跑馬古道露營區</h4>
+                                        <div class="fs-sm text-primary-200 mb-2 fw-bold"><span
+                                                class="material-symbols-outlined fs-md"
+                                                style="transform: translateY(3px);">
+                                                distance
+                                            </span>宜蘭縣礁溪鄉 白石腳路157巷90號</div>
+                                        <div class="d-flex align-items-center text-primary-200 gap-2px">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill text-neutral-100"></i>
+                                        </div>
+
+                                        <div class="mt-auto d-flex align-items-end">
+                                            <div class="d-flex flex-wrap gap-2">
+                                                <div class="searchListTags flex-wrap gap-2">
+                                                    <a href="#" class="btn tag mb-0">#可帶寵物</a>
+                                                    <a href="#" class="btn tag mb-0">#日出美景</a>
+                                                    <a href="#" class="btn tag mb-0">#車泊友善</a>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="btn btn-pr ms-auto fs-md">查看更多 <i
+                                                    class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+        <footer class="footer">
+  <div class="footer-Container text-center">
+    <div class="row align-items-center ">
+      <!-- 左側 LOGO + 品牌介紹 -->
+      <div class="col-md-8 ">
+        <div class="footer-logo mb-6 p-3 py-4 ms-7">
+          <img src="/Yeah-Fun-Cheap/assets/LOGO_150X100-DehojGIA.png" alt="網站LOGO">
+        </div>
+        <p>在野Fun趣，找地方不只是準備做飯！更是開始親近自然的第一步。</p>
+      </div>
+
+      <!-- 右側 聯絡方式 + icon -->
+      <div class="col-md-4 text-md-start">
+        <div class="pd-12 mb-20">
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgBvZf/dYIwEMcPnv+XEbJB2wlMJ6gbaDdgA3GCdgNfJ6gbiBPUToAbyAbXixw2WvILCJ/37mngLvnmcoSQQE8QMaMfQZbxpTpJkiPERA1KtiL7IjujmW+yDzIBY8GDrx0Dm9iTPcEQqANJVuFwtr0yw7MfkypICDm/YxwqLyE4fgbChGBT/X3YYlM/QjNp6W9vEiAwvAgrtFQ/92kiH2sZJNiX1iZCPfKZ7pxheBZKcOAQoSiU34z9F9BswSHsDAOv6GfOzQzsLMmKNnCH4cgOATmGI1KOn8M4vEI4ixSb4nClLSaXTAx7wYwgYhbg/ENWa+3a4JNo7QdwTzJr35S9CtGFZ6GWajlOEA/h4VMrETXE49HD55jSuVCJiHU29Cn6Y1uYB4+ANa3fUmtvaAIn3YHur+F2CXwe/bIN9i1Oa6Fic6YMYaviLjsmzai8KpqWz6sIZgPTcuDJ/4ngCzuYjlX7J7278QZx942Wm6K+EcGP6wvE3TuUgEK/cJ8JYIXPECcj/wRYQffBV3bE7A2+6jyZQ18ouDCIkZ4iShz6Pcqdq6zkd2KkRcSZB5cQAzUrFiQ67qmPnQXqR3kPfgE211YZiuETGAAAAABJRU5ErkJggg==" alt="Facebook"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJsSURBVHgBtVeBVYNADA0+B2ADzwnUCcQJ7AZ2BJ1AnKB1gtYN6gTgBNYJwAl0g5jYIOGAyxXb/14ex13u8i/JhSMBA4iY0sORpNLlwMa3yG87SZIt7Asy7EiWJBUeDgXJPJbAAo+LisRpm4lHYEWPucfrk2Sr3avaY3DyTEUuoA1ns8ZNL0xE4NFjvPQZ/wccCuyG9wt3+fan4DwC93AEiJ13ZSfXg0s1sIIDgXcqaxckM0Wk7w2P3SUcCN7msDEopBpkp6LfGI4+0zxZ5jVx5Xlbml8HpjnReyXJpC/z3VOCbdxPMB8rlISWtSs//hwarc8dl7EkxEAMKgyElb2oSXA49PmtAhMX0K0hbyQbaGtGRnInbUdS0JyrkfDovvMeKxgmMPd2ej+ip93PKAJ6rfcjSeiFcwhggEgGBokTMCCxdfJak3vzkL64/1l1mYXPJAHt8WW8QhzWqn1hKceQcKodVUPIG5ysnwPzJ5PQX8wU4nE2MH8yCb372wh98JLxw9KPJfFXC4ayfQCPqr22lE0SEl+d7SsM3DNojAlk8lqTlGAhsk6k2L+QLOT4NuO8ToFdzEfW6xUr/e3YBMj6RchCDnEb33A4orJfitANyQuEwes9WEVN4esUuiTOQtpChL8jS9h9zHQ15QQuSdaSRyHoze7qCS1aK/fsUwsmgWyslb1Zczp0LhzlkqsIOHpcq65tM5B5me/gSMDuz1XpDxZqsEK5HR/QeIr9vzvHY4lS4g6+hDg1l131Js8a9oeD9g9sBt2EfBo8QRNqwVTkJn20b9RTUeLAtycxyHAdyMSNDvYH14tapByrHz8didSsTsRBdwAAAABJRU5ErkJggg==" alt="Ins"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGKSURBVHgBvZfxVYMwEMaPPv+3IzACI+AEuoFsoBuUTiBOUJxAnYA6QXEC2IBucH5nwJfGQkMa8nvvezQkl/seORIa0QIwc4KL6AjVURS1FAokf4Y6/s8BSo2xqYw3J8igDTmC2B1f5qU3WvXtxJxk6JhtRGJ4PnkfG+sTtdoAayMyCc+n6o1XUyaE5mTAuImM3cnMyaqRgZspM+greT6dbmClzfc1kieHGlaFl5IfXvHalkPjRusooCdoPRKYiWCkxbWGviH5fUs+QYIHDsPJ/rDSDBxwuYc+aXlqvaEvh2yxGYXhqDf0wgzxBIQWRVmPmShJFdrS7M0bfybgTh7RXQAjbxdHsNqGXTYgG5pzOVdn7snJ1kIfZBSQB7ZWo1id88GewpSRgv2T0lwQlLM/cnIFwQmrIu3YnXfyAaszxcWIfFuur8k9FGnFbpS2BqIhmXYvJvWaPtL4sT6FvNZbbH7FrCj2t0Ht2OKT0NZMY5/399s05yvWPpowJEsSk1qa2Ohue+19/Lv6AToQ9QrApXL2AAAAAElFTkSuQmCC" alt="Twitter"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJZSURBVHgBtViNlZswDBZZoIzgDcoGZYQbgW6QToA7wWUDrhNcNwg3QW4D2IDbwJUf0ntC2NhA+r2nl8TWz2fJliEFHIRzzuBHhVKifJF8FkXxBf8LGLREuaLcUSYXx4DSobzAs0DB20TgLUJNKkaRIOBX08GccokPlE8Shtfx5fmBYpR+j/ITSzXCHtDqJXwmrM9Mhm2F8hbISgW5CBC45QQP+DEUXC4kTUQRmNwTNhgtQvo0kGAukZ++NBEr/D6imVWpu8KT4ebjzbAhhUYodIH5lpy0cBCU6UmUpdQKgyBhAgQkdm9S4csGs4E/6lgW3NysNCwcBPnjbAxyQu7eWhnVARITnIBb9hBzofHvrIBdrVc2oQupPFMSmDsoo2YSfBQ/AgZjgMjvk7dlL75XTIJXtXJMwf6IoRHHLJyDjPPtoiZjtbbC0B+zUz1EZ/Gyw+iXGHrVG/g0xJF5JPT0HVAHdF5c4hnCzbcs48aD99yj59ZXdOuoubllRxxiZIgoowmtsD5AxAfs3LLrulh2lX3Fg/UqPWki1uWhV3bhjkmT8YslTsSnv0+QaJSNvCivWyvrYAcokz7Fg/AxBQjoJy2jHcmL6gEHQYFMZO5dxLAQWQ0ja1/sJNcK/0NMSZajhicC/b2qMpmY4p211LhP76GHXbK9KwJVTHmxH9y8g29qEw00nvveIXvPJoGCjPxK3yEfPczX/khSwvINTAfzus3mG5hbd0DJ/m1jPoXVMd0iMQijv25++zZKx1A5Us2JfdSQCS6HxY8+8GgXI82p5zJ48P8TI+zEP4g4QFXFG712AAAAAElFTkSuQmCC" alt="WhatApp"></i></a>
+        </div>
+        <div>信箱：<a href="mailto:funcamping@gmail.com" class="text-white text-decoration-none">funcamping@gmail.com</a>
+        </div>
+        <div>地址：台北市中正區重慶南路一段122號</div>
+      </div>
+    </div>
+
+    <!-- 版權聲明 -->
+  </div>
+  <div class=" footer-copyright text-center ">
+    © 2025 COPYRIGHT | 本網站圖片及文字僅供個人信息使用 禁止轉載
+  </div>
+</footer>            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                // md 以上用直向縮圖；手機改用另一組橫向縮圖
+                const isDesktop = window.matchMedia('(min-width: 768px)').matches;
+
+                const thumbsEl = isDesktop
+                    ? document.querySelector('.thumbs-rail')
+                    : document.querySelector('.thumbs-rail-mobile');
+
+                const thumbsSwiper = new Swiper(thumbsEl, {
+                    direction: isDesktop ? 'vertical' : 'horizontal',
+                    slidesPerView: isDesktop ? 4 : 5,
+                    spaceBetween: 8,
+                    freeMode: true,
+                    watchSlidesProgress: true,
+                    mousewheel: isDesktop,           // 直向可滾輪
+                    scrollbar: isDesktop ? { el: '.swiper-scrollbar', draggable: true } : false,
+                    breakpoints: {
+                        992: { slidesPerView: 5, spaceBetween: 12 }
+                    }
+                });
+
+                const mainSwiper = new Swiper('.main-rail', {
+                    loop: true,
+                    spaceBetween: 12,
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev'
+                    },
+                    thumbs: { swiper: thumbsSwiper }
+                });
+            </script>
+</body>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文章知識</title>
+
+
+  <script type="module" crossorigin src="/Yeah-Fun-Cheap/assets/main-CSZoTEOx.js"></script>
+  <link rel="stylesheet" crossorigin href="/Yeah-Fun-Cheap/assets/main-tT7ZJ1Bc.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg border-bottom border-neutral-50">
+    <div class="container d-flex justify-content-between align-items-center py-4">
+        <div class="d-flex justify-content-between align-items-center flex-nowrap">
+            <a class="d-block me-8 navbar-brand" href="index.html">
+                <img src="/Yeah-Fun-Cheap/assets/LOGO_96x60-D1tBEaAT.png" alt="logo">
+            </a>
+            <!-- 漢堡按鈕：在小螢幕出現 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="nav" style="height: 45px;">
+                    <li class="nav-item border-end border-primary ps-0 pe-7">
+                        <a class="nav-link text-center" href="/index.html#latest-posts">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Newest</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="/index.html#hottest-posts">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Popular</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 px-7">
+                        <a class="nav-link text-center" href="../pages/infoList.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
+                        </a>
+                    </li>
+                    <li class="nav-item border-start border-primary-200 ps-7 pe-0">
+                        <a class="nav-link text-center" href="../pages/about.html">
+                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
+                            <p class="fs-ssm text-primary-300 mb-0">About Us</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="searchList.html" class="btn btn-md btn-pr-outline ms-7">野fun去～</a>
+            </div>
+
+
+        </div>
+        <div class="d-flex justify-content-center">
+            <a class="p-0" href="#">
+                <button type="button" class="btn btn-md btn-pr-noneline"><img class="pe-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVHgB7ZTBDUBAEEX/sAUoQUl0sHd6QAUcONMBJSlBB2NXJEQiJLObOHin2cuf/3eST7pLNJhqABEkEGYiLpWZCrGYhREzU6PsYN9DPhIE6DZlayyAY9TNptdck/l3KP3LP/Jz5KeF34/sz+HeOj0kMObDoVxsoXCrrxOmz4ZsqiAgcCl2CDoS2zDHKOCQFdoLN61ECN5eAAAAAElFTkSuQmCC"
+                        alt="">營地討論</button>
+            </a>
+            <a class="p-0" href="#">
+                <button type="button" class="btn btn-md btn-pr-noneline"><img class="pe-2"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJLSURBVHgBnVRtbtNAEJ3ZNKg/2xOQ3sDcIJygLheokfgDBJGcoO0JEiCIX8ibC7S+Ab4B7gmanoBIiEoI4uHNeB3FThrRjuR8jGfezrx5O0xbLEnjA7qjUyLXp1IiYurZC6E5OS6Yyyx9k8225fIG2Oc4IeExfh7QLmOaM8t5G9g1wD6dTACWVmCSM0nS2eeeH1yxPsTyDBW/1Heoticl+2Qaj5vnrIMxvUfggpyc+7fZB9phyfTFEMBn4fCJH2SjFWBoMzWwv/Lcj7LC/F/iHi2t4sgSWTx6uvCvs3nIi5D3Td+xk0TbDy3zWUUAKgtgZqUF96nmUzhRXzKO7T+6QCxf2KuSJ+p3VXU6RcnX21z5dbJ/5BDPEdyF+rhLx3WcH1xO8JXboU/oFBW649C7b9H0NFTtUfUCzxwtZ1WhQUarTqSedH8v6EyDrhtBS7o1DQjH4HJG++D3Di3r4Vr1unVR4dIoilwt2oqPBmBGVWKEwdzQL/5RU5AOmtqrh6RYDR02gtCmThxR3hyqANWf+e43hv5uFFkF/PXV5S09woJ8vmv1Tu+mdfi7jOnxFtmnk2IPTOYoNFby4TLZ2HL4STF1oID/Wg6VjjGsjE2kXZBeXaERkhcPWQ5SukPkjfUw/+7qyBn5pYxC1Hh9OZDIcOty0ErDcjAwzQR4dU5NrG0NHoa/OQB2TjOZntTXkjaWw1bQuiWh61qjtixKXLuK7w2wDUBL+og7zCC5fb3aBl3iwGFb5HxfvAF3UA2uU3PKUqBKCJxmxn/L/gGOmTQL97Z83gAAAABJRU5ErkJggg==" alt="">登入/註冊</button>
+            </a>
+        </div>
+    </div>
+</nav>
+<script>
+    const BASE = (import.meta?.env?.BASE_URL) ?? '/';
+
+
+    if (latestLink) {
+        latestLink.addEventListener('click', function (e) {
+            const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
+
+            e.preventDefault(); // 兩邊都先擋預設行為
+
+            if (isHomePage) {
+                document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                // ⚠️ 關鍵：用 BASE 拼，不要寫 '/index.html'
+                location.href = BASE + 'index.html#latest-posts';
+                // 若你的主機支援目錄預設文件，也可用： location.href = BASE + '#latest-posts';
+            }
+        });
+    }
+
+    // ✅ 首頁載入時偵測 hash，自動滾動（重整或跨頁返回都會啟動）
+    window.addEventListener('load', () => {
+        const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
+        if (isHomePage && location.hash === '#latest-posts') {
+            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+    const latestLink = document.querySelector('a[href="#latest-posts"], a[href="/index.html#latest-posts"]');
+
+    latestLink.addEventListener('click', function (e) {
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+        if (isHomePage) {
+            e.preventDefault();
+            document.querySelector('#latest-posts').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            e.preventDefault();
+            window.location.href = '/index.html#latest-posts';
+        }
+    });
+    // ✅ 首頁載入時偵測 hash，自動滾動（避免重整後 hash 無效）
+    window.addEventListener('load', () => {
+        if (window.location.hash === '#latest-posts') {
+            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+
+
+    const hottestLink = document.querySelector('a[href="#hottest-posts"], a[href="/index.html#hottest-posts"]');
+
+    hottestLink.addEventListener('click', function (r) {
+        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
+        if (isHomePage) {
+            r.preventDefault();
+            document.querySelector('#hottest-posts').scrollIntoView({ behavior: 'smooth' });
+        }
+    });
+</script>    <div class="container infoList-bg">
+
+      <div class="row custom-row-spacing">
+
+        <!-- 右邊查詢區 與 新增的文章目錄/進度導覽 (Sidebar) -->
+        <div class="col-12 col-lg-4 mb-0 mb-lg-10 order-lg-2 sidebar-section">
+
+          <!-- 搜尋與熱門文章區塊 (放入一個新 div 以便佈局) -->
+          <div class="sidebar-widgets bg-primary-50 rounded mb-4 mb-lg-10 py-3 px-3">
+            <form class="input-group search-box mb-lg-10" style="max-width: 95%;">
+              <input type="text" class="form-control" placeholder="輸入標題或關鍵字..." aria-label="搜尋文章">
+              <button class="btn btn-primary btn-search" type="submit">
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+            <!-- 熱門文章列表：在手機上隱藏 (d-none)，在桌機版顯示 (d-lg-block) -->
+            <div class="bg-secondary-100 border-secondary-300 py-4 d-none d-lg-block elementor-post popular-posts">
+              <h4 class="fw-bold px-3 mb-3">熱門文章</h4>
+              <div class="mb-2 info-post ">
+                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">雨天露營不掃興：防水裝備與備案，惡劣天氣也能玩得盡興！</a></p>
+              </div>
+              <div class="mb-2 info-post ">
+                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">營火安全守則：享受溫暖與浪漫，避免意外發生！</a></p>
+              </div>
+              <div class="mb-2 info-post ">
+                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">冬季露營攻略：保暖防寒、裝備升級，體驗雪地露營的夢幻！</a></p>
+              </div>
+              <div class="mb-2 info-post ">
+                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">露營周邊活動推薦：除了搭帳篷，營地還能怎麼玩？</a></p>
+              </div>
+              <div class="mb-2 info-post ">
+                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">雨天露營不掃興：防水裝備與備案，惡劣天氣也能玩得盡興！</a></p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 新增：文章目錄/閱讀進度導覽 -->
+          <nav id="article-progress-nav" class="bg-white rounded p-4 d-none d-lg-block sticky-top i">
+            <button id="toggle-nav" class="btn btn-sm d-flex align-items-center ms-4 border-bottom ">文章快速目錄
+              <i class="bi bi-folder2-open ms-3"></i>
+              <img src="/Yeah-Fun-Cheap/assets/split_0_0-BHYM2eEr.png" alt="" style="width: 15%;"> <!-- 可以換成任何圖示 -->
+            </button>
+
+            <div class="progress-bar-container mb-3 bg-secondary-100 rounded-pill">
+              <div class="progress-bar-fill bg-primary-500 rounded-pill"></div>
+            </div>
+            <ul class="list-unstyled mb-0">
+              <!-- JavaScript 會動態生成這些連結 -->
+            </ul>
+          </nav>
+        </div>
+
+        <!-- 左邊主文章內容區塊 -->
+        <div class="col-12 col-lg-8 py-6 order-lg-1 article-content-section">
+          <h1 class="main-article-title fw-bold text-center mb-5" data-aos="fade-down" data-aos-once="true">
+            冬季露營攻略：保暖防寒、裝備升級，體驗雪地露營的夢幻！</h1>
+          <!-- 文章首段與導言 -->
+          <p class="lead mb-4" data-aos="fade-up" data-aos-once="true">
+            嘿，新手們！如果你已經體驗過春秋兩季的露營，被大自然的美好稍稍蠱惑了，那我想是時候挑戰一下更高階的玩法了——冬季露營！別聽到「冬季」就卻步，只要掌握好技巧，備齊裝備，在白雪皚皚的山林間，升起一爐溫暖的營火，那種夢幻與靜謐，絕對是其他季節無法比擬的。相信我，一旦你愛上冬季露營，你會覺得過去的露營都少了那麼一點「味道」。
+          </p>
+
+          <!-- 大標題一：心態準備 -->
+          <section id="section-1" class="article-section mb-5" data-aos="fade-up" data-aos-once="true">
+            <h2 class="section-title mb-4">一、心態準備：別把冬天妖魔化，但也別輕忽</h2>
+            <div class="text-center mb-4">
+              <img src="/Yeah-Fun-Cheap/assets/infoList01-BiTfV0Ot.jpg" alt="心態準備" class="img-fluid rounded article-image"
+                data-aos="zoom-in" data-aos-once="true">
+            </div>
+            <p>
+              首先，新手要有一個正確的心態。冬季露營，確實比其他季節需要更多的準備和謹慎，但絕非遙不可及。它考驗的是你的規劃能力、應變能力，以及對裝備的熟悉程度。別因為害怕寒冷而錯過冬日限定的美景，但同時也要對大自然的嚴峻保持敬畏之心。做好萬全準備，享受過程，這就是冬季露營的第一步。
+            </p>
+          </section>
+
+          <!-- 大標題二：裝備升級 (改為 Accordion 手風琴結構) -->
+          <section id="section-2" class="article-section mb-5" data-aos="fade-up" data-aos-once="true">
+            <h2 class="section-title mb-4">二、裝備升級：保暖是王道，細節是關鍵</h2>
+            <div class="text-center mb-4">
+              <img src="/Yeah-Fun-Cheap/assets/infoList07-CgRHoMzv.jpg" alt="裝備升級" class="img-fluid rounded article-image"
+                data-aos="zoom-in" data-aos-once="true">
+            </div>
+            <p>冬季露營，裝備的「升級」是重中之重。一套正確的保暖系統，能讓你從頭到腳都感受到溫暖，這是能否舒適度過寒夜的關鍵。</p>
+
+            <!-- Accordion for Equipment Subsections -->
+            <div class="accordion accordion-flush" id="equipmentAccordion">
+
+              <!-- 子標題：帳篷 -->
+              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+                <h3 class="accordion-header" id="headingTent">
+                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTent" aria-expanded="false" aria-controls="collapseTent">
+                    帳篷：選擇四季帳或高山帳
+                  </button>
+                </h3>
+                <div id="collapseTent" class="accordion-collapse collapse" aria-labelledby="headingTent"
+                  data-bs-parent="#equipmentAccordion">
+                  <div class="accordion-body">
+                    <div class="text-center mb-4">
+                      <img src="/Yeah-Fun-Cheap/assets/info001-CRD0Y8Qn.jpg" alt="帳篷類型" class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in" data-aos-once="true">
+                    </div>
+                    <p class="old-hand-tip"><strong>老手心法：</strong>
+                      你那輕巧的夏季帳，在冬天可能只是一塊布。冬季營地可能風大、濕氣重，甚至會降雪。你需要的是能抵抗強風、具備良好抗雪壓能力的四季帳，或是更高階的高山帳。這些帳篷通常採用更堅固的骨架、更厚的布料，並有較小的通風口來減少熱量流失。內帳最好是全密閉設計，避免冷風灌入。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 子標題：睡袋 -->
+              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+                <h3 class="accordion-header" id="headingSleepingBag">
+                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSleepingBag" aria-expanded="false" aria-controls="collapseSleepingBag">
+                    睡袋：溫標是生命線，材質要講究
+                  </button>
+                </h3>
+                <div id="collapseSleepingBag" class="accordion-collapse collapse" aria-labelledby="headingSleepingBag"
+                  data-bs-parent="#equipmentAccordion">
+                  <div class="accordion-body">
+                    <div class="text-center mb-4">
+                      <img src="/Yeah-Fun-Cheap/assets/info002-CgR_KboR.jpg" alt="睡袋" class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in" data-aos-once="true">
+                    </div>
+                    <p class="old-hand-tip"><strong>老手心法：</strong>
+                      你的睡袋，就像是你在野外的棉被。冬季的睡袋，溫標（舒適溫度）至少要達到0℃以下，甚至更低（-5℃到-15℃）。羽絨睡袋輕巧保暖，但潮濕會降低保暖效果；化纖睡袋即使受潮也能保持一定保暖，但體積較大。新手可以選擇綜合考量，或是在羽絨睡袋外加一層防水套。記得，選擇比預期最低溫度更低的溫標，寧可熱到脫衣，不可冷到發抖。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 子標題：睡墊 -->
+              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+                <h3 class="accordion-header" id="headingSleepingPad">
+                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseSleepingPad" aria-expanded="false" aria-controls="collapseSleepingPad">
+                    睡墊：隔離地氣，比睡袋更重要！
+                  </button>
+                </h3>
+                <div id="collapseSleepingPad" class="accordion-collapse collapse" aria-labelledby="headingSleepingPad"
+                  data-bs-parent="#equipmentAccordion">
+                  <div class="accordion-body">
+                    <div class="text-center mb-4">
+                      <img src="/Yeah-Fun-Cheap/assets/infoList03-DE9YJakl.jpg" alt="睡墊" class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in" data-aos-once="true">
+                    </div>
+                    <p class="old-hand-tip"><strong>老手心法：</strong>
+                      許多新手以為睡袋最重要，其實不然。地面的濕氣與寒氣是最大的熱量殺手！一張好的睡墊，能有效阻隔地氣，讓你的睡袋發揮最大效用。建議選擇R值（熱阻值）3.0以上的充氣墊或泡棉墊，甚至可以「雙墊組合」，先鋪泡棉墊再鋪充氣墊，雙重阻隔，保暖效果更佳。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 子標題：衣物 -->
+              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+                <h3 class="accordion-header" id="headingClothing">
+                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseClothing" aria-expanded="false" aria-controls="collapseClothing">
+                    衣物：洋蔥式穿搭，三層原理
+                  </button>
+                </h3>
+                <div id="collapseClothing" class="accordion-collapse collapse" aria-labelledby="headingClothing"
+                  data-bs-parent="#equipmentAccordion">
+                  <div class="accordion-body">
+                    <div class="text-center mb-4">
+                      <img src="/assets/images/info/layered_clothing.jpg" alt="洋蔥式穿搭"
+                        class="img-fluid rounded article-image-sm" data-aos="zoom-in" data-aos-once="true">
+                    </div>
+                    <p class="old-hand-tip"><strong>老手心法：</strong> 「洋蔥式穿搭」是戶外活動的黃金準則。</p>
+                    <ul>
+                      <li><strong>內層（排汗層）：</strong> 選擇羊毛或化纖材質的排汗衣褲，保持身體乾爽。棉質衣物是大忌，濕了難乾，會迅速帶走體溫。</li>
+                      <li><strong>中層（保暖層）：</strong> 羽絨外套、刷毛衣褲是最佳選擇。輕量且保暖，可以多準備幾件，依氣溫變化增減。</li>
+                      <li><strong>外層（防風防水層）：</strong> 一件防水透氣的外套與長褲，能有效阻擋風寒與雨雪，同時排出身體的濕氣。</li>
+                    </ul>
+                    <p class="old-hand-tip"><strong>細節提醒：</strong>
+                      頭部、手部和腳部的保暖也不可忽視。毛帽、防水手套、羊毛襪是必備品。腳濕了會非常不舒服，建議多帶幾雙羊毛襪替換。</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- 子標題：炊事裝備 -->
+              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+                <h3 class="accordion-header" id="headingCookingGear">
+                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseCookingGear" aria-expanded="false" aria-controls="collapseCookingGear">
+                    炊事裝備：抗寒爐頭與保溫瓶
+                  </button>
+                </h3>
+                <div id="collapseCookingGear" class="accordion-collapse collapse" aria-labelledby="headingCookingGear"
+                  data-bs-parent="#equipmentAccordion">
+                  <div class="accordion-body">
+                    <div class="text-center mb-4">
+                      <img src="/assets/images/info/cooking_gear.jpg" alt="炊事裝備"
+                        class="img-fluid rounded article-image-sm" data-aos="zoom-in" data-aos-once="true">
+                    </div>
+                    <p class="old-hand-tip"><strong>老手心法：</strong>
+                      一般的瓦斯罐在低溫下可能會「罷工」。建議選擇分離式瓦斯爐，或使用高山瓦斯罐（異丁烷比例較高），或是攜帶去漬油爐，它們在低溫下表現更穩定。同時，保溫瓶非常重要，能讓你隨時喝到熱水、熱湯，暖和身子。
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+            </div><!-- /#equipmentAccordion -->
+          </section>
+
+          <!-- 大標題三：營地選擇與搭設 -->
+          <section id="section-3" class="article-section mb-5" data-aos="fade-up" data-aos-once="true">
+            <h2 class="section-title mb-4">三、營地選擇與搭設：背風向陽是重點</h2>
+            <div class="text-center mb-4">
+              <img src="/assets/images/info/campsite_setup.jpg" alt="營地選擇與搭設" class="img-fluid rounded article-image"
+                data-aos="zoom-in" data-aos-once="true">
+            </div>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">選擇營地：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong>
+              冬季選營地，要特別注意「避風」和「向陽」。選擇有樹林遮蔽的營地，可以有效阻擋冷風。向陽的坡面能讓帳篷在白天吸收更多熱量。避開谷地和水邊，這些地方濕氣重、溫度低。事先了解營地是否有提供電力，對冬季來說非常有用（可以用電暖爐或電毯）。
+            </p>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">帳篷搭設：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong>
+              冬季搭帳篷，確保地布完全覆蓋帳篷底部，並向外延伸，避免雪水或雨水滲入。拉緊營繩，使帳篷更穩固，抵抗強風。如果有外帳，確保與內帳保持適當距離，形成通風層，減少結露。</p>
+          </section>
+
+          <!-- 大標題四：野炊與飲食 -->
+          <section id="section-4" class="article-section mb-5" data-aos="fade-up" data-aos-once="true">
+            <h2 class="section-title mb-4">四、野炊與飲食：熱量與水分不可少</h2>
+            <div class="text-center mb-4">
+              <img src="/assets/images/info/cooking_food.jpg" alt="野炊與飲食" class="img-fluid rounded article-image"
+                data-aos="zoom-in" data-aos-once="true">
+            </div>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">高熱量飲食：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong>
+              身體在寒冷環境下會消耗更多熱量來維持體溫。準備高熱量、易消化的食物，例如肉類、麵包、巧克力、堅果等。熱湯、熱粥更是暖身暖胃的好選擇。</p>
+            <ul class="mb-3">
+              <li>避免油炸： 油炸食物在低溫下容易凝固，不易消化。</li>
+              <li>燃料預備： 多帶一些燃料，以防萬一。</li>
+            </ul>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">充足水分：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong> 即使在冬天，補充水分也同樣重要。身體脫水會降低抗寒能力。隨身攜帶保溫瓶，隨時喝熱水或熱飲。</p>
+          </section>
+
+          <!-- 大標題五：安全注意事項 -->
+          <section id="section-5" class="article-section mb-5" data-aos="fade-up" data-aos-once="true">
+            <h2 class="section-title mb-4">五、安全注意事項：萬事小心為上</h2>
+            <div class="text-center mb-4">
+              <img src="/assets/images/info/safety_tips.jpg" alt="安全注意事項" class="img-fluid rounded article-image"
+                data-aos="zoom-in" data-aos-once="true">
+            </div>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">天氣預報：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong> 出發前務必查詢詳細的天氣預報，包括溫度、濕度、風速、降雪機率。冬季天氣變化快，多關注幾份預報，並有隨時撤退的心理準備。
+            </p>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">生火取暖：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong>
+              營火是冬季露營的樂趣，但務必注意防火安全。選擇安全的生火地點，遠離帳篷和易燃物。離去或就寢前務必完全熄滅營火。如果使用暖爐，切記在通風良好的地方使用，避免一氧化碳中毒。帳篷內嚴禁使用直火。</p>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">急救用品：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong> 除了常規急救包，冬季露營更要準備保溫毯、暖暖包等物品。了解失溫的症狀與處理方法，並告知同行者。</p>
+            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">雪地活動：</h3>
+            <p class="old-hand-tip"><strong>老手心法：</strong> 如果是雪地露營，準備雪釘、冰爪、雪杖等輔助裝備，並了解相關的雪地行走技巧。避免獨自行動，隨時注意周圍環境。</p>
+          </section>
+
+          <!-- 大標題六：享受冬日靜謐 -->
+          <section id="section-6" class="article-section mb-5" data-aos="fade-up" data-aos-once="true">
+            <h2 class="section-title mb-4">六、享受冬日靜謐：慢活與體驗</h2>
+            <div class="text-center mb-4">
+              <img src="/assets/images/info/winter_quiet.jpg" alt="享受冬日靜謐" class="img-fluid rounded article-image"
+                data-aos="zoom-in" data-aos-once="true">
+            </div>
+            <p class="old-hand-tip">冬季露營，不再是追求大汗淋漓的戶外活動，更多的是一種慢活與體驗。</p>
+            <ul>
+              <li><strong>星空：</strong> 冬季的星空通常更加清澈明亮，躺在帳篷裡，仰望滿天繁星，你會感受到宇宙的浩瀚與自身的渺小。</li>
+              <li><strong>寧靜：</strong> 冬天的山林，少了蟲鳴鳥叫的喧囂，多了一份獨有的寧靜。踩在雪地上發出的沙沙聲，營火燃燒的劈啪聲，都是大自然最美的樂章。</li>
+              <li><strong>熱飲：</strong> 沖泡一杯熱咖啡或熱可可，坐在帳篷前，看著遠方的山巒被白雪覆蓋，享受片刻的悠閒。</li>
+            </ul>
+            <p class="lead mt-4" data-aos="fade-up" data-aos-once="true">
+              新手們，冬季露營或許聽起來有些挑戰，但那種在寒冷中尋求溫暖、在靜謐中感受生命的體驗，絕對會讓你上癮。準備好了嗎？一起來享受這份冬日限定的夢幻之旅吧！</p>
+          </section>
+
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+  <div class="footer-Container text-center">
+    <div class="row align-items-center ">
+      <!-- 左側 LOGO + 品牌介紹 -->
+      <div class="col-md-8 ">
+        <div class="footer-logo mb-6 p-3 py-4 ms-7">
+          <img src="/Yeah-Fun-Cheap/assets/LOGO_150X100-DehojGIA.png" alt="網站LOGO">
+        </div>
+        <p>在野Fun趣，找地方不只是準備做飯！更是開始親近自然的第一步。</p>
+      </div>
+
+      <!-- 右側 聯絡方式 + icon -->
+      <div class="col-md-4 text-md-start">
+        <div class="pd-12 mb-20">
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHESURBVHgBvZf/dYIwEMcPnv+XEbJB2wlMJ6gbaDdgA3GCdgNfJ6gbiBPUToAbyAbXixw2WvILCJ/37mngLvnmcoSQQE8QMaMfQZbxpTpJkiPERA1KtiL7IjujmW+yDzIBY8GDrx0Dm9iTPcEQqANJVuFwtr0yw7MfkypICDm/YxwqLyE4fgbChGBT/X3YYlM/QjNp6W9vEiAwvAgrtFQ/92kiH2sZJNiX1iZCPfKZ7pxheBZKcOAQoSiU34z9F9BswSHsDAOv6GfOzQzsLMmKNnCH4cgOATmGI1KOn8M4vEI4ixSb4nClLSaXTAx7wYwgYhbg/ENWa+3a4JNo7QdwTzJr35S9CtGFZ6GWajlOEA/h4VMrETXE49HD55jSuVCJiHU29Cn6Y1uYB4+ANa3fUmtvaAIn3YHur+F2CXwe/bIN9i1Oa6Fic6YMYaviLjsmzai8KpqWz6sIZgPTcuDJ/4ngCzuYjlX7J7278QZx942Wm6K+EcGP6wvE3TuUgEK/cJ8JYIXPECcj/wRYQffBV3bE7A2+6jyZQ18ouDCIkZ4iShz6Pcqdq6zkd2KkRcSZB5cQAzUrFiQ67qmPnQXqR3kPfgE211YZiuETGAAAAABJRU5ErkJggg==" alt="Facebook"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJsSURBVHgBtVeBVYNADA0+B2ADzwnUCcQJ7AZ2BJ1AnKB1gtYN6gTgBNYJwAl0g5jYIOGAyxXb/14ex13u8i/JhSMBA4iY0sORpNLlwMa3yG87SZIt7Asy7EiWJBUeDgXJPJbAAo+LisRpm4lHYEWPucfrk2Sr3avaY3DyTEUuoA1ns8ZNL0xE4NFjvPQZ/wccCuyG9wt3+fan4DwC93AEiJ13ZSfXg0s1sIIDgXcqaxckM0Wk7w2P3SUcCN7msDEopBpkp6LfGI4+0zxZ5jVx5Xlbml8HpjnReyXJpC/z3VOCbdxPMB8rlISWtSs//hwarc8dl7EkxEAMKgyElb2oSXA49PmtAhMX0K0hbyQbaGtGRnInbUdS0JyrkfDovvMeKxgmMPd2ej+ip93PKAJ6rfcjSeiFcwhggEgGBokTMCCxdfJak3vzkL64/1l1mYXPJAHt8WW8QhzWqn1hKceQcKodVUPIG5ysnwPzJ5PQX8wU4nE2MH8yCb372wh98JLxw9KPJfFXC4ayfQCPqr22lE0SEl+d7SsM3DNojAlk8lqTlGAhsk6k2L+QLOT4NuO8ToFdzEfW6xUr/e3YBMj6RchCDnEb33A4orJfitANyQuEwes9WEVN4esUuiTOQtpChL8jS9h9zHQ15QQuSdaSRyHoze7qCS1aK/fsUwsmgWyslb1Zczp0LhzlkqsIOHpcq65tM5B5me/gSMDuz1XpDxZqsEK5HR/QeIr9vzvHY4lS4g6+hDg1l131Js8a9oeD9g9sBt2EfBo8QRNqwVTkJn20b9RTUeLAtycxyHAdyMSNDvYH14tapByrHz8didSsTsRBdwAAAABJRU5ErkJggg==" alt="Ins"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAbCAYAAADyBeakAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGKSURBVHgBvZfxVYMwEMaPPv+3IzACI+AEuoFsoBuUTiBOUJxAnYA6QXEC2IBucH5nwJfGQkMa8nvvezQkl/seORIa0QIwc4KL6AjVURS1FAokf4Y6/s8BSo2xqYw3J8igDTmC2B1f5qU3WvXtxJxk6JhtRGJ4PnkfG+sTtdoAayMyCc+n6o1XUyaE5mTAuImM3cnMyaqRgZspM+greT6dbmClzfc1kieHGlaFl5IfXvHalkPjRusooCdoPRKYiWCkxbWGviH5fUs+QYIHDsPJ/rDSDBxwuYc+aXlqvaEvh2yxGYXhqDf0wgzxBIQWRVmPmShJFdrS7M0bfybgTh7RXQAjbxdHsNqGXTYgG5pzOVdn7snJ1kIfZBSQB7ZWo1id88GewpSRgv2T0lwQlLM/cnIFwQmrIu3YnXfyAaszxcWIfFuur8k9FGnFbpS2BqIhmXYvJvWaPtL4sT6FvNZbbH7FrCj2t0Ht2OKT0NZMY5/399s05yvWPpowJEsSk1qa2Ohue+19/Lv6AToQ9QrApXL2AAAAAElFTkSuQmCC" alt="Twitter"></i></a>
+          <a href="#"><i class=""><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACEAAAAhCAYAAABX5MJvAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJZSURBVHgBtViNlZswDBZZoIzgDcoGZYQbgW6QToA7wWUDrhNcNwg3QW4D2IDbwJUf0ntC2NhA+r2nl8TWz2fJliEFHIRzzuBHhVKifJF8FkXxBf8LGLREuaLcUSYXx4DSobzAs0DB20TgLUJNKkaRIOBX08GccokPlE8Shtfx5fmBYpR+j/ITSzXCHtDqJXwmrM9Mhm2F8hbISgW5CBC45QQP+DEUXC4kTUQRmNwTNhgtQvo0kGAukZ++NBEr/D6imVWpu8KT4ebjzbAhhUYodIH5lpy0cBCU6UmUpdQKgyBhAgQkdm9S4csGs4E/6lgW3NysNCwcBPnjbAxyQu7eWhnVARITnIBb9hBzofHvrIBdrVc2oQupPFMSmDsoo2YSfBQ/AgZjgMjvk7dlL75XTIJXtXJMwf6IoRHHLJyDjPPtoiZjtbbC0B+zUz1EZ/Gyw+iXGHrVG/g0xJF5JPT0HVAHdF5c4hnCzbcs48aD99yj59ZXdOuoubllRxxiZIgoowmtsD5AxAfs3LLrulh2lX3Fg/UqPWki1uWhV3bhjkmT8YslTsSnv0+QaJSNvCivWyvrYAcokz7Fg/AxBQjoJy2jHcmL6gEHQYFMZO5dxLAQWQ0ja1/sJNcK/0NMSZajhicC/b2qMpmY4p211LhP76GHXbK9KwJVTHmxH9y8g29qEw00nvveIXvPJoGCjPxK3yEfPczX/khSwvINTAfzus3mG5hbd0DJ/m1jPoXVMd0iMQijv25++zZKx1A5Us2JfdSQCS6HxY8+8GgXI82p5zJ48P8TI+zEP4g4QFXFG712AAAAAElFTkSuQmCC" alt="WhatApp"></i></a>
+        </div>
+        <div>信箱：<a href="mailto:funcamping@gmail.com" class="text-white text-decoration-none">funcamping@gmail.com</a>
+        </div>
+        <div>地址：台北市中正區重慶南路一段122號</div>
+      </div>
+    </div>
+
+    <!-- 版權聲明 -->
+  </div>
+  <div class=" footer-copyright text-center ">
+    © 2025 COPYRIGHT | 本網站圖片及文字僅供個人信息使用 禁止轉載
+  </div>
+</footer>
+      <!-- 引入 AOS 動畫庫的 JS 檔案 -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Bootstrap JS (with Popper included) -->
+
+
+</body>
+
+</html>
