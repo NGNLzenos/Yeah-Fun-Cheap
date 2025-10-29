@@ -123,15 +123,17 @@
             document.querySelector('#hottest-posts').scrollIntoView({ behavior: 'smooth' });
         }
     });
-</script>        <main class="container">
+</script>
+    <main>
+        <div class="container">
             <section class="hero-section">
                 <div class="hero-content">
                     <img src="/Yeah-Fun-Cheap/assets/LOGO_320x200-AtdpCqj_.png" alt="">
 
-                    <div class="search-bar">
+                    <!-- <div class="search-bar">
                         <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
                             placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
-                        <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
+                        <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div> -->
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-lg-8">
@@ -180,12 +182,23 @@
                                         <a href="#" class="btn tag">#單人友善</a>
                                     </div>
                                 </div>
-                            </div>
-
-
             </section>
+        </div>
 
-            <section class="features-section py-7 position-relative">
+        <hr>
+            
+
+        <div id="OurHighlights-background-wrapper" 
+            style="
+                /* 樣式設置為全寬，並應用圖片和透明度 */
+                background-image: url('/Yeah-Fun-Cheap/assets/background01-B4dfCiX4.png'); 
+                background-size: cover; 
+                background-position: center center;
+                background-color: rgba(255, 255, 255, 0.2); /* 20% 不透明的白色底 */
+                background-blend-mode: overlay; /* 混合模式 */
+            ">
+
+            <section class="features-section py-7 position-relative" style="background-color: transparent;">
                 <div class="container">
                     <div class="row text-center mb-5">
                         <div class="col-12">
@@ -213,11 +226,11 @@
 
                                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAAB5CAYAAABRPEH0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATdSURBVHgB7d1NUtxGFMDxJ6jsyQ3EDTiCXJXYWSS2cgJPNimcjbkBwwmwd9llfALwLjtPTmDfwNxgWGYTv7xmWkYM4BmENOqP/6+qSzVmTNGjp6f+1IgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgD6paCTAmC8LPAozFZUFdqiRCO4IUTPyxEmAM7lbsM+EHAbbJgm7Pyqne5F6XAgzJtwHP9Nv+IhgxCJ/9ZrrewsrUvV+AIbgsZ+VNqz1I8GEcPjMufABGOVbIEE3kiqK4tMMn/3IuESII0/B+5Qhsl78lK+1AjMoC8EiAMZEFAQAAAAAAAAB4hEICZzMBtR1ymA049ytishN0EPrl6bnsp51bED6RDIUehC4ASysnkqaXsqyfy4Au2z+xQJwLwmABOGk27EiC/PL8hV+eX/u6smUzFP4EffallAS5pVc+8E796w/+dSUYX2s32UQS1dqgVPrXTTY8E4zLZ8FoN+1s4r6mxmpgYiStE3Egibov2Fq36DeCcWjinRHnW3Vsbd9cxLRSuj78oaqPqs5/bzC77XxWOLZyIekOyTiv/fHt6g/8YLX7d3dCo9kz8kV26//+/a6WjkLa8ulOTmnlrZ2MC0mQ7/m6ZsY/VsdP97zN3YpdML6OJRsWhbzYKXZeSkdBBKHPgu7Kv7CTk3J7qMlu99YxtmxY//Gju6hKO4sH9eFPpXQQxIyJH6StrPxqJ+FcEtSagnQX2v6a97oAXFi5tPd+LwH62dqBu7J7bBFU3fiByqyQ4uT8z78vNv1do2dCPxZYWZmlGoDe1B/Xtnd9NnxnZU8DHCutj+o9u/1OLADLWz8spLaomsgDjJoJ/RX/UZZtwf2E24KlbJgFW/+nsoO7QwS7sOHq9lvYILvI1axPocVvlgFnEhP7oI/9cMVUEtZ1BiiWqbwXr54tnr96OpfY5DAz4jymnnr9VP6gFzY8P3w6++X3Z507UWO2Caf+mPKYoNMMXbyTB/LLulypQs6GXwo5392JrD2fw8xIQx85HxxDNnQdFYmNZjJR39fFlsvntTW5dEacvoKHhQ09yqUz4vTZ5NBIFzYESTNYrNro+xaqyyfyZ3EHGUwrM6Q8K3Kl1ZmYS0/Ihj3QjBrXOtAgM9nwETLrjAzW7tXrB6QvBJvTm1sbS0nc0O1ezahd3ZvMOiOD9/41kqm8YNgHdeA/sI+SgW1dcMoe5c1l1hnZ2hgo2XBDej3Kn/z8sLPtzhfZcA3N4DEeq7ad9cmGa2hmPTgdaVWQsrDhbprR/HBjrGBQFjbcLberU0dcG6lM5d2mGS1WbYx90SlTedcy7Yz0vlChw99ANmzk1hlxQhkmIRtKtp2RYOqsLGzI45mCq0LL/Dneib7KtDMSXObXzObpv2p1Rha5dEacULNOKG3UrbLKnubWIA4xCzY0t6m8kE/GkDTwVeJZZUOr5JmvbOfHxMZIA58RyiYb5tgZcWKpt+ucaMqjFbockwo6GwwllnonnyRCbxMNJaYTqylP5eXaGXFiy/4a0VTegx4XbBWayfJ5e5e+5KS08r4oilsdMV2OF3b+CoWBuAzo2oTuPO2H/IXeGweh/6Cz6ojc4c7vI9bwvxz8xP7uqQQq6C/djknot+lUH0oPAAAAAAAAAACQhv8BlAaaVeaXu7AAAAAASUVORK5CYII=" alt="露營圖標" class="position-absolute"
                                         style="
-                    bottom: 20px; 
-                    right: 10px; /* 將 right 調整 10px，避免圖標貼邊 */
-                    width: 150px; 
-                    height: auto;
-                    ">
+                                                bottom: 20px; 
+                                                right: 10px; /* 將 right 調整 10px，避免圖標貼邊 */
+                                                width: 150px; 
+                                                height: auto;
+                                                ">
                                 </div>
 
                                 <div class="card-body p-4">
@@ -241,11 +254,11 @@
                                     </div>
                                     <img src="data:image/png;base64,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" alt="水流圖標" class="position-absolute"
                                         style="
-                                bottom: 20px;   /* 調整圖標距離底部的距離 */
-                                right: 0px;    /* 調整圖標距離右側的距離 */
-                                width: 150px;    /* 根據需要調整圖標大小，確保 RWD */
-                                height: auto;
-                                ">
+                                                bottom: 20px;   /* 調整圖標距離底部的距離 */
+                                                right: 0px;    /* 調整圖標距離右側的距離 */
+                                                width: 150px;    /* 根據需要調整圖標大小，確保 RWD */
+                                                height: auto;
+                                                ">
                                 </div>
 
                                 <div class="card-body p-4">
@@ -268,11 +281,11 @@
                                     </div>
                                     <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKEAAAB5CAYAAABRPEH0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAV8SURBVHgB7dy/bxtlHMfx7+MUUrawsSClSVonA1KokqpIHVwJtSlClbOxUQZQw4I7MpH+BW0lREKXkq1M2GFIXCG1nShqQO3mRk1JN9jCFqomD9/n4hPOr9Y/7nzPnd8vyYovdnKPzh8993y/PlsEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOCvYqkwIIhdn+BAxctTg3ar79f8xPDAk5W1+4LYEMIDBAE09q7eHTTGFDSIQhDjQwj3aAyg3tb1NkAQ40UIG+wKoLGPTP+LD8zLN56IkSJBjI8RBPYF8M0XZ8vX723UH7ukj91y9621s4vzd65KB4qXPyxY03er2edvb8mNn29Wr0tG5QSvDKBTnl/+wVjzmbuvM+LsxcvnvpHODTZ7Mzmb6Sq952fC1wVwz3MjmxHdfpt+8tHNjcPGlAU9HcJWAtjwN5GemtHDhUk7AXRqK08fjU0cf06xEp2eDGG7AQwRxGj1XAg7DWCIIEanp9aEUQVwz/9seY1Yb9HclZhU5qqpel17pkUTRwCdmNo3PaUnZsK4ArhnH1TNbcr8mrAbAXRYI7Yv0yHsVgBDBLE9mQ1htwMYIoity2QIkwpgiCC2JnMhTDqAIYLYvEyF0JcAhnwI4sWZ89dGJ0fmdRwVHY+XF0FkJoS+BTCUVBDd8cifGrprxBR1c0D3X/J1Ns5En9DXADbqZh+x+PlH4/bI1k9S/4iCMVKxVr6qP7yuzfWz2mRfF0+kfiZMQwCdbs2I0zPnPrU5e1vvvhMcD5u7UJ6r3tZ939d9F2TnOF06cXLk39Xf1x6IB1IdwrQEMBR3EIv6lqE1xn0M4KjOfDcW5+5Mh+tA/bnu1oV6vN7WU/Rpk5Op0YmRQf3d46TXiqkNYdoCGIojiO5D+vmT+TldXZXctq6xrlTmq7MH7HtD91Wu7388mBl1HCcmhv5ZXXn2SBKSyhCmNYChKIMYHIvt3JJYM6WbG7reu1Cer95uYv+VIIgi4zqGYn5yZGDszLu/1R6sb0qXpa4wSXsAG3VarOwrQNooOIpfTs3qvsMrfxIpWlI1E2YpgE4nM2Lxi/Mle8S6AA5Ysfdz/Xosvv3lL2lR7eHTezqGBTcGCY5r91s5qZkJsxbARq3OiK4BrS9caef5WoDMV0sSxTgaZ0V3jLdz092YFVMxE2Y5gE6zM2JQgIznl7Tv94m49Z/I1wcVIG2PY2dWrLdyzGjQypkY+jvuosX7EGY9gKHXBTH8lrB6MbFuXvZdKH+/XJaI7WvlaNESdyvH6xD2SgBDhwXx45lzui1L0tiAvrlUk5gc1so5Pjn8fHVlLfL9ersm7LUANirOaNEhci3YsHKv/k6H3jULuf7NUjePQ/A65LQAssEMrD/k+uJc9YpEyMsQ9nIAQ3taJ9oGNFcXv1uelYTE2crx7tN2BHBHWQOnp+T/q+TtbSsJCsZjzTHZ+c5G9xr9GdUnC71aExLA3YJq9dRxd7Yq+HBhbH2teCN/akSLFnFFS2F0cqTgKupOihZvQkgAD+ZbEJ0nD9eWxyaHH+tq7rRujnf6/rMXISSAr+ZjEGtaJTe0cgqdtHISDyEBbI6fQdzVynFtnNNBK0eDuKr9xmb/T6IhJICt8TGIwbh2+ps/aplb0M3RnJFLrYwtsRYNAWxfY7vEt68caaeVk8hMSAA74+uM6LRzVU4iIcxPDrtLkMYJYPv2BnHs/aFK7Y9nLV/KFQe3Vhw7896C3X75VtjKcetGd9o+6PmJhND1lbTzeizX/2KaALYvDKKe8hbKN+8si0dqD2qbQStHw+cq6EpEl5sBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgFv8BQcWQloR3ce0AAAAASUVORK5CYII=" alt="山脈圖標"
                                         class="position-absolute" style="
-                                bottom: 20px;   /* 調整圖標距離底部的距離 */
-                                right: 0px;    /* 調整圖標距離右側的距離 */
-                                width: 150px;    /* 根據需要調整圖標大小，確保 RWD */
-                                height: auto;
-                                ">
+                                                bottom: 20px;   /* 調整圖標距離底部的距離 */
+                                                right: 0px;    /* 調整圖標距離右側的距離 */
+                                                width: 150px;    /* 根據需要調整圖標大小，確保 RWD */
+                                                height: auto;
+                                                ">
                                 </div>
 
                                 <div class="card-body p-4">
@@ -285,19 +298,21 @@
                     </div>
                 </div>
             </section>
+        </div>
 
+        
+        </div>
+    </main>
+        
             <hr>
 
-            <section id="hottest-posts" class="campsites-section hot-campsites">
-                <h2>熱門營地</h2>
-                <div class=" flex-nowrap d-flex justify-content-center overflow-auto">
-                    <div class="vstack">
-                        <div class="card-img placeholder-campsite"></div>
-                        <h3 class="fs-md fw-bold text-primary-300">暮光山丘露營地</h3>
-                        <p>地點：南投魚池鄉</p>
-                        <p>眺望日月潭全景、提供懶人帳篷、夜晚可觀星拍銀河</p>
 
-                        <section class="campsites-section new-campsites">
+            <div id="gradient-background-wrapper" style="background: linear-gradient(to bottom, rgba(96, 148, 81, 0.1), rgba(249, 188, 62, 0.1)); 
+/* ^^^^^^ 將 0.1 改為 0.5 可調高透明度*/">
+
+                <div class="container">
+
+                        <section id="hottest-posts" class="campsites-section hot-campsites">
                             <div class="row mb-4">
                                 <div class="col-12">
                                     <h2 class="h3 fw-bold mb-1">熱門營地</h2>
@@ -308,10 +323,9 @@
                             <div class="row g-4 flex-nowrap flex-md-wrap overflow-x-auto pb-3">
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
-                                        <div
-                                            class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
+                                        <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
                                             <img src="/Yeah-Fun-Cheap/assets/camp01-tOg2chaB.png" alt="暮光山丘露營地"
                                                 class="w-100 h-100 object-fit-cover">
                                         </div>
@@ -320,8 +334,8 @@
                                             <h3 class="fs-md fw-bold text-primary-300 mb-2">暮光山丘露營地</h3>
 
                                             <p class="fs-sm text-neutral-700 mb-2">
-                                                南投魚池鄉 <span class="material-symbols-outlined ms-1 fs-6"
-                                                    style="transform: translateY(2px);">location_on</span>
+                                                <span class="material-symbols-outlined ms-1 fs-6"
+                                                    style="transform: translateY(2px);">location_on</span> 南投魚池鄉
                                             </p>
 
                                             <p class="fs-sm text-neutral-700 mb-3">眺望日月潭全景、提供懶人帳篷、夜晚可觀星拍銀河</p>
@@ -333,10 +347,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                            </div>
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
                                         <div
                                             class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -348,8 +362,8 @@
                                             <h3 class="fs-md fw-bold text-primary-300 mb-2">松風谷野營場</h3>
 
                                             <p class="fs-sm text-neutral-700 mb-2">
-                                                花蓮壽豐鄉 <span class="material-symbols-outlined ms-1 fs-6"
-                                                    style="transform: translateY(2px);">location_on</span>
+                                                <span class="material-symbols-outlined ms-1 fs-6"
+                                                    style="transform: translateY(2px);">location_on</span> 花蓮壽豐鄉
                                             </p>
 
                                             <p class="fs-sm text-neutral-700 mb-3">原始林地環繞，可帶毛孩，有簡易步道直達溪谷</p>
@@ -364,7 +378,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
                                         <div
                                             class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -392,7 +406,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
                                         <div
                                             class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -404,8 +418,8 @@
                                             <h3 class="fs-md fw-bold text-primary-300 mb-2">水影森森營地</h3>
 
                                             <p class="fs-sm text-neutral-700 mb-2">
-                                                宜蘭大同鄉 <span class="material-symbols-outlined ms-1 fs-6"
-                                                    style="transform: translateY(2px);">location_on</span>
+                                                <span class="material-symbols-outlined ms-1 fs-6"
+                                                    style="transform: translateY(2px);">location_on</span> 宜蘭大同鄉
                                             </p>
 
                                             <p class="fs-sm text-neutral-700 mb-3">湖畔景緻、森林浴營位，夏季可戲水划獨木舟</p>
@@ -423,14 +437,6 @@
                         <hr>
 
                         <section id="latest-posts" class="campsites-section new-campsites">
-                            <h2>最新營地</h2>
-                            <div class="campsite-cards">
-                                <div class="campsite-card small">
-                                    <div class="card-img placeholder-new"></div>
-                                    <h3>路徑森林帳篷村</h3>
-                                    <p>地點：苗栗泰安鄉</p>
-                                    <p>偶遇山鹿，提供星空晚餐體驗、冷泉溪畔玩水</p>
-                                    <section class="campsites-section new-campsites">
                                         <div class="row mb-4">
                                             <div class="col-12">
                                                 <h2 class="h3 fw-bold mb-1">最新營地</h2>
@@ -442,7 +448,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -461,7 +467,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -480,7 +486,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -499,7 +505,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -515,7 +521,7 @@
                                                     <p class="fs-sm">雲海日出美景、森林步道包圍，提供茶席體驗</p>
                                                 </div>
                                             </div>
-                                    </section>
+                        </section>
                                     <div class="text-center mt-5">
                                         <a href="/pages/campDetail.html"
                                             class="btn btn-pr btn-lg more-btn d-inline-block">
@@ -523,6 +529,8 @@
                                         </a>
                                     </div>
 
+            </div> 
+                </div>                       
 
                                     <hr>
 
@@ -563,8 +571,8 @@
             background-image: url('/Yeah-Fun-Cheap/assets/background02-BbADlBCd.png');
             background-size: cover; 
             background-position: center center;
-            background-color: rgba(0, 0, 0, 0.4); 
-            background-blend-mode: multiply;
+            background-color: rgba(79, 105, 71, 1, 0.4); /* 40% 不透明的綠色底 */
+            background-blend-mode: overlay; /* 混合模式 */
         ">
 
             <div class="d-flex flex-column align-items-center justify-content-center h-100">
