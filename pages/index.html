@@ -10,7 +10,9 @@
 
 <body>
     <%- include('./layout/header'); -%>
-        <main class="container">
+
+    <main>
+        <div class="container">
             <section class="hero-section">
                 <div class="hero-content">
                     <img src="/assets/images/LOGO_320x200.png" alt="">
@@ -67,12 +69,23 @@
                                         <a href="#" class="btn tag">#單人友善</a>
                                     </div>
                                 </div>
-                            </div>
-
-
             </section>
+        </div>
 
-            <section class="features-section py-7 position-relative">
+        <hr>
+            
+
+        <div id="OurHighlights-background-wrapper" 
+            style="
+                /* 樣式設置為全寬，並應用圖片和透明度 */
+                background-image: url('/assets/images/background01.png'); 
+                background-size: cover; 
+                background-position: center center;
+                background-color: rgba(255, 255, 255, 0.2); /* 20% 不透明的白色底 */
+                background-blend-mode: overlay; /* 混合模式 */
+            ">
+
+            <section class="features-section py-7 position-relative" style="background-color: transparent;">
                 <div class="container">
                     <div class="row text-center mb-5">
                         <div class="col-12">
@@ -172,19 +185,21 @@
                     </div>
                 </div>
             </section>
+        </div>
 
+        
+        </div>
+    </main>
+        
             <hr>
 
-            <section id="hottest-posts" class="campsites-section hot-campsites">
-                <h2>熱門營地</h2>
-                <div class=" flex-nowrap d-flex justify-content-center overflow-auto">
-                    <div class="vstack">
-                        <div class="card-img placeholder-campsite"></div>
-                        <h3 class="fs-md fw-bold text-primary-300">暮光山丘露營地</h3>
-                        <p>地點：南投魚池鄉</p>
-                        <p>眺望日月潭全景、提供懶人帳篷、夜晚可觀星拍銀河</p>
 
-                        <section class="campsites-section new-campsites">
+            <div id="gradient-background-wrapper" style="background: linear-gradient(to bottom, rgba(96, 148, 81, 0.1), rgba(249, 188, 62, 0.1)); 
+/* ^^^^^^ 將 0.1 改為 0.5 可調高透明度*/">
+
+                <div class="container">
+
+                        <section id="hottest-posts" class="campsites-section hot-campsites">
                             <div class="row mb-4">
                                 <div class="col-12">
                                     <h2 class="h3 fw-bold mb-1">熱門營地</h2>
@@ -195,10 +210,9 @@
                             <div class="row g-4 flex-nowrap flex-md-wrap overflow-x-auto pb-3">
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
-                                        <div
-                                            class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
+                                        <div class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
                                             <img src="/assets/images/index/camp01.png" alt="暮光山丘露營地"
                                                 class="w-100 h-100 object-fit-cover">
                                         </div>
@@ -220,10 +234,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                            </div>
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
                                         <div
                                             class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -251,7 +265,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
                                         <div
                                             class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -279,7 +293,7 @@
                                 </div>
 
                                 <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm" style="width: 300px;">
-                                    <div class="card h-100 campsite-card small border-0">
+                                    <div class="card h-100 campsite-card border-0">
 
                                         <div
                                             class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -310,14 +324,6 @@
                         <hr>
 
                         <section id="latest-posts" class="campsites-section new-campsites">
-                            <h2>最新營地</h2>
-                            <div class="campsite-cards">
-                                <div class="campsite-card small">
-                                    <div class="card-img placeholder-new"></div>
-                                    <h3>路徑森林帳篷村</h3>
-                                    <p>地點：苗栗泰安鄉</p>
-                                    <p>偶遇山鹿，提供星空晚餐體驗、冷泉溪畔玩水</p>
-                                    <section class="campsites-section new-campsites">
                                         <div class="row mb-4">
                                             <div class="col-12">
                                                 <h2 class="h3 fw-bold mb-1">最新營地</h2>
@@ -329,7 +335,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -348,7 +354,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -367,7 +373,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -386,7 +392,7 @@
 
                                             <div class="col-12 col-md-6 col-lg-3 flex-shrink-0 card-width-sm"
                                                 style="width: 300px;">
-                                                <div class="card h-100 campsite-card small border-0">
+                                                <div class="card h-100 campsite-card border-0">
 
                                                     <div
                                                         class="card-img placeholder-new rounded overflow-hidden mb-3 ratio ratio-1x1">
@@ -402,7 +408,7 @@
                                                     <p class="fs-sm">雲海日出美景、森林步道包圍，提供茶席體驗</p>
                                                 </div>
                                             </div>
-                                    </section>
+                        </section>
                                     <div class="text-center mt-5">
                                         <a href="/pages/campDetail.html"
                                             class="btn btn-pr btn-lg more-btn d-inline-block">
@@ -410,6 +416,8 @@
                                         </a>
                                     </div>
 
+            </div> 
+                </div>                       
 
                                     <hr>
 
@@ -450,8 +458,8 @@
             background-image: url('../assets/images/background02.png');
             background-size: cover; 
             background-position: center center;
-            background-color: rgba(0, 0, 0, 0.4); 
-            background-blend-mode: multiply;
+            background-color: rgba(79, 105, 71, 1, 0.4); /* 40% 不透明的綠色底 */
+            background-blend-mode: overlay; /* 混合模式 */
         ">
 
             <div class="d-flex flex-column align-items-center justify-content-center h-100">
