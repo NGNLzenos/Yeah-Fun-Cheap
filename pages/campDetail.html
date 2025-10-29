@@ -14,7 +14,7 @@
         <section class="border-bottom border-neutail-50">
             <div class="py-6 d-flex justify-content-center align-items-center">
                 <div>
-                    <div class="input-group mb-3 border border-primary-200 mb-4">
+                    <div class="input-group searchList-search-bar mb-3 border border-primary-200 mb-4">
                         <select class="form-select" aria-label="選擇地區">
                             <option selected class="text-neutral-200 h6">請選擇地區</option>
                             <option value="1" class="h6">新北市</option>
@@ -165,7 +165,7 @@
         </div>
         <section class="bg-primary-50">
             <div class="container py-7">
-                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-6">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-6 flex-nowrap overflow-x-auto gap-4">
                     <!-- 1 card -->
                     <div class="col">
                         <div class="card shadow-sm border-0 rounded-4 h-100">
@@ -704,13 +704,13 @@
                     <h3 class="h5 fw-bold mb-6">類似營地</h3>
                 </div>
 
-                <div class="row row-cols-1 row-cols-md-2 g-6">
+                <div class="row row-cols-1 row-cols-md-2 g-6 flex-nowrap overflow-x-auto gap-4">
                     <!-- 卡片 1 -->
-                    <div class="col">
+                    <div class="col-10 col-lg-6">
                         <div class="card camp-card border-1 border-neutail-100 rounded-4 w-100 h-100 p-4">
-                            <div class="row g-0">
+                            <div class="row g-0 flex-column flex-lg-row">
 
-                                <div class="rounded-4 overflow-hidden me-3" style="width:160px;height: 160px;">
+                                <div class="rounded-4 overflow-hidden me-3 similar-camp">
                                     <img src="/assets/images/campDetail/Rectangle 5831.png"
                                         class="w-100 h-100 object-fit-cover" alt="">
                                 </div>
@@ -730,7 +730,6 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill text-neutral-100"></i>
                                         </div>
-
                                         <div class="mt-auto d-flex align-items-end">
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="searchListTags flex-wrap gap-2">
@@ -739,9 +738,11 @@
                                                     <a href="#" class="btn tag mb-0">#輕鬆露營</a>
                                                 </div>
                                             </div>
-                                            <a href="#" class="btn btn-pr ms-auto fs-md">查看更多 <i
+                                            <a href="#" class="btn btn-pr ms-auto fs-md d-none d-md-block">查看更多 <i
                                                     class="bi bi-arrow-right"></i></a>
                                         </div>
+                                        <a href="#" class="btn btn-pr mt-3 fs-md d-lg-none w-100">查看更多 <i
+                                                class="bi bi-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -749,15 +750,13 @@
                     </div>
 
                     <!-- 卡片 2 -->
-                    <div class="col">
+                    <div class="col-10 col-lg-6">
                         <div class="card camp-card border-1 border-neutail-100 rounded-4 w-100 h-100 p-4">
                             <div class="row g-0">
-
-                                <div class="rounded-4 overflow-hidden me-3" style="width:160px;height: 160px;">
+                                <div class="rounded-4 overflow-hidden me-3 similar-camp">
                                     <img src="/assets/images/campDetail/Rectangle 5832.png"
                                         class="w-100 h-100 object-fit-cover" alt="">
                                 </div>
-
                                 <div class="col-8">
                                     <div class="card-body p-0 vstack h-100">
                                         <h4 class="fs-6 mb-2 text-neutral-900">跑馬古道露營區</h4>
@@ -773,7 +772,6 @@
                                             <i class="bi bi-star-fill"></i>
                                             <i class="bi bi-star-fill text-neutral-100"></i>
                                         </div>
-
                                         <div class="mt-auto d-flex align-items-end">
                                             <div class="d-flex flex-wrap gap-2">
                                                 <div class="searchListTags flex-wrap gap-2">
@@ -782,9 +780,11 @@
                                                     <a href="#" class="btn tag mb-0">#車泊友善</a>
                                                 </div>
                                             </div>
-                                            <a href="#" class="btn btn-pr ms-auto fs-md">查看更多 <i
+                                            <a href="#" class="btn btn-pr ms-auto fs-md d-none d-md-block">查看更多 <i
                                                     class="bi bi-arrow-right"></i></a>
                                         </div>
+                                        <a href="#" class="btn btn-pr mt-3 fs-md d-lg-none w-100">查看更多 <i
+                                                class="bi bi-arrow-right"></i></a>
                                     </div>
                                 </div>
                             </div>

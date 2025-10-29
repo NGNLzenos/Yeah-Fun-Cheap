@@ -579,17 +579,17 @@ $grid-breakpoints: (
 //
 // Define the maximum width of `.container` for different screen sizes.
 
-// scss-docs-start container-max-widths
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1320px) !default;
-// scss-docs-end container-max-widths
+// // scss-docs-start container-max-widths
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 720px,
+//   lg: 960px,
+//   xl: 1140px,
+//   xxl: 1320px) !default;
+// // scss-docs-end container-max-widths
 
-@include _assert-ascending($container-max-widths, "$container-max-widths"
-);
+// @include _assert-ascending($container-max-widths, "$container-max-widths"
+// );
 
 
 // Grid columns

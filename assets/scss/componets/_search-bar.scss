@@ -9,3 +9,17 @@
     margin: 0;
     overflow: hidden;
 }
+
+@media (max-width:776px) {
+    .searchList-search-bar {
+        width: auto;
+    }
+}
+
+.searchListTags {
+    .btn {
+        flex: 0 0 auto;
+
+    }
+
+}

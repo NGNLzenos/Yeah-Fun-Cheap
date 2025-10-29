@@ -1,0 +1,40 @@
+@media (max-width: 991.98px) {
+
+
+    .navbar .navbar-collapse.show {
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        ul {
+            flex-direction: column;
+        }
+
+        .cta-btn {
+            align-self: center;
+            justify-self: center;
+        }
+
+
+    }
+}
+
+@media (min-width: 992px) {
+    .nav-item {
+        border-right: 1px solid $primary-200;
+    }
+
+
+
+
+}
+
+@media (max-width: 991.98px) {
+
+    /* 父層 .d-flex 內只要「有」#navbarNav.show，就把 .navbar-brand 隱藏 */
+    .d-flex:has(#navbarNav.show) .navbar-brand {
+        display: none;
+    }
+}
