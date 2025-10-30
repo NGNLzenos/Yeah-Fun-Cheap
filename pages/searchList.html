@@ -12,7 +12,7 @@
   <%- include('./layout/header'); -%>
 
 
-    <section class=" hero position-relative py-70px d-flex justify-content-start align-items-center">
+    <section class=" position-relative py-70px d-flex justify-content-start align-items-center">
       <div class="container">
         <div class="me-6">
           <h3 class="h2 mb-6">從這裡開始計畫露營之旅</h3>
@@ -40,14 +40,14 @@
             <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
           </div>
           <div class="searchListTags gap-2 d-flex flex-nowrap overflow-x-auto gap-2">
-            <a href="#" class="btn tag tag-outline">#可帶寵物</a>
-            <a href="#" class="btn tag tag-outline" style="max-width: 100%">#免搭棚帳</a>
-            <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
-            <a href="#" class="btn tag tag-outline">#適合親子</a>
-            <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
-            <a href="#" class="btn tag tag-outline">#機車友善</a>
-            <a href="#" class="btn tag tag-outline">#車泊友善</a>
-            <a href="#" class="btn tag tag-outline">#單人友善</a>
+            <a href="search.html" class="btn tag tag-outline">#可帶寵物</a>
+            <a href="search.html" class="btn tag tag-outline" style="max-width: 100%">#免搭棚帳</a>
+            <a href="search.html" class="btn tag tag-outline">#獨立衛浴</a>
+            <a href="search.html" class="btn tag tag-outline">#適合親子</a>
+            <a href="search.html" class="btn tag tag-outline">#4.5顆星以上</a>
+            <a href="search.html" class="btn tag tag-outline">#機車友善</a>
+            <a href="search.html" class="btn tag tag-outline">#車泊友善</a>
+            <a href="search.html" class="btn tag tag-outline">#單人友善</a>
           </div>
         </div>
         <div>
@@ -63,7 +63,7 @@
           <img src="/assets/images/LOGO.png" alt="herologo" class="me-3">
           <h3 class="h2 mb-0 pb-0">為您帶來精彩的露營體驗</h2>
         </div>
-        <div class="crad-wrapper d-flex flex-wrap gap-6 justify-content-center align-items-center mb-6">
+        <div class="card-wrapper d-flex flex-wrap gap-6 justify-content-center align-items-center mb-6">
           <div class="card shadow-lg border-0 gap-6 position-relative" style="width: 26rem;">
             <div class="card-body p-0">
               <div class="p-6">
@@ -100,28 +100,37 @@
             <h3 class="h5 text-neutral-900">精選文章</h3>
             <button class="btn btn-pr-noneline h7 fw-medium">看更多文章</button>
           </div>
-          <div class="card-wrapper d-flex justify-content-between flex-nowrap overflow-x-auto gap-4 gap-lg-0">
-            <div class="card mb-3 w-lg-50" style="max-width: 612px;max-height: 160px;flex: 0 0 auto;">
-              <div class="d-flex justify-content-start">
+          <div
+            class="card-wrapper featured-articles d-flex justify-content-between flex-nowrap overflow-x-auto gap-4 gap-lg-0">
+            <div class="card mb-3 w-lg-50 position-relative">
+              <div class="d-flex justify-content-start align-items-start">
                 <div>
                   <img src="/assets/images/searchList/unsplash_YSN4xhXuPig.png" class="img-fluid rounded-start"
                     alt="..." style="width: 240px;">
                 </div>
                 <div>
-                  <div class="card-body py-4 px-5">
+                  <div class="card-body py-4 px-5 h-100">
                     <h5 class="card-title h7 mb-1">第一次露營新手指南</h5>
-                    <p class="card-text fs-sm mb-2 text-primary-200 d-none d-lg-block" style="padding: 0px;">
+                    <p class="card-text fs-sm mb-2 text-primary-200 d-none d-lg-block"
+                      style="padding: 0px;line-height: 1.5;">
                       行前必讀，避開新手容易踩的坑</p>
-                    <ul class="mb-0">
-                      <li>行前須知</li>
-                      <li>必備清單</li>
-                      <li>常見雷區</li>
+                    <ul class="mb-0 d-flex flex-column gap-0">
+                      <li>
+                        <p class="fs-md m-0 p-0">行前須知</p>
+                      </li>
+                      <li>
+                        <p class="fs-md m-0 p-0">必備清單</p>
+                      </li>
+                      <li>
+                        <p class="fs-md m-0 p-0">常見雷區</p>
+                      </li>
                     </ul>
+                    <a href="info.html" class="stretched-link"></a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="card mb-3 w-lg-50" style="max-width: 612px;max-height: 160px;flex: 0 0 auto;;">
+            <div class="card mb-3 w-lg-50 position-relative">
               <div class="d-flex justify-content-start">
                 <div>
                   <img src="/assets/images/searchList/image 39.png" class="img-fluid rounded-start" alt="..."
@@ -133,10 +142,17 @@
                     <p class="card-text fs-sm mb-2 text-primary-200 d-none d-lg-block" style="padding: 0px;">
                       從規劃到裝備，省時省力不踩雷</p>
                     <ul class="mb-0">
-                      <li>釐清條件</li>
-                      <li>優先排序</li>
-                      <li>行前準備</li>
+                      <li>
+                        <p class="fs-md m-0 p-0">釐清條件</p>
+                      </li>
+                      <li>
+                        <p class="fs-md m-0 p-0">優先排序</p>
+                      </li>
+                      <li>
+                        <p class="fs-md m-0 p-0">行前準備</p>
+                      </li>
                     </ul>
+                    <a href="info.html" class="stretched-link"></a>
                   </div>
                 </div>
 
@@ -156,20 +172,24 @@
                 <hr class="border-primary" style="width: 516px; opacity: 1;">
               </div>
               <div class="card-wrapper d-flex">
-                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                <div class="card text-bg-dark gradient-overlay me-4 position-relative"
+                  style="max-width: 310px;max-height: 212px;">
                   <img src="/assets/images/searchList/unsplash_xS_Ayok1WWY (1).png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">俯瞰城市夜景，輕鬆上山露一晚
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台北內湖 碧山露營場</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
-                <div class="card text-bg-dark gradient-overlay" style="max-width: 310px;max-height: 212px;">
+                <div class="card text-bg-dark gradient-overlay position-relative"
+                  style="max-width: 310px;max-height: 212px;">
                   <img src="/assets/images/searchList/unsplash_TcgASSD5G04.png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">市中心唯一合法露營空間
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台北萬華 茄中露營場</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
               </div>
@@ -181,20 +201,23 @@
                 <hr class="border-primary" style="width: 516px; opacity: 1;">
               </div>
               <div class="card-wrapper d-flex">
-                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                <div class="card text-bg-dark gradient-overlay me-4 position-relative"
+                  style="max-width: 310px;max-height: 212px;">
                   <img src="/assets/images/searchList/unsplash_BPCsppbNRMI.png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">深山秘境，雲海日出一次擁有
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">南投仁愛 樟木老營區</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
-                <div class="card text-bg-dark gradient-overlay" style="width: 310px;height: 212px;">
+                <div class="card text-bg-dark gradient-overlay position-relative" style="width: 310px;height: 212px;">
                   <img src="/assets/images/searchList/unsplash_XJuhZqEE4Go.png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">山景與農趣共融的親子營地
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台中和平 德美隱農場</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
               </div>
@@ -208,20 +231,24 @@
                 <hr class="border-primary" style="width: 516px; opacity: 1;">
               </div>
               <div class="card-wrapper d-flex">
-                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                <div class="card text-bg-dark gradient-overlay me-4 position-relative"
+                  style="max-width: 310px;max-height: 212px;">
                   <img src="/assets/images/searchList/unsplash_ESNV6KmLJMg.png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">咖啡香與森林浴的療癒時光
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">嘉義阿里山 高美休閒營區</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
-                <div class="card text-bg-dark gradient-overlay" style="max-width: 310px;max-height: 212px;">
+                <div class="card text-bg-dark gradient-overlay position-relative"
+                  style="max-width: 310px;max-height: 212px;">
                   <img src="/assets/images/searchList/unsplash_MlCaPR4UTSw.png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">南台灣最齊全的豪華營地體驗
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">台南左鎮 露營樂旗艦店</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
               </div>
@@ -233,20 +260,24 @@
                 <hr class="border-primary" style="width: 516px; opacity: 1;">
               </div>
               <div class="card-wrapper d-flex">
-                <div class="card text-bg-dark gradient-overlay me-4" style="max-width: 310px;max-height: 212px;">
+                <div class="card text-bg-dark gradient-overlay me-4 position-relative"
+                  style="max-width: 310px;max-height: 212px;">
                   <img src="/assets/images/searchList/unsplash_zBkVp3E2CnE.png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">被山林擁抱的童話系露營地
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">宜蘭大同 夏綠營露營區</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
-                <div class="card text-bg-dark gradient-overlay" style="max-width: 310px;max-height: 212px;">
+                <div class="card text-bg-dark gradient-overlay position-relative"
+                  style="max-width: 310px;max-height: 212px;">
                   <img src="/assets/images/searchList/unsplash_JI4NwVAB1fM.png" class="card-img" alt="...">
                   <div class="card-img-overlay d-flex flex-column justify-content-end">
                     <h5 class="card-title h7 text-white">望海露營，讓心情也跟著 chill
                     </h5>
                     <p class="card-text text-neutral-50 fs-sm" style="padding: 0px;">花蓮新城 Ocean Chill</p>
+                    <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
               </div>

@@ -71,3 +71,19 @@
 
     }
 }
+
+.featured-articles .card {
+    max-width: 612px;
+    max-height: 160px;
+    flex: 0 0 auto;
+}
+
+@media (min-width:776px) {
+    .featured-articles .card {
+        flex: 0 0 auto;
+    }
+}
+
+.lh-15 {
+    line-height: 1.5;
+}
