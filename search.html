@@ -1,148 +1,198 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>search</title>
+    <script type="module" crossorigin src="/Yeah-Fun-Cheap/assets/main-BqmcTRks.js"></script>
+    <link rel="stylesheet" crossorigin href="/Yeah-Fun-Cheap/assets/main-Be74ji_h.css">
+  </head>
 
-<head>
-
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>search</title>
-  <script type="module" crossorigin src="/Yeah-Fun-Cheap/assets/main-BqmcTRks.js"></script>
-  <link rel="stylesheet" crossorigin href="/Yeah-Fun-Cheap/assets/main-Be74ji_h.css">
-</head>
-
-<body>
-  <nav class="navbar navbar-expand-lg border-bottom border-neutral-50">
-    <div class="container d-flex justify-content-between align-items-center py-4">
-        <div class="d-flex justify-content-between align-items-center flex-nowrap w-100 w-lg-auto">
-            <a class=" me-8 navbar-brand" href="index.html">
-                <img src="/Yeah-Fun-Cheap/assets/LOGO_96x60-D1tBEaAT.png" alt="logo">
+  <body>
+    <nav class="navbar navbar-expand-lg border-bottom border-neutral-50">
+  <div class="container d-flex justify-content-between align-items-center py-4">
+    <div
+      class="d-flex justify-content-between align-items-center flex-nowrap w-100 w-lg-auto"
+    >
+      <a class="me-8 navbar-brand" href="index.html">
+        <img src="/Yeah-Fun-Cheap/assets/LOGO_96x60-D1tBEaAT.png" alt="logo" />
+      </a>
+      <!-- 漢堡按鈕：在小螢幕出現 -->
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="切換導覽"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav">
+          <li class="nav-item border-primary ps-4 ps-lg-0 pe-4">
+            <a class="nav-link text-center" href="index.html#latest-posts">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
+              <p class="fs-ssm text-primary-300 mb-0">Newest</p>
             </a>
-            <!-- 漢堡按鈕：在小螢幕出現 -->
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav">
-                    <li class="nav-item  border-primary ps-4 ps-lg-0 pe-4">
-                        <a class="nav-link text-center" href="index.html#latest-posts">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">Newest</p>
-                        </a>
-                    </li>
-                    <li class="nav-item border-primary-200 px-4">
-                        <a class="nav-link text-center" href="index.html#hottest-posts">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">Popular</p>
-                        </a>
-                    </li>
-                    <li class="nav-item border-lg-start border-primary-200 px-4">
-                        <a class="nav-link text-center" href="../pages/infoList.html">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
-                        </a>
-                    </li>
-                    <li class="nav-item border-primary-200 ps-4 pe-4">
-                        <a class="nav-link text-center" href="../pages/about.html">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">About Us</p>
-                        </a>
-                    </li>
-                    <li class="nav-item align-items-center mt-0 mt-lg-2 cta-btn" style="border: none;">
-                        <a href="searchList.html" class="btn btn-md btn-pr-outline ms-0 ms-lg-7">野fun去～</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center d-none d-lg-flex">
-            <a class="p-0 w-100" href="campDetail.html">
-                <button type="button" class="btn btn-md btn-pr-noneline" style="width:124px;"><img class="pe-2"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVHgB7ZTBDUBAEEX/sAUoQUl0sHd6QAUcONMBJSlBB2NXJEQiJLObOHin2cuf/3eST7pLNJhqABEkEGYiLpWZCrGYhREzU6PsYN9DPhIE6DZlayyAY9TNptdck/l3KP3LP/Jz5KeF34/sz+HeOj0kMObDoVxsoXCrrxOmz4ZsqiAgcCl2CDoS2zDHKOCQFdoLN61ECN5eAAAAAElFTkSuQmCC" alt="">營地討論</button>
+          </li>
+          <li class="nav-item border-primary-200 px-4">
+            <a class="nav-link text-center" href="index.html#hottest-posts">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
+              <p class="fs-ssm text-primary-300 mb-0">Popular</p>
             </a>
-            <a class="p-0 w-100" href="#">
-                <button type="button" class="btn btn-md btn-pr-noneline" style="width:132px;"><img class="pe-2"
-                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJLSURBVHgBnVRtbtNAEJ3ZNKg/2xOQ3sDcIJygLheokfgDBJGcoO0JEiCIX8ibC7S+Ab4B7gmanoBIiEoI4uHNeB3FThrRjuR8jGfezrx5O0xbLEnjA7qjUyLXp1IiYurZC6E5OS6Yyyx9k8225fIG2Oc4IeExfh7QLmOaM8t5G9g1wD6dTACWVmCSM0nS2eeeH1yxPsTyDBW/1Heoticl+2Qaj5vnrIMxvUfggpyc+7fZB9phyfTFEMBn4fCJH2SjFWBoMzWwv/Lcj7LC/F/iHi2t4sgSWTx6uvCvs3nIi5D3Td+xk0TbDy3zWUUAKgtgZqUF96nmUzhRXzKO7T+6QCxf2KuSJ+p3VXU6RcnX21z5dbJ/5BDPEdyF+rhLx3WcH1xO8JXboU/oFBW649C7b9H0NFTtUfUCzxwtZ1WhQUarTqSedH8v6EyDrhtBS7o1DQjH4HJG++D3Di3r4Vr1unVR4dIoilwt2oqPBmBGVWKEwdzQL/5RU5AOmtqrh6RYDR02gtCmThxR3hyqANWf+e43hv5uFFkF/PXV5S09woJ8vmv1Tu+mdfi7jOnxFtmnk2IPTOYoNFby4TLZ2HL4STF1oID/Wg6VjjGsjE2kXZBeXaERkhcPWQ5SukPkjfUw/+7qyBn5pYxC1Hh9OZDIcOty0ErDcjAwzQR4dU5NrG0NHoa/OQB2TjOZntTXkjaWw1bQuiWh61qjtixKXLuK7w2wDUBL+og7zCC5fb3aBl3iwGFb5HxfvAF3UA2uU3PKUqBKCJxmxn/L/gGOmTQL97Z83gAAAABJRU5ErkJggg==" alt="">登入/註冊</button>
+          </li>
+          <li class="nav-item border-lg-start border-primary-200 px-4">
+            <a class="nav-link text-center" href="infoList.html">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
+              <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
             </a>
-        </div>
+          </li>
+          <li class="nav-item border-primary-200 ps-4 pe-4">
+            <a class="nav-link text-center" href="about.html">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
+              <p class="fs-ssm text-primary-300 mb-0">About Us</p>
+            </a>
+          </li>
+          <li
+            class="nav-item align-items-center mt-0 mt-lg-2 cta-btn"
+            style="border: none"
+          >
+            <a
+              href="searchList.html"
+              class="btn btn-md btn-pr-outline ms-0 ms-lg-7"
+              >野fun去～</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
+    <div
+      class="d-flex justify-content-center align-items-center d-none d-lg-flex"
+    >
+      <a class="p-0 w-100" href="campDetail.html">
+        <button
+          type="button"
+          class="btn btn-md btn-pr-noneline"
+          style="width: 124px"
+        >
+          <img class="pe-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAACRSURBVHgB7ZTBDUBAEEX/sAUoQUl0sHd6QAUcONMBJSlBB2NXJEQiJLObOHin2cuf/3eST7pLNJhqABEkEGYiLpWZCrGYhREzU6PsYN9DPhIE6DZlayyAY9TNptdck/l3KP3LP/Jz5KeF34/sz+HeOj0kMObDoVxsoXCrrxOmz4ZsqiAgcCl2CDoS2zDHKOCQFdoLN61ECN5eAAAAAElFTkSuQmCC" alt="" />營地討論
+        </button>
+      </a>
+      <a class="p-0 w-100" href="#">
+        <button
+          type="button"
+          class="btn btn-md btn-pr-noneline"
+          style="width: 132px"
+        >
+          <img
+            class="pe-2"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJLSURBVHgBnVRtbtNAEJ3ZNKg/2xOQ3sDcIJygLheokfgDBJGcoO0JEiCIX8ibC7S+Ab4B7gmanoBIiEoI4uHNeB3FThrRjuR8jGfezrx5O0xbLEnjA7qjUyLXp1IiYurZC6E5OS6Yyyx9k8225fIG2Oc4IeExfh7QLmOaM8t5G9g1wD6dTACWVmCSM0nS2eeeH1yxPsTyDBW/1Heoticl+2Qaj5vnrIMxvUfggpyc+7fZB9phyfTFEMBn4fCJH2SjFWBoMzWwv/Lcj7LC/F/iHi2t4sgSWTx6uvCvs3nIi5D3Td+xk0TbDy3zWUUAKgtgZqUF96nmUzhRXzKO7T+6QCxf2KuSJ+p3VXU6RcnX21z5dbJ/5BDPEdyF+rhLx3WcH1xO8JXboU/oFBW649C7b9H0NFTtUfUCzxwtZ1WhQUarTqSedH8v6EyDrhtBS7o1DQjH4HJG++D3Di3r4Vr1unVR4dIoilwt2oqPBmBGVWKEwdzQL/5RU5AOmtqrh6RYDR02gtCmThxR3hyqANWf+e43hv5uFFkF/PXV5S09woJ8vmv1Tu+mdfi7jOnxFtmnk2IPTOYoNFby4TLZ2HL4STF1oID/Wg6VjjGsjE2kXZBeXaERkhcPWQ5SukPkjfUw/+7qyBn5pYxC1Hh9OZDIcOty0ErDcjAwzQR4dU5NrG0NHoa/OQB2TjOZntTXkjaWw1bQuiWh61qjtixKXLuK7w2wDUBL+og7zCC5fb3aBl3iwGFb5HxfvAF3UA2uU3PKUqBKCJxmxn/L/gGOmTQL97Z83gAAAABJRU5ErkJggg=="
+            alt=""
+          />登入/註冊
+        </button>
+      </a>
+    </div>
+  </div>
 </nav>
 <script>
+  const navbar = document.getElementById("navbarNav");
+  const logo = document.querySelector(".navbar-brand");
 
-    const navbar = document.getElementById('navbarNav');
-    const logo = document.querySelector('.navbar-brand');
+  navbar.addEventListener("show.bs.collapse", () => {
+    logo.style.display = "none"; // 展開時隱藏 logo
+  });
 
-    navbar.addEventListener('show.bs.collapse', () => {
-        logo.style.display = 'none';   // 展開時隱藏 logo
+  navbar.addEventListener("hide.bs.collapse", () => {
+    logo.style.display = "block"; // 收起時顯示 logo
+  });
+
+  const BASE = import.meta?.env?.BASE_URL ?? "/";
+
+  if (latestLink) {
+    latestLink.addEventListener("click", function (e) {
+      const isHomePage =
+        location.pathname === BASE || location.pathname === BASE + "index.html";
+
+      e.preventDefault(); // 兩邊都先擋預設行為
+
+      if (isHomePage) {
+        document
+          .querySelector("#latest-posts")
+          ?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // ⚠️ 關鍵：用 BASE 拼，不要寫 '/index.html'
+        location.href = BASE + "index.html#latest-posts";
+        // 若你的主機支援目錄預設文件，也可用： location.href = BASE + '#latest-posts';
+      }
     });
+  }
 
-    navbar.addEventListener('hide.bs.collapse', () => {
-        logo.style.display = 'block';  // 收起時顯示 logo
-    });
-
-    const BASE = (import.meta?.env?.BASE_URL) ?? '/';
-
-
-    if (latestLink) {
-        latestLink.addEventListener('click', function (e) {
-            const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
-
-            e.preventDefault(); // 兩邊都先擋預設行為
-
-            if (isHomePage) {
-                document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                // ⚠️ 關鍵：用 BASE 拼，不要寫 '/index.html'
-                location.href = BASE + 'index.html#latest-posts';
-                // 若你的主機支援目錄預設文件，也可用： location.href = BASE + '#latest-posts';
-            }
-        });
+  // ✅ 首頁載入時偵測 hash，自動滾動（重整或跨頁返回都會啟動）
+  window.addEventListener("load", () => {
+    const isHomePage =
+      location.pathname === BASE || location.pathname === BASE + "index.html";
+    if (isHomePage && location.hash === "#latest-posts") {
+      document
+        .querySelector("#latest-posts")
+        ?.scrollIntoView({ behavior: "smooth" });
     }
+  });
 
-    // ✅ 首頁載入時偵測 hash，自動滾動（重整或跨頁返回都會啟動）
-    window.addEventListener('load', () => {
-        const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
-        if (isHomePage && location.hash === '#latest-posts') {
-            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+  const latestLink = document.querySelector(
+    'a[href="#latest-posts"], a[href="/index.html#latest-posts"]'
+  );
 
-    const latestLink = document.querySelector('a[href="#latest-posts"], a[href="/index.html#latest-posts"]');
+  latestLink.addEventListener("click", function (e) {
+    const isHomePage =
+      window.location.pathname.endsWith("index.html") ||
+      window.location.pathname === "/";
+    if (isHomePage) {
+      e.preventDefault();
+      document
+        .querySelector("#latest-posts")
+        .scrollIntoView({ behavior: "smooth" });
+    } else {
+      e.preventDefault();
+      window.location.href = "/index.html#latest-posts";
+    }
+  });
+  // ✅ 首頁載入時偵測 hash，自動滾動（避免重整後 hash 無效）
+  window.addEventListener("load", () => {
+    if (window.location.hash === "#latest-posts") {
+      document
+        .querySelector("#latest-posts")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 
-    latestLink.addEventListener('click', function (e) {
-        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
-        if (isHomePage) {
-            e.preventDefault();
-            document.querySelector('#latest-posts').scrollIntoView({ behavior: 'smooth' });
-        } else {
-            e.preventDefault();
-            window.location.href = '/index.html#latest-posts';
-        }
-    });
-    // ✅ 首頁載入時偵測 hash，自動滾動（避免重整後 hash 無效）
-    window.addEventListener('load', () => {
-        if (window.location.hash === '#latest-posts') {
-            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+  const hottestLink = document.querySelector(
+    'a[href="#hottest-posts"], a[href="/index.html#hottest-posts"]'
+  );
 
-
-    const hottestLink = document.querySelector('a[href="#hottest-posts"], a[href="/index.html#hottest-posts"]');
-
-    hottestLink.addEventListener('click', function (r) {
-        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
-        if (isHomePage) {
-            r.preventDefault();
-            document.querySelector('#hottest-posts').scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+  hottestLink.addEventListener("click", function (r) {
+    const isHomePage =
+      window.location.pathname.endsWith("index.html") ||
+      window.location.pathname === "/";
+    if (isHomePage) {
+      r.preventDefault();
+      document
+        .querySelector("#hottest-posts")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  });
 </script>
 
-    <section class=" hero position-relative py-70px d-flex justify-content-start align-items-center">
+    <section
+      class="hero position-relative py-70px d-flex justify-content-start align-items-center"
+    >
       <div class="container">
         <div class="">
-          <div class="input-group mb-3 border border-primary-200 mb-4 mx-auto align-items-center"
-            style="max-width: 1076px;">
+          <div
+            class="input-group mb-3 border border-primary-200 mb-4 mx-auto align-items-center"
+            style="max-width: 1076px"
+          >
             <select class="form-select" aria-label="選擇地區">
               <option selected class="text-neutral-200 h6">請選擇地區</option>
               <option value="1" class="h6">新北市</option>
@@ -161,11 +211,19 @@
               <option value="14" class="h6">花蓮縣</option>
               <option value="15" class="h6">臺東縣</option>
             </select>
-            <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
-              placeholder="輸入營地名稱或條件" aria-label="營地搜尋">
-            <div class="p-10p"><button class="btn btn-pr" type="button">搜尋</button></div>
+            <input
+              type="text"
+              class="form-control h6 d-flex justify-content-center align-items-center ps-2"
+              placeholder="輸入營地名稱或條件"
+              aria-label="營地搜尋"
+            />
+            <div class="p-10p">
+              <button class="btn btn-pr" type="button">搜尋</button>
+            </div>
           </div>
-          <div class="searchListTags d-flex flex-wrap justify-content-center gap-2">
+          <div
+            class="searchListTags d-flex flex-wrap justify-content-center gap-2"
+          >
             <a href="#" class="btn tag tag-checked">#可帶寵物</a>
             <a href="#" class="btn tag tag-outline">#免搭棚帳</a>
             <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
@@ -177,38 +235,63 @@
           </div>
         </div>
       </div>
-
     </section>
     <section>
       <div class="container">
         <div class="d-flex justify-content-between mb-4">
-          <h3 class="fs-5 fw-bold text-neutral-900">找到 24 個你可能喜歡的營地</h3>
-          <div class="btn-toggle gap-3 " role="group" aria-label="切換顯示模式">
-            <input type="radio" class="btn-check" name="viewMode" id="listView" autocomplete="off" checked>
-            <label class=" btn-toggle  " for="listView">列表</label>
+          <h3 class="fs-5 fw-bold text-neutral-900">
+            找到 24 個你可能喜歡的營地
+          </h3>
+          <div class="btn-toggle gap-3" role="group" aria-label="切換顯示模式">
+            <input
+              type="radio"
+              class="btn-check"
+              name="viewMode"
+              id="listView"
+              autocomplete="off"
+              checked
+            />
+            <label class="btn-toggle" for="listView">列表</label>
 
-            <input type="radio" class="btn-check" name="viewMode" id="mapView" autocomplete="off">
-            <label class=" btn-toggle " for="mapView">地圖</label>
+            <input
+              type="radio"
+              class="btn-check"
+              name="viewMode"
+              id="mapView"
+              autocomplete="off"
+            />
+            <label class="btn-toggle" for="mapView">地圖</label>
           </div>
-
-
         </div>
         <!--搜尋結果，用卡片模式-->
-        <div class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-7">
+        <div
+          class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-7"
+        >
           <!--第一張-->
           <div class="card mb-3 mr-4 camp-card">
-            <div class="row g-0 ">
-              <div class="col-md-3 py-4 "><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp01-BG-iEPjf.jpg" class="searchImg ms-4 " alt="searchCamp01">
+            <div class="row g-0">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp01-BG-iEPjf.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp01"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">森日快樂露營區</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>苗栗縣卓蘭鎮 西坪里三鄰西坪36-29號</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >苗栗縣卓蘭鎮 西坪里三鄰西坪36-29號
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -216,13 +299,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#可帶寵物</a>
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -230,19 +322,30 @@
             </div>
           </div>
           <!--第二張-->
-          <div class="card mb-3  mr-4 camp-card">
+          <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0">
-              <div class="col-md-3 py-4"><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp02-LxQSs5pX.jpg" class="searchImg ms-4 " alt="searchCamp02">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp02-LxQSs5pX.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp02"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">享露菲菲露營區</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>苗栗縣泰安鄉 大興村高熊段</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >苗栗縣泰安鄉 大興村高熊段
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -250,13 +353,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#雨天也不怕</a>
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -264,19 +376,30 @@
             </div>
           </div>
           <!--第三張-->
-          <div class="card mb-3  mr-4 camp-card">
+          <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0">
-              <div class="col-md-3 py-4"><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp03-CRxs-r8M.jpg" class="searchImg ms-4 " alt="searchCamp03">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp03-CRxs-r8M.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp03"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">布拉布拉 BulaBula</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>宜蘭縣南澳鄉 東岳路81巷</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >宜蘭縣南澳鄉 東岳路81巷
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -284,13 +407,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#親子同樂</a>
                     <a href="#" class="btn tag mb-0 ms-2">#仲夏戲水</a>
                     <a href="#" class="btn tag mb-0 ms-2">#輕鬆露營</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -298,19 +430,30 @@
             </div>
           </div>
           <!--第四張-->
-          <div class="card mb-3  mr-4 camp-card">
+          <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0">
-              <div class="col-md-3 py-4"><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp04-DJ5z3Xv4.jpg" class="searchImg ms-4 " alt="searchCamp04">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp04-DJ5z3Xv4.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp04"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">跑馬古道露營區</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>宜蘭縣礁溪鄉 白石腳路157巷90號</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >宜蘭縣礁溪鄉 白石腳路157巷90號
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -318,13 +461,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#可帶寵物</a>
                     <a href="#" class="btn tag mb-0 ms-2">#日出美景</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -332,19 +484,30 @@
             </div>
           </div>
           <!--第五張-->
-          <div class="card mb-3  mr-4 camp-card">
+          <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0">
-              <div class="col-md-3 py-4"><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp05-j7FKcBiI.jpg" class="searchImg ms-4 " alt="searchCamp05">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp05-j7FKcBiI.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp05"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">星語森林露營區</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>台中市和平區 森林小徑旁</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >台中市和平區 森林小徑旁
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -352,13 +515,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#適合觀星</a>
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#大片草地</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -366,19 +538,30 @@
             </div>
           </div>
           <!--第六張-->
-          <div class="card mb-3  mr-4 camp-card">
+          <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0">
-              <div class="col-md-3 py-4"><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp06-B36KDXEr.jpg" class="searchImg ms-4 " alt="searchCamp06">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp06-B36KDXEr.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp06"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">清溪谷露營園地</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>南投縣仁愛鄉 清澈溪流旁</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >南投縣仁愛鄉 清澈溪流旁
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -386,13 +569,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#可帶寵物</a>
                     <a href="#" class="btn tag mb-0 ms-2">#溪邊玩水</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -400,19 +592,30 @@
             </div>
           </div>
           <!--第七張-->
-          <div class="card mb-3  mr-4 camp-card">
+          <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0">
-              <div class="col-md-3 py-4"><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp07-B8JV74A6.jpg" class="searchImg ms-4 " alt="searchCamp07">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp07-B8JV74A6.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp07"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">曙光高地營區</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>新竹縣五峰鄉 高山觀景台附近</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >新竹縣五峰鄉 高山觀景台附近
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -420,13 +623,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#可帶寵物</a>
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#日出美食</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -434,19 +646,30 @@
             </div>
           </div>
           <!--第八張-->
-          <div class="card mb-3  mr-4 camp-card">
+          <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0">
-              <div class="col-md-3 py-4"><!--圖片160px-->
-                <img src="/Yeah-Fun-Cheap/assets/searchCamp08-DPHLFTQq.jpg" class="searchImg ms-4 " alt="searchCamp08">
+              <div class="col-md-3 py-4">
+                <!--圖片160px-->
+                <img
+                  src="/Yeah-Fun-Cheap/assets/searchCamp08-DPHLFTQq.jpg"
+                  class="searchImg ms-4"
+                  alt="searchCamp08"
+                />
               </div>
               <div class="col-md-9 py-4 ps-4">
                 <div class="card-body p-0 ps-3">
                   <h5 class="fs-6 fw-bold mb-2">雲海松林露營區</h5>
-                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0"><span class="material-symbols-outlined fs-md"
-                      style="transform: translateY(3px);">
-                      distance
-                    </span>嘉義縣阿里山鄉 松林步道旁</p>
-                  <div class="d-flex align-items-center text-primary-200 gap-2px">
+                  <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
+                    <span
+                      class="material-symbols-outlined fs-md"
+                      style="transform: translateY(3px)"
+                    >
+                      distance </span
+                    >嘉義縣阿里山鄉 松林步道旁
+                  </p>
+                  <div
+                    class="d-flex align-items-center text-primary-200 gap-2px"
+                  >
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
                     <i class="bi bi-star-fill"></i>
@@ -454,13 +677,22 @@
                     <i class="bi bi-star-fill text-neutral-100"></i>
                   </div>
 
-                  <div class=" d-flex align-items-center flex-wrap position-relative">
+                  <div
+                    class="d-flex align-items-center flex-wrap position-relative"
+                  >
                     <a href="#" class="btn tag mb-0">#可帶寵物</a>
                     <a href="#" class="btn tag mb-0 ms-2">#森林步道</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button class="btn btn-pr d-flex align-items-center ms-4" type="button">查看更多
-                      <span class="material-symbols-outlined ms-2 ">arrow_forward</span></button>
+                    <button
+                      class="btn btn-pr d-flex align-items-center ms-4"
+                      type="button"
+                    >
+                      查看更多
+                      <span class="material-symbols-outlined ms-2"
+                        >arrow_forward</span
+                      >
+                    </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
                 </div>
@@ -488,18 +720,20 @@
         </ul>
     </nav>
 </div>
+        <!--頁碼切換-->
 
-          <!--頁碼切換-->
-
-          <div class="text-center d-flex justify-content-center mb-11 align-items-center">
-            <span class="material-symbols-outlined mr-3 text-neutral-200">chevron_left</span>
-            <button class="btn btn-pr">1</button>
-            <button class="btn btn-pr-noneline">2</button>
-            <button class="btn btn-pr-noneline">3</button>
-            <span class="material-symbols-outlined">chevron_right</span>
-          </div>
+        <div
+          class="text-center d-flex justify-content-center mb-11 align-items-center"
+        >
+          <span class="material-symbols-outlined mr-3 text-neutral-200"
+            >chevron_left</span
+          >
+          <button class="btn btn-pr">1</button>
+          <button class="btn btn-pr-noneline">2</button>
+          <button class="btn btn-pr-noneline">3</button>
+          <span class="material-symbols-outlined">chevron_right</span>
+        </div>
       </div>
-
     </section>
     <footer class="footer">
   <div class="footer-Container text-center">
@@ -531,7 +765,6 @@
   <div class=" footer-copyright text-center ">
     © 2025 COPYRIGHT | 本網站圖片及文字僅供個人信息使用 禁止轉載
   </div>
-</footer>      
-</body>
-
+</footer>    
+  </body>
 </html>
