@@ -19,7 +19,7 @@ const generateTableOfContents = () => {
     const navList = document.querySelector('#article-progress-nav ul');
     if (!navList) return; // 如果導覽容器不存在，則不執行
 
-    mainContentSections = document.querySelectorAll('.article-content-section section[id^="section-"]'); // 選擇所有帶有 id="section-X" 的 section
+    mainContentSections = document.querySelectorAll('.article-content-section section[id^="infoSection-"]'); // 選擇所有帶有 id="section-X" 的 section
 
     mainContentSections.forEach(section => {
         const title = section.querySelector('.section-title').textContent;
