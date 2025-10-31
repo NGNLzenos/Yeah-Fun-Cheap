@@ -149,16 +149,16 @@ toggleBtn.addEventListener('click', () => {
 
 // Bootstrap Scroll animation
 document.addEventListener("scroll", () => {
-  document.querySelectorAll(".fade-section").forEach((el) => {
-    const rect = el.getBoundingClientRect();
-    if (rect.top < window.innerHeight * 0.8) {
-      el.classList.add("show");
-    }
-  });
+    document.querySelectorAll(".fade-section").forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight * 0.8) {
+            el.classList.add("show");
+        }
+    });
 });
 
 // 啟用 Bootstrap Scrollspy
 const scrollSpy = new bootstrap.ScrollSpy(document.body, {
-  target: '#navbar',
-  offset: 70
+    target: '#navbar',
+    offset: 70
 });
