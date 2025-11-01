@@ -71,8 +71,6 @@
                                 </div>
             </section>
         </div>
-
-        <hr>
             
 
         <div id="OurHighlights-background-wrapper" 
@@ -83,9 +81,23 @@
                 background-position: center center;
                 background-color: rgba(255, 255, 255, 0.5); /* 50% 不透明的白色底 */
                 background-blend-mode: overlay; /* 混合模式 */
+                position: relative; 
+                overflow: hidden;
+                padding-top: 100px; /* <--- 增加頂部內邊距*/
             ">
 
-            <section class="features-section py-7 position-relative" style="background-color: transparent; padding-bottom: 150px !important;">
+        <div class="feature-wave-top position-absolute top-0 start-0 w-100" 
+                style="height: 150px; z-index: 5; transform: translateY(-1px);"> 
+            <svg class="wave top" viewBox="0 0 1440 320" preserveAspectRatio="none"
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+            <path fill="#ffffff" fill-opacity="0.7" 
+                    d="M0,224L60,218.7C120,213,240,203,360,176C480,149,600,107,720,122.7C840,139,960,213,1080,234.7C1200,256,1320,224,1380,208L1440,192L1440,320L0,320Z">
+            </path>
+        </svg>
+
+    </div>
+
+            <section class="features-section py-7 position-relative" style="background-color: transparent; padding-bottom: 250px !important;">
                 <div class="container">
                     <div class="row text-center mb-5">
                         <div class="col-12">
@@ -185,7 +197,17 @@
                     </div>
                 </div>
 
+            <div class="position-absolute bottom-0 start-0 w-100" 
+                style="height: 100px; z-index: 2;"> 
+            
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
+                class="w-100 h-100" style="display: block;"> 
 
+                <path d="M0,30 C 150,10 250,-20 400,30 S 550,100 650,85 S 850,50 1000,90 L1000,100 L0,100 Z" fill="#F5F5E94D">
+                    </path>
+                
+                </svg>
+            </div>
                 
             </section>
         </div>
@@ -207,17 +229,10 @@
                 z-index: 1;
                 ">
 
-                <div class="position-absolute top-0 start-0 w-100" style="height: 100px; z-index: 1;">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
-                        class="w-100 h-100" style="display: block;">
-                        <path d="M0,30 C 150,10 250,-20 400,30 S 550,100 650,85 S 850,50 1000,90 L1000,100 L0,100 Z" fill="rgba(96, 148, 81, 0.3)" />
-                    </svg>
-                </div>
-        
             </div> 
 
 
-            <div id="gradient-background-wrapper" style="background: linear-gradient(to bottom, rgba(96, 148, 81, 0.3), rgba(249, 188, 62, 0.2)); 
+            <div id="gradient-background-wrapper" style="background: linear-gradient(to bottom, rgba(96, 148, 81, 0.3), rgba(249, 188, 62, 0.1)); 
 /* ^^^^^^ 將 0.1 改為 0.5 可調高透明度*/">
 
                 <div class="container">
@@ -248,9 +263,9 @@
                                                     style="transform: translateY(5px);">distance</span> 南投魚池鄉
                                             </p>
 
-                                            <p class="fs-sm text-neutral-700 mb-3">眺望日月潭全景、提供懶人帳篷、夜晚可觀星拍銀河</p>
+                                            <p class="fs-sm text-neutral-700 mb-3 ps-3">眺望日月潭全景、提供懶人帳篷、夜晚可觀星拍銀河</p>
 
-                                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                            <div class="d-flex flex-wrap gap-2 mt-auto ps-3">
                                                 <a href="search.html" class="btn tag">單人友善</a>
                                                 <a href="search.html" class="btn tag">星空</a>
                                                 <a href="search.html" class="btn tag">免裝備</a>
@@ -276,9 +291,9 @@
                                                     style="transform: translateY(5px);">distance</span> 花蓮壽豐鄉
                                             </p>
 
-                                            <p class="fs-sm text-neutral-700 mb-3">原始林地環繞，可帶毛孩，有簡易步道直達溪谷</p>
+                                            <p class="fs-sm text-neutral-700 mb-3 ps-3">原始林地環繞，可帶毛孩，有簡易步道直達溪谷</p>
 
-                                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                            <div class="d-flex flex-wrap gap-2 mt-auto ps-3">
                                                 <a href="search.html" class="btn tag">可帶寵物</a>
                                                 <a href="search.html" class="btn tag">新手適合</a>
                                                 <a href="search.html" class="btn tag">免裝備</a>
@@ -306,7 +321,7 @@
 
                                             <p class="fs-sm text-neutral-700 mb-3">獨立衛浴豪華帳，適合親子共遊，草原放風大空閒</p>
 
-                                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                            <div class="d-flex flex-wrap gap-2 mt-auto ps-3">
                                                 <a href="search.html" class="btn tag">適合親子</a>
                                                 <a href="search.html" class="btn tag">新手適合</a>
                                                 <a href="search.html" class="btn tag">獨立衛浴</a>
@@ -334,7 +349,7 @@
 
                                             <p class="fs-sm text-neutral-700 mb-3">湖畔景緻、森林浴營位，夏季可戲水划獨木舟</p>
 
-                                            <div class="d-flex flex-wrap gap-2 mt-auto">
+                                            <div class="d-flex flex-wrap gap-2 mt-auto ps-3">
                                                 <a href="search.html" class="btn tag">日出</a>
                                                 <a href="search.html" class="btn tag">森林</a>
                                             </div>
