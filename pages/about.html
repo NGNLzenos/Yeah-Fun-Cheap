@@ -120,6 +120,68 @@
         </p>
       </section>
     </div>
+    <!-- Contact Section -->
+<section id="contact" class="section py-5 bg-gray fade-section aboutSection">
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-lg-8">
+        <img
+          src="/assets/images/info/Sticker01.png"
+          width="180"
+          class="mb-4"
+          alt="contact"
+        />
+        <h2 class="section-title">聯繫我們</h2>
+        <p class="mb-4">
+          有任何合作提案、問題回饋或建議，都歡迎告訴我們。<br />
+          我們希望聽見每一位旅人對自然與旅行的想法。
+        </p>
+
+        <form id="contactForm" class="text-start mx-auto" style="max-width: 600px;">
+          <div class="mb-3">
+            <label for="name" class="form-label">您的姓名</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="請輸入您的姓名"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">電子郵件</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="請輸入您的信箱"
+              required
+            />
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">留言內容</label>
+            <textarea
+              class="form-control"
+              id="message"
+              rows="4"
+              placeholder="請輸入您的留言..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary px-5">
+              送出訊息
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="script.js"></script>
