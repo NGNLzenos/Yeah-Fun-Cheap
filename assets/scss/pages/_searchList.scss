@@ -12,6 +12,20 @@
     pointer-events: none; // 裝飾圖不影響互動
 }
 
+.searchbar {
+    .input-group {
+        display: flex;
+
+        max-width: 100%;
+        overflow: hidden; // 防止邊框外溢
+    }
+
+    .form-control {
+        flex: 1 1 auto; // 可縮可撐，填滿剩餘空間
+        min-width: 0; // ← 非常關鍵！不加這行會導致 input 不縮小
+    }
+}
+
 .bg-primary-50 {
     background-color: $primary-50;
 }
