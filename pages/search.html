@@ -1,15 +1,101 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>search</title>
-  </head>
 
-  <body>
-    <%- include('./layout/header'); -%>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>search</title>
+</head>
 
-    <section
+<body>
+  <%- include('./layout/header'); -%>
+    <section class="border-neutail-50 d-none d-md-block">
+      <div class="py-10 d-flex justify-content-center align-items-center">
+        <div class="w-100" style="max-width: 960px;">
+          <div class="input-group searchList-search-bar mb-3 border border-primary-200 mb-4">
+            <select class="form-select" aria-label="選擇地區">
+              <option selected class="text-neutral-200 h6">請選擇地區</option>
+              <option value="1" class="h6">新北市</option>
+              <option value="2" class="h6">臺北市</option>
+              <option value="3" class="h6">桃園市</option>
+              <option value="4" class="h6">苗栗市</option>
+              <option value="5" class="h6">新竹市</option>
+              <option value="6" class="h6">台中市</option>
+              <option value="7" class="h6">臺南市</option>
+              <option value="8" class="h6">高雄市</option>
+              <option value="9" class="h6">宜蘭縣</option>
+              <option value="10" class="h6">彰化縣</option>
+              <option value="11" class="h6">雲林縣</option>
+              <option value="12" class="h6">嘉義縣</option>
+              <option value="13" class="h6">屏東縣</option>
+              <option value="14" class="h6">花蓮縣</option>
+              <option value="15" class="h6">臺東縣</option>
+            </select>
+            <input type="text" class="form-control h6 d-flex justify-content-center align-items-center ps-2"
+              placeholder="輸入營地名稱或條件" aria-label="營地搜尋" />
+            <div class="p-10p">
+              <button class="btn btn-pr flex-shrink-0" type="button">搜尋</button>
+            </div>
+          </div>
+          <div class="searchListTags d-flex flex-wrap gap-2 overflow-auto pb-2">
+            <a href="#" class="btn tag tag-checked">#可帶寵物</a>
+            <a href="#" class="btn tag tag-outline">#免搭棚帳</a>
+            <a href="#" class="btn tag tag-outline">#獨立衛浴</a>
+            <a href="#" class="btn tag tag-outline">#適合親子</a>
+            <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
+            <a href="#" class="btn tag tag-outline">#機車友善</a>
+            <a href="#" class="btn tag tag-outline">#車泊友善</a>
+            <a href="#" class="btn tag tag-outline">#單人友善</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="searchbar py-10 border-neutral-50 d-md-none7">
+      <div class="container-fluid d-flex justify-content-center">
+        <div class="w-100">
+          <!-- 輸入框 + 搜尋icon -->
+          <div class="input-group border border-primary-200 rounded-3 w-100">
+            <input type="text" class="form-control border-0 py-2 ps-3" placeholder="輸入營地名稱或條件" />
+            <button class="btn bg-white border-0 px-3">
+              <i class="bi bi-search fs-5 text-primary"></i>
+            </button>
+          </div>
+
+          <!-- 篩選條件 -->
+          <div class="mt-3 d-flex flex-nowrap gap-2">
+            <select class="form-select w-auto border-primary-200">
+              <option selected class="text-neutral-200 fs-sm fw-bold">請選擇地區</option>
+              <option value="1" class="fs-sm fw-bold">新北市</option>
+              <option value="2" class="fs-sm fw-bold">臺北市</option>
+              <option value="3" class="fs-sm fw-bold">桃園市</option>
+              <option value="4" class="fs-sm fw-bold">苗栗市</option>
+              <option value="5" class="fs-sm fw-bold">新竹市</option>
+              <option value="6" class="fs-sm fw-bold">台中市</option>
+              <option value="7" class="fs-sm fw-bold">臺南市</option>
+              <option value="8" class="fs-sm fw-bold">高雄市</option>
+              <option value="9" class="fs-sm fw-bold">宜蘭縣</option>
+              <option value="10" class="fs-sm fw-bold">彰化縣</option>
+              <option value="11" class="fs-sm fw-bold">雲林縣</option>
+              <option value="12" class="fs-sm fw-bold">嘉義縣</option>
+              <option value="13" class="fs-sm fw-bold">屏東縣</option>
+              <option value="14" class="fs-sm fw-bold">花蓮縣</option>
+              <option value="15" class="fs-sm fw-bold">臺東縣</option>
+            </select>
+            <div class="searchListTags d-flex flex-nowrap gap-2 overflow-x-auto">
+              <a href="#" class="btn tag tag-checked">#可帶寵物</a>
+              <a href="#" class="btn tag tag-checked">#免搭棚帳</a>
+              <a href="#" class="btn tag tag-checked">#獨立衛浴</a>
+              <a href="#" class="btn tag tag-outline">#適合親子</a>
+              <a href="#" class="btn tag tag-outline">#4.5顆星以上</a>
+              <a href="#" class="btn tag tag-outline">#機車友善</a>
+              <a href="#" class="btn tag tag-outline">#車泊友善</a>
+              <a href="#" class="btn tag tag-outline">#單人友善</a>
+            </div>
+          </div>
+
+        </div>
+    </section>
+    <!-- <section
       class="hero position-relative py-70px d-flex justify-content-start align-items-center"
     >
       <div class="container">
@@ -53,7 +139,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section>
       <div class="container">
         <div class="d-flex justify-content-between mb-4">
@@ -61,52 +147,29 @@
             找到 24 個你可能喜歡的營地
           </h3>
           <div class="btn-toggle gap-3" role="group" aria-label="切換顯示模式">
-            <input
-              type="radio"
-              class="btn-check"
-              name="viewMode"
-              id="listView"
-              autocomplete="off"
-              checked
-            />
+            <input type="radio" class="btn-check" name="viewMode" id="listView" autocomplete="off" checked />
             <label class="btn-toggle" for="listView">列表</label>
 
-            <input
-              type="radio"
-              class="btn-check"
-              name="viewMode"
-              id="mapView"
-              autocomplete="off"
-            />
+            <input type="radio" class="btn-check" name="viewMode" id="mapView" autocomplete="off" />
             <label class="btn-toggle" for="mapView">地圖</label>
           </div>
         </div>
         <!--搜尋結果，用卡片模式-->
-        <div
-          class="d-flex flex-wrap justify-content-between align-items-center gap-3 mb-7"
-        >
+        <div class="d-flex flex-wrap  justify-content-between align-items-center gap-3 mb-7">
           <!--第一張-->
           <div class="card mb-3 mr-4 camp-card">
             <div class="row g-0 align-items-center flex-md-row flex-column">
-              <div class="col-md-3 col-12 py-3 text-center ps-2">
+              <div class="col-md-3 col-12 py-3 text-center px-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp01.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp01"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp01.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp01" style="max-height: 320px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">森日快樂露營區</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >苗栗縣卓蘭鎮 西坪里三鄰西坪36-29號
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>苗栗縣卓蘭鎮 西坪里三鄰西坪36-29號
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -121,17 +184,15 @@
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-self-center mt-2 ms-auto mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
+
+
                 </div>
               </div>
             </div>
@@ -141,23 +202,15 @@
             <div class="row g-0 align-items-center flex-md-row flex-column">
               <div class="col-md-3 col-12 py-3 text-center ps-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp02.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp02"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp02.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp02" style="max-height: 160px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">享露菲菲露營區</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >苗栗縣泰安鄉 大興村高熊段
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>苗栗縣泰安鄉 大興村高熊段
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -172,14 +225,10 @@
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
@@ -192,23 +241,15 @@
             <div class="row g-0 align-items-center flex-md-row flex-column">
               <div class="col-md-3 col-12 py-3 text-center ps-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp03.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp03"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp03.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp03" style="max-height: 160px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">布拉布拉 BulaBula</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >宜蘭縣南澳鄉 東岳路81巷
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>宜蘭縣南澳鄉 東岳路81巷
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -223,14 +264,10 @@
                     <a href="#" class="btn tag mb-0 ms-2">#仲夏戲水</a>
                     <a href="#" class="btn tag mb-0 ms-2">#輕鬆露營</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
@@ -243,23 +280,15 @@
             <div class="row g-0 align-items-center flex-md-row flex-column">
               <div class="col-md-3 col-12 py-3 text-center ps-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp04.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp04"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp04.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp04" style="max-height: 160px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">跑馬古道露營區</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >宜蘭縣礁溪鄉 白石腳路157巷90號
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>宜蘭縣礁溪鄉 白石腳路157巷90號
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -274,14 +303,10 @@
                     <a href="#" class="btn tag mb-0 ms-2">#日出美景</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
@@ -294,23 +319,15 @@
             <div class="row g-0 align-items-center flex-md-row flex-column">
               <div class="col-md-3 col-12 py-3 text-center ps-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp05.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp05"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp05.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp05" style="max-height: 160px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">星語森林露營區</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >台中市和平區 森林小徑旁
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>台中市和平區 森林小徑旁
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -325,14 +342,10 @@
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#大片草地</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
@@ -345,23 +358,15 @@
             <div class="row g-0 align-items-center flex-md-row flex-column">
               <div class="col-md-3 col-12 py-3 text-center ps-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp06.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp06"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp06.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp06" style="max-height: 160px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">清溪谷露營園地</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >南投縣仁愛鄉 清澈溪流旁
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>南投縣仁愛鄉 清澈溪流旁
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -376,14 +381,10 @@
                     <a href="#" class="btn tag mb-0 ms-2">#溪邊玩水</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
@@ -396,23 +397,15 @@
             <div class="row g-0 align-items-center flex-md-row flex-column">
               <div class="col-md-3 col-12 py-3 text-center ps-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp07.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp07"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp07.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp07" style="max-height: 160px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">曙光高地營區</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >新竹縣五峰鄉 高山觀景台附近
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>新竹縣五峰鄉 高山觀景台附近
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -427,14 +420,10 @@
                     <a href="#" class="btn tag mb-0 ms-2">#適合親子</a>
                     <a href="#" class="btn tag mb-0 ms-2">#日出美食</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
@@ -447,23 +436,15 @@
             <div class="row g-0 align-items-center flex-md-row flex-column">
               <div class="col-md-3 col-12 py-3 text-center ps-2">
                 <!--圖片160px-->
-                <img
-                  src="/assets/images/search/searchCamp08.jpg"
-                  class="searchImg img-fluid rounded mx-auto d-block"
-                  alt="searchCamp08"
-                  style="max-height: 160px; object-fit: cover"
-                />
+                <img src="/assets/images/search/searchCamp08.jpg" class="searchImg img-fluid rounded mx-auto d-block"
+                  alt="searchCamp08" style="max-height: 160px; object-fit: cover" />
               </div>
               <div class="col-md-9 col-12 py-3 ps-md-4 px-3">
                 <div class="card-body p-0">
                   <h5 class="fs-6 fw-bold mb-2">雲海松林露營區</h5>
                   <p class="fs-sm fw-medium mb-2 text-primary-200 p-0">
-                    <span
-                      class="material-symbols-outlined fs-md align-middle"
-                      style="transform: translateY(3px)"
-                    >
-                      distance </span
-                    >嘉義縣阿里山鄉 松林步道旁
+                    <span class="material-symbols-outlined fs-md align-middle" style="transform: translateY(3px)">
+                      distance </span>嘉義縣阿里山鄉 松林步道旁
                   </p>
                   <div class="d-flex align-items-center text-primary-200 mb-2">
                     <i class="bi bi-star-fill"></i>
@@ -478,14 +459,10 @@
                     <a href="#" class="btn tag mb-0 ms-2">#森林步道</a>
                     <a href="#" class="btn tag mb-0 ms-2">#車泊友善</a>
                     <!-- 將查看更多按鈕放同一層，直接 margin-left 控距 -->
-                    <button
-                      class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0"
-                      type="button"
-                    >
+                    <button class="btn btn-pr d-flex align-items-center ms-auto mt-2 mt-md-0 d-none d-md-block"
+                      type="button">
                       查看更多
-                      <span class="material-symbols-outlined ms-2"
-                        >arrow_forward</span
-                      >
+                      <span class="material-symbols-outlined ms-2">arrow_forward</span>
                     </button>
                     <a href="campDetail.html" class="stretched-link"></a>
                   </div>
@@ -497,7 +474,11 @@
         <%- include('./layout/pagination'); -%>
       </div>
     </section>
+
+
+
     <%- include('./layout/footer'); -%>
-    <script type="module" src="../main.js"></script>
-  </body>
+      <script type="module" src="../main.js"></script>
+</body>
+
 </html>

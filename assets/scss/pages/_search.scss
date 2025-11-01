@@ -1,13 +1,13 @@
 .search-box {
-    background-color: aquamarine;
-    width: 100px;
-    height: 150px;
+  background-color: aquamarine;
+  width: 100px;
+  height: 150px;
 }
 
-.searchImg{
-height: 160px;
-width: 160px; 
-border-radius: 8px;
+.searchImg {
+  height: 160px;
+  width: 160px;
+  border-radius: 8px;
 
 }
 
@@ -18,8 +18,63 @@ border-radius: 8px;
 
 @media (max-width: 576px) {
   .camp-card {
-    width: 100%; /* 或改成 100% 以滿版更好 */
-    margin-right: 0; /* 避免手機太擠 */
+    width: 100%;
+    /* 或改成 100% 以滿版更好 */
+    margin-right: 0;
+    /* 避免手機太擠 */
   }
 }
 
+/* 卡片外層：桌機才兩側撐開，手機就 100% */
+.camp-list .camp-card {
+  border: 1px solid #edf1f5;
+  border-radius: 16px;
+}
+
+/* 小螢幕時，卡片內的 tag 不要硬擠一行 */
+.camp-card-tags {
+  gap: .5rem;
+}
+
+/* 手機板：查看更多不要被擠掉，讓它自己一列或排最後 */
+@media (max-width: 767.98px) {
+  .camp-card .row {
+    /* 確保卡片內是直排的 */
+    flex-direction: column;
+  }
+
+  .camp-card-tags {
+    flex-direction: row;
+  }
+
+  .camp-card-tags .btn-pr {
+    width: 100%;
+    /* 看你要不要滿版按鈕，不要就拿掉 */
+    justify-content: center;
+  }
+
+  /* 假如 tag 太多，不要往右撐爆 */
+  .camp-card-tags .btn.tag {
+    white-space: nowrap;
+  }
+
+  /* 標題 + 切換按鈕，手機要能換行 */
+  .btn-toggle[role="group"] {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+/* 平板以上：還原你原本想要的「tag 在左、按鈕靠右」 */
+@media (min-width: 768px) {
+  .camp-card-tags {
+    flex-wrap: wrap;
+  }
+
+  .camp-card-tags .btn-pr {
+    margin-left: auto;
+    width: auto;
+  }
+
+
+}
