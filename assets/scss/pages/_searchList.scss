@@ -95,7 +95,11 @@
 @media (min-width:776px) {
     .featured-articles .card {
         flex: 0 0 auto;
+        width: 50%;
+        max-width: 612px;
     }
+
+
 }
 
 .lh-15 {
