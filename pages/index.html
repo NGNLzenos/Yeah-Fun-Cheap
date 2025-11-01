@@ -81,11 +81,11 @@
                 background-image: url('/assets/images/background01.png'); 
                 background-size: cover; 
                 background-position: center center;
-                background-color: rgba(255, 255, 255, 0.2); /* 20% 不透明的白色底 */
+                background-color: rgba(255, 255, 255, 0.5); /* 50% 不透明的白色底 */
                 background-blend-mode: overlay; /* 混合模式 */
             ">
 
-            <section class="features-section py-7 position-relative" style="background-color: transparent;">
+            <section class="features-section py-7 position-relative" style="background-color: transparent; padding-bottom: 150px !important;">
                 <div class="container">
                     <div class="row text-center mb-5">
                         <div class="col-12">
@@ -185,17 +185,6 @@
                     </div>
                 </div>
 
-                <div class="position-absolute bottom-0 start-0 w-100 overflow-hidden" 
-                    style="height: 100px; z-index: 2;"> 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
-                    class="w-100 h-100" style="display: block;"> 
-                
-                        <path d="M0,100 Q500,0 1000,100 L1000,100 L0,100 Z" 
-                        fill="rgba(255, 255, 255, 0.2)"> 
-                        </path>
-                
-                    </svg>
-                </div>
 
                 
             </section>
@@ -209,25 +198,26 @@
                 style="
                 height: 100px; 
                 width: 100%;
-                margin-bottom: 0px; /* 增加下方的間距 */
-        
-                /* 1. 曲線底色：將背景色設為  rgba(255, 255, 255, 0.2) */
-                background-color:  rgba(255, 255, 255, 0.2); 
-        
-                /* 移除父 div 的 'color' 屬性，避免它影響 SVG 填充色 */
+                /* 關鍵修正：將背景色設為透明，讓下方的 Hot Campsites 背景透上來 */
+                background-color: transparent; 
+                /* 確保全寬度 */
+                /* 向上移動 100px，覆蓋 Features 區塊最底部 100px 的樹林背景 */
+                margin-top: -100px; 
+                /* 讓它在 Z 軸上比 Features 內容高，但比 Features 背景低 (這很複雜) */
+                z-index: 1;
                 ">
 
-                <div class="position-absolute top-0 start-0 w-100 overflow-hidden" style="height: 100px; z-index: 1;">
+                <div class="position-absolute top-0 start-0 w-100" style="height: 100px; z-index: 1;">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none"
-                    class="w-100 h-100" style="display: block;"> 
-                                        <path d="M0,30 C 150,10 250,-20 400,30 S 550,100 650,85 S 850,50 1000,90 L1000,100 L0,100 Z" fill="rgba(96, 148, 81, 0.1)" />
+                        class="w-100 h-100" style="display: block;">
+                        <path d="M0,30 C 150,10 250,-20 400,30 S 550,100 650,85 S 850,50 1000,90 L1000,100 L0,100 Z" fill="rgba(96, 148, 81, 0.3)" />
                     </svg>
                 </div>
         
             </div> 
 
 
-            <div id="gradient-background-wrapper" style="background: linear-gradient(to bottom, rgba(96, 148, 81, 0.1), rgba(249, 188, 62, 0.1)); 
+            <div id="gradient-background-wrapper" style="background: linear-gradient(to bottom, rgba(96, 148, 81, 0.3), rgba(249, 188, 62, 0.2)); 
 /* ^^^^^^ 將 0.1 改為 0.5 可調高透明度*/">
 
                 <div class="container">
