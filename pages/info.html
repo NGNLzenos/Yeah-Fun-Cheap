@@ -1,59 +1,104 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>文章知識</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>文章知識</title>
-
-
-</head>
-
-<body>
-  <%- include('./layout/header'); -%>
+  <body>
+    <%- include('./layout/header'); -%>
     <div class="container infoList-bg">
+      <svg class="wave top" viewBox="0 0 1440 250" preserveAspectRatio="none">
+        <path
+          fill="#ffffff"
+          fill-opacity="0.2"
+          d="M0,224L60,218.7C120,213,240,203,360,176C480,149,600,107,720,122.7C840,139,960,213,1080,234.7C1200,256,1320,224,1380,208L1440,192L1440,320L0,320Z"
+        ></path>
+      </svg>
 
       <div class="row custom-row-spacing">
-
         <!-- 右邊查詢區 與 新增的文章目錄/進度導覽 (Sidebar) -->
         <div class="col-12 col-lg-4 mb-0 mb-lg-10 order-lg-2 sidebar-section">
-
           <!-- 搜尋與熱門文章區塊 (放入一個新 div 以便佈局) -->
-          <div class="sidebar-widgets bg-primary-50 rounded mb-4 mb-lg-10 py-3 px-3">
-            <form class="input-group search-box mb-lg-6 " style="max-width: 95%;">
-              <input type="text" class="form-control" placeholder="輸入標題或關鍵字..." aria-label="搜尋文章">
+          <div
+            class="sidebar-widgets bg-primary-50 rounded mb-4 mb-lg-10 py-3 px-3"
+          >
+            <form class="input-group search-box mb-lg-6" style="max-width: 95%">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="輸入標題或關鍵字..."
+                aria-label="搜尋文章"
+              />
               <button class="btn btn-primary btn-search" type="submit">
                 <i class="bi bi-search"></i>
               </button>
             </form>
             <!-- 熱門文章列表：在手機上隱藏 (d-none)，在桌機版顯示 (d-lg-block) -->
-            <div class="bg-secondary-100 border-secondary-300 py-4 d-none d-lg-block elementor-post popular-posts">
+            <div
+              class="bg-secondary-100 border-secondary-300 py-4 d-none d-lg-block elementor-post popular-posts"
+            >
               <h4 class="fw-bold px-3 mb-3">熱門文章</h4>
-              <div class="info-post ">
-                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">雨天露營不掃興：防水裝備與備案，惡劣天氣也能玩得盡興！</a></p>
+              <div class="info-post">
+                <p class="fw-medium mx-auto">
+                  <a class="info-link" href="info.html"
+                    >雨天露營不掃興：防水裝備與備案，惡劣天氣也能玩得盡興！</a
+                  >
+                </p>
               </div>
-              <div class="info-post ">
-                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">營火安全守則：享受溫暖與浪漫，避免意外發生！</a></p>
+              <div class="info-post">
+                <p class="fw-medium mx-auto">
+                  <a class="info-link" href="info.html"
+                    >營火安全守則：享受溫暖與浪漫，避免意外發生！</a
+                  >
+                </p>
               </div>
-              <div class="info-post ">
-                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">冬季露營攻略：保暖防寒、裝備升級，體驗雪地露營的夢幻！</a></p>
+              <div class="info-post">
+                <p class="fw-medium mx-auto">
+                  <a class="info-link" href="info.html"
+                    >冬季露營攻略：保暖防寒、裝備升級，體驗雪地露營的夢幻！</a
+                  >
+                </p>
               </div>
-              <div class="info-post ">
-                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">露營周邊活動推薦：除了搭帳篷，營地還能怎麼玩？</a></p>
+              <div class="info-post">
+                <p class="fw-medium mx-auto">
+                  <a class="info-link" href="info.html"
+                    >露營周邊活動推薦：除了搭帳篷，營地還能怎麼玩？</a
+                  >
+                </p>
               </div>
-              <div class="info-post ">
-                <p class="fw-medium mx-auto"><a class="info-link" href="info.html">雨天露營不掃興：防水裝備與備案，惡劣天氣也能玩得盡興！</a></p>
+              <div class="info-post">
+                <p class="fw-medium mx-auto">
+                  <a class="info-link" href="info.html"
+                    >雨天露營不掃興：防水裝備與備案，惡劣天氣也能玩得盡興！</a
+                  >
+                </p>
               </div>
             </div>
           </div>
 
           <!-- 新增：文章目錄/閱讀進度導覽 -->
-          <nav id="article-progress-nav" class="bg-white rounded p-4 d-none d-lg-block sticky-top i">
-            <button id="toggle-nav" class="btn btn-sm d-flex align-items-center ms-4 border-bottom ">文章快速目錄
-              <img src="/assets/images/info/split_0_0.png" alt="" style="width: 15%;"> <!-- 可以換成任何圖示 -->
+          <nav
+            id="article-progress-nav"
+            class="bg-white rounded p-4 d-none d-lg-block sticky-top i"
+          >
+            <button
+              id="toggle-nav"
+              class="btn btn-sm d-flex align-items-center ms-4 border-bottom"
+            >
+              文章快速目錄
+              <img
+                src="/assets/images/info/split_0_0.png"
+                alt=""
+                style="width: 15%"
+              />
+              <!-- 可以換成任何圖示 -->
             </button>
 
-            <div class="progress-bar-container mb-3 bg-secondary-100 rounded-pill">
+            <div
+              class="progress-bar-container mb-3 bg-secondary-100 rounded-pill"
+            >
               <div class="progress-bar-fill bg-primary-500 rounded-pill"></div>
             </div>
             <ul class="list-unstyled mb-0">
@@ -64,19 +109,40 @@
 
         <!-- 左邊主文章內容區塊 -->
         <div class="col-12 col-lg-8 py-6 order-lg-1 article-content-section">
-          <h1 class="main-article-title text-center mb-10 border-bottom" data-aos="fade-down" data-aos-once="true">
-            冬季露營攻略<br>保暖防寒、裝備升級，體驗雪地露營！</h1>
+          <h1
+            class="main-article-title text-center mb-10 border-bottom"
+            data-aos="fade-down"
+            data-aos-once="true"
+          >
+            冬季露營攻略<br />保暖防寒、裝備升級，體驗雪地露營！
+          </h1>
           <!-- 文章首段與導言 -->
-          <p class="fs-lg fw-medium mb-8" data-aos="fade-up" data-aos-once="true">
+          <p
+            class="fs-lg fw-medium mb-8"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
             嘿，新手們！如果你已經體驗過春秋兩季的露營，被大自然的美好稍稍蠱惑了，那我想是時候挑戰一下更高階的玩法了——冬季露營！別聽到「冬季」就卻步，只要掌握好技巧，備齊裝備，在白雪皚皚的山林間，升起一爐溫暖的營火，那種夢幻與靜謐，絕對是其他季節無法比擬的。相信我，一旦你愛上冬季露營，你會覺得過去的露營都少了那麼一點「味道」。
           </p>
 
           <!-- 大標題一：心態準備 -->
-          <section id="section-1" class="mb-5 " data-aos="fade-up" data-aos-once="true">
-            <h2 class="section-title mb-4">一、心態準備：別把冬天妖魔化，但也別輕忽</h2>
+          <section
+            id="infoSection-1"
+            class="mb-5"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <h2 class="section-title mb-4">
+              一、心態準備：別把冬天妖魔化，但也別輕忽
+            </h2>
             <div class="text-center mb-4">
-              <img src="/assets/images/info/info01.jpg" alt="心態準備" class="img-fluid rounded article-image-sm"
-                data-aos="zoom-in" data-aos-once="true">
+              <img
+                src="/assets/images/info/info01.jpg"
+                alt="心態準備"
+                class="img-fluid rounded article-image-sm"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
             </div>
             <p>
               首先，新手要有一個正確的心態。冬季露營，確實比其他季節需要更多的準備和謹慎，但絕非遙不可及。它考驗的是你的規劃能力、應變能力，以及對裝備的熟悉程度。別因為害怕寒冷而錯過冬日限定的美景，但同時也要對大自然的嚴峻保持敬畏之心。做好萬全準備，享受過程，這就是冬季露營的第一步。
@@ -84,33 +150,66 @@
           </section>
 
           <!-- 大標題二：裝備升級 (改為 Accordion 手風琴結構) -->
-          <section id="section-2" class="mb-5 section2-bg" data-aos="fade-up" data-aos-once="true">
-            <h2 class="section-title mb-4">二、裝備升級：保暖是王道，細節是關鍵</h2>
+          <section
+            id="infoSection-2"
+            class="mb-5 infosection2-bg"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <h2 class="section-title mb-4">
+              二、裝備升級：保暖是王道，細節是關鍵
+            </h2>
             <div class="text-center mb-4">
-              <img src="/assets/images/info/info02.jpg" alt="裝備升級" class="img-fluid rounded article-image-sm "
-                data-aos="zoom-in" data-aos-once="true">
+              <img
+                src="/assets/images/info/info02.jpg"
+                alt="裝備升級"
+                class="img-fluid rounded article-image-sm"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
             </div>
-            <p>冬季露營，裝備的「升級」是重中之重。一套正確的保暖系統，能讓你從頭到腳都感受到溫暖，這是能否舒適度過寒夜的關鍵。</p>
+            <p>
+              冬季露營，裝備的「升級」是重中之重。一套正確的保暖系統，能讓你從頭到腳都感受到溫暖，這是能否舒適度過寒夜的關鍵。
+            </p>
 
             <!-- Accordion for Equipment Subsections -->
             <div class="accordion accordion-flush" id="equipmentAccordion">
-
               <!-- 子標題：帳篷 -->
-              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-once="true"
+              >
                 <h3 class="accordion-header" id="headingTent">
-                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseTent" aria-expanded="false" aria-controls="collapseTent">
+                  <button
+                    class="accordion-button subsection-title collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTent"
+                    aria-expanded="false"
+                    aria-controls="collapseTent"
+                  >
                     帳篷：選擇四季帳或高山帳
                   </button>
                 </h3>
-                <div id="collapseTent" class="accordion-collapse collapse" aria-labelledby="headingTent"
-                  data-bs-parent="#equipmentAccordion">
+                <div
+                  id="collapseTent"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingTent"
+                  data-bs-parent="#equipmentAccordion"
+                >
                   <div class="accordion-body">
                     <div class="text-center mb-4">
-                      <img src="/assets/images/info/info03.jpg" alt="帳篷類型" class="img-fluid rounded article-image-sm"
-                        data-aos="zoom-in" data-aos-once="true">
+                      <img
+                        src="/assets/images/info/info03.jpg"
+                        alt="帳篷類型"
+                        class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in"
+                        data-aos-once="true"
+                      />
                     </div>
-                    <p class="old-hand-tip"><strong>老手心法：</strong>
+                    <p class="old-hand-tip">
+                      <strong>老手心法：</strong>
                       你那輕巧的夏季帳，在冬天可能只是一塊布。冬季營地可能風大、濕氣重，甚至會降雪。你需要的是能抵抗強風、具備良好抗雪壓能力的四季帳，或是更高階的高山帳。這些帳篷通常採用更堅固的骨架、更厚的布料，並有較小的通風口來減少熱量流失。內帳最好是全密閉設計，避免冷風灌入。
                     </p>
                   </div>
@@ -118,21 +217,41 @@
               </div>
 
               <!-- 子標題：睡袋 -->
-              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-once="true"
+              >
                 <h3 class="accordion-header" id="headingSleepingBag">
-                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSleepingBag" aria-expanded="false" aria-controls="collapseSleepingBag">
+                  <button
+                    class="accordion-button subsection-title collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSleepingBag"
+                    aria-expanded="false"
+                    aria-controls="collapseSleepingBag"
+                  >
                     睡袋：溫標是生命線，材質要講究
                   </button>
                 </h3>
-                <div id="collapseSleepingBag" class="accordion-collapse collapse" aria-labelledby="headingSleepingBag"
-                  data-bs-parent="#equipmentAccordion">
+                <div
+                  id="collapseSleepingBag"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSleepingBag"
+                  data-bs-parent="#equipmentAccordion"
+                >
                   <div class="accordion-body">
                     <div class="text-center mb-4">
-                      <img src="/assets/images/info/info04.jpg" alt="睡袋" class="img-fluid rounded article-image-sm"
-                        data-aos="zoom-in" data-aos-once="true">
+                      <img
+                        src="/assets/images/info/info04.jpg"
+                        alt="睡袋"
+                        class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in"
+                        data-aos-once="true"
+                      />
                     </div>
-                    <p class="old-hand-tip"><strong>老手心法：</strong>
+                    <p class="old-hand-tip">
+                      <strong>老手心法：</strong>
                       你的睡袋，就像是你在野外的棉被。冬季的睡袋，溫標（舒適溫度）至少要達到0℃以下，甚至更低（-5℃到-15℃）。羽絨睡袋輕巧保暖，但潮濕會降低保暖效果；化纖睡袋即使受潮也能保持一定保暖，但體積較大。新手可以選擇綜合考量，或是在羽絨睡袋外加一層防水套。記得，選擇比預期最低溫度更低的溫標，寧可熱到脫衣，不可冷到發抖。
                     </p>
                   </div>
@@ -140,21 +259,41 @@
               </div>
 
               <!-- 子標題：睡墊 -->
-              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-once="true"
+              >
                 <h3 class="accordion-header" id="headingSleepingPad">
-                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseSleepingPad" aria-expanded="false" aria-controls="collapseSleepingPad">
+                  <button
+                    class="accordion-button subsection-title collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSleepingPad"
+                    aria-expanded="false"
+                    aria-controls="collapseSleepingPad"
+                  >
                     睡墊：隔離地氣，比睡袋更重要！
                   </button>
                 </h3>
-                <div id="collapseSleepingPad" class="accordion-collapse collapse" aria-labelledby="headingSleepingPad"
-                  data-bs-parent="#equipmentAccordion">
+                <div
+                  id="collapseSleepingPad"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingSleepingPad"
+                  data-bs-parent="#equipmentAccordion"
+                >
                   <div class="accordion-body">
                     <div class="text-center mb-4">
-                      <img src="/assets/images/info/info05.jpg" alt="睡墊" class="img-fluid rounded article-image-sm"
-                        data-aos="zoom-in" data-aos-once="true">
+                      <img
+                        src="/assets/images/info/info05.jpg"
+                        alt="睡墊"
+                        class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in"
+                        data-aos-once="true"
+                      />
                     </div>
-                    <p class="old-hand-tip"><strong>老手心法：</strong>
+                    <p class="old-hand-tip">
+                      <strong>老手心法：</strong>
                       許多新手以為睡袋最重要，其實不然。地面的濕氣與寒氣是最大的熱量殺手！一張好的睡墊，能有效阻隔地氣，讓你的睡袋發揮最大效用。建議選擇R值（熱阻值）3.0以上的充氣墊或泡棉墊，甚至可以「雙墊組合」，先鋪泡棉墊再鋪充氣墊，雙重阻隔，保暖效果更佳。
                     </p>
                   </div>
@@ -162,140 +301,311 @@
               </div>
 
               <!-- 子標題：衣物 -->
-              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-once="true"
+              >
                 <h3 class="accordion-header" id="headingClothing">
-                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseClothing" aria-expanded="false" aria-controls="collapseClothing">
+                  <button
+                    class="accordion-button subsection-title collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseClothing"
+                    aria-expanded="false"
+                    aria-controls="collapseClothing"
+                  >
                     衣物：洋蔥式穿搭，三層原理
                   </button>
                 </h3>
-                <div id="collapseClothing" class="accordion-collapse collapse" aria-labelledby="headingClothing"
-                  data-bs-parent="#equipmentAccordion">
+                <div
+                  id="collapseClothing"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingClothing"
+                  data-bs-parent="#equipmentAccordion"
+                >
                   <div class="accordion-body">
                     <div class="text-center mb-4">
-                      <img src="/assets/images/info/info06.jpg" alt="洋蔥式穿搭"
-                        class="img-fluid rounded article-image-sm" data-aos="zoom-in" data-aos-once="true">
+                      <img
+                        src="/assets/images/info/info06.jpg"
+                        alt="洋蔥式穿搭"
+                        class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in"
+                        data-aos-once="true"
+                      />
                     </div>
-                    <p class="old-hand-tip"><strong>老手心法：</strong> 「洋蔥式穿搭」是戶外活動的黃金準則。</p>
+                    <p class="old-hand-tip">
+                      <strong>老手心法：</strong>
+                      「洋蔥式穿搭」是戶外活動的黃金準則。
+                    </p>
                     <ul>
-                      <li><strong>內層（排汗層）：</strong> 選擇羊毛或化纖材質的排汗衣褲，保持身體乾爽。棉質衣物是大忌，濕了難乾，會迅速帶走體溫。</li>
-                      <li><strong>中層（保暖層）：</strong> 羽絨外套、刷毛衣褲是最佳選擇。輕量且保暖，可以多準備幾件，依氣溫變化增減。</li>
-                      <li><strong>外層（防風防水層）：</strong> 一件防水透氣的外套與長褲，能有效阻擋風寒與雨雪，同時排出身體的濕氣。</li>
+                      <li>
+                        <strong>內層（排汗層）：</strong>
+                        選擇羊毛或化纖材質的排汗衣褲，保持身體乾爽。棉質衣物是大忌，濕了難乾，會迅速帶走體溫。
+                      </li>
+                      <li>
+                        <strong>中層（保暖層）：</strong>
+                        羽絨外套、刷毛衣褲是最佳選擇。輕量且保暖，可以多準備幾件，依氣溫變化增減。
+                      </li>
+                      <li>
+                        <strong>外層（防風防水層）：</strong>
+                        一件防水透氣的外套與長褲，能有效阻擋風寒與雨雪，同時排出身體的濕氣。
+                      </li>
                     </ul>
-                    <p class="old-hand-tip"><strong>細節提醒：</strong>
-                      頭部、手部和腳部的保暖也不可忽視。毛帽、防水手套、羊毛襪是必備品。腳濕了會非常不舒服，建議多帶幾雙羊毛襪替換。</p>
-                  </div>
-                </div>
-              </div>
-
-              <!-- 子標題：炊事裝備 -->
-              <div class="accordion-item" data-aos="fade-right" data-aos-once="true">
-                <h3 class="accordion-header" id="headingCookingGear">
-                  <button class="accordion-button subsection-title collapsed" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#collapseCookingGear" aria-expanded="false" aria-controls="collapseCookingGear">
-                    炊事裝備：抗寒爐頭與保溫瓶
-                  </button>
-                </h3>
-                <div id="collapseCookingGear" class="accordion-collapse collapse" aria-labelledby="headingCookingGear"
-                  data-bs-parent="#equipmentAccordion">
-                  <div class="accordion-body">
-                    <div class="text-center mb-4">
-                      <img src="/assets/images/info/info07.jpg" alt="炊事裝備"
-                        class="img-fluid rounded article-image-sm" data-aos="zoom-in" data-aos-once="true">
-                    </div>
-                    <p class="old-hand-tip"><strong>老手心法：</strong>
-                      一般的瓦斯罐在低溫下可能會「罷工」。建議選擇分離式瓦斯爐，或使用高山瓦斯罐（異丁烷比例較高），或是攜帶去漬油爐，它們在低溫下表現更穩定。同時，保溫瓶非常重要，能讓你隨時喝到熱水、熱湯，暖和身子。
+                    <p class="old-hand-tip">
+                      <strong>細節提醒：</strong>
+                      頭部、手部和腳部的保暖也不可忽視。毛帽、防水手套、羊毛襪是必備品。腳濕了會非常不舒服，建議多帶幾雙羊毛襪替換。
                     </p>
                   </div>
                 </div>
               </div>
 
-            </div><!-- /#equipmentAccordion -->
+              <!-- 子標題：炊事裝備 -->
+              <div
+                class="accordion-item"
+                data-aos="fade-right"
+                data-aos-once="true"
+              >
+                <h3 class="accordion-header" id="headingCookingGear">
+                  <button
+                    class="accordion-button subsection-title collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseCookingGear"
+                    aria-expanded="false"
+                    aria-controls="collapseCookingGear"
+                  >
+                    炊事裝備：抗寒爐頭與保溫瓶
+                  </button>
+                </h3>
+                <div
+                  id="collapseCookingGear"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingCookingGear"
+                  data-bs-parent="#equipmentAccordion"
+                >
+                  <div class="accordion-body">
+                    <div class="text-center mb-4">
+                      <img
+                        src="/assets/images/info/info07.jpg"
+                        alt="炊事裝備"
+                        class="img-fluid rounded article-image-sm"
+                        data-aos="zoom-in"
+                        data-aos-once="true"
+                      />
+                    </div>
+                    <p class="old-hand-tip">
+                      <strong>老手心法：</strong>
+                      一般的瓦斯罐在低溫下可能會「罷工」。建議選擇分離式瓦斯爐，或使用高山瓦斯罐（異丁烷比例較高），或是攜帶去漬油爐，它們在低溫下表現更穩定。同時，保溫瓶非常重要，能讓你隨時喝到熱水、熱湯，暖和身子。
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /#equipmentAccordion -->
           </section>
 
           <!-- 大標題三：營地選擇與搭設 -->
-          <section id="section-3" class="mb-5" data-aos="fade-up" data-aos-once="true">
-            <h2 class="section-title mb-4">三、營地選擇與搭設：背風向陽是重點</h2>
+          <section
+            id="infoSection-3"
+            class="mb-5"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
+            <h2 class="section-title mb-4">
+              三、營地選擇與搭設：背風向陽是重點
+            </h2>
             <div class="text-center mb-4">
-              <img src="/assets/images/info/info08.jpg" alt="營地選擇與搭設" class="img-fluid rounded article-image-sm"
-                data-aos="zoom-in" data-aos-once="true">
+              <img
+                src="/assets/images/info/info08.jpg"
+                alt="營地選擇與搭設"
+                class="img-fluid rounded article-image-sm"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
             </div>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">選擇營地：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong>
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              選擇營地：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
               冬季選營地，要特別注意「避風」和「向陽」。選擇有樹林遮蔽的營地，可以有效阻擋冷風。向陽的坡面能讓帳篷在白天吸收更多熱量。避開谷地和水邊，這些地方濕氣重、溫度低。事先了解營地是否有提供電力，對冬季來說非常有用（可以用電暖爐或電毯）。
             </p>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">帳篷搭設：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong>
-              冬季搭帳篷，確保地布完全覆蓋帳篷底部，並向外延伸，避免雪水或雨水滲入。拉緊營繩，使帳篷更穩固，抵抗強風。如果有外帳，確保與內帳保持適當距離，形成通風層，減少結露。</p>
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              帳篷搭設：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
+              冬季搭帳篷，確保地布完全覆蓋帳篷底部，並向外延伸，避免雪水或雨水滲入。拉緊營繩，使帳篷更穩固，抵抗強風。如果有外帳，確保與內帳保持適當距離，形成通風層，減少結露。
+            </p>
           </section>
 
           <!-- 大標題四：野炊與飲食 -->
-          <section id="section-4" class="mb-5" data-aos="fade-up" data-aos-once="true">
+          <section
+            id="infoSection-4"
+            class="mb-5 infosection4-bg"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
             <h2 class="section-title mb-4">四、野炊與飲食：熱量與水分不可少</h2>
             <div class="text-center mb-4">
-              <img src="/assets/images/info/info09.jpg" alt="野炊與飲食" class="img-fluid rounded article-image-sm"
-                data-aos="zoom-in" data-aos-once="true">
+              <img
+                src="/assets/images/info/info09.jpg"
+                alt="野炊與飲食"
+                class="img-fluid rounded article-image-sm"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
             </div>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">高熱量飲食：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong>
-              身體在寒冷環境下會消耗更多熱量來維持體溫。準備高熱量、易消化的食物，例如肉類、麵包、巧克力、堅果等。熱湯、熱粥更是暖身暖胃的好選擇。</p>
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              高熱量飲食：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
+              身體在寒冷環境下會消耗更多熱量來維持體溫。準備高熱量、易消化的食物，例如肉類、麵包、巧克力、堅果等。熱湯、熱粥更是暖身暖胃的好選擇。
+            </p>
             <ul class="mb-3">
               <li>避免油炸： 油炸食物在低溫下容易凝固，不易消化。</li>
               <li>燃料預備： 多帶一些燃料，以防萬一。</li>
             </ul>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">充足水分：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong> 即使在冬天，補充水分也同樣重要。身體脫水會降低抗寒能力。隨身攜帶保溫瓶，隨時喝熱水或熱飲。</p>
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              充足水分：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
+              即使在冬天，補充水分也同樣重要。身體脫水會降低抗寒能力。隨身攜帶保溫瓶，隨時喝熱水或熱飲。
+            </p>
           </section>
 
           <!-- 大標題五：安全注意事項 -->
-          <section id="section-5" class="mb-5" data-aos="fade-up" data-aos-once="true">
+          <section
+            id="infoSection-5"
+            class="mb-5"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
             <h2 class="section-title mb-4">五、安全注意事項：萬事小心為上</h2>
             <div class="text-center mb-4">
-              <img src="/assets/images/info/info10.jpg" alt="安全注意事項" class="img-fluid rounded article-image-sm"
-                data-aos="zoom-in" data-aos-once="true">
+              <img
+                src="/assets/images/info/info10.jpg"
+                alt="安全注意事項"
+                class="img-fluid rounded article-image-sm"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
             </div>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">天氣預報：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong> 出發前務必查詢詳細的天氣預報，包括溫度、濕度、風速、降雪機率。冬季天氣變化快，多關注幾份預報，並有隨時撤退的心理準備。
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              天氣預報：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
+              出發前務必查詢詳細的天氣預報，包括溫度、濕度、風速、降雪機率。冬季天氣變化快，多關注幾份預報，並有隨時撤退的心理準備。
             </p>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">生火取暖：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong>
-              營火是冬季露營的樂趣，但務必注意防火安全。選擇安全的生火地點，遠離帳篷和易燃物。離去或就寢前務必完全熄滅營火。如果使用暖爐，切記在通風良好的地方使用，避免一氧化碳中毒。帳篷內嚴禁使用直火。</p>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">急救用品：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong> 除了常規急救包，冬季露營更要準備保溫毯、暖暖包等物品。了解失溫的症狀與處理方法，並告知同行者。</p>
-            <h3 class="subsection-title mt-4 mb-3" data-aos="fade-right" data-aos-once="true">雪地活動：</h3>
-            <p class="old-hand-tip"><strong>老手心法：</strong> 如果是雪地露營，準備雪釘、冰爪、雪杖等輔助裝備，並了解相關的雪地行走技巧。避免獨自行動，隨時注意周圍環境。</p>
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              生火取暖：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
+              營火是冬季露營的樂趣，但務必注意防火安全。選擇安全的生火地點，遠離帳篷和易燃物。離去或就寢前務必完全熄滅營火。如果使用暖爐，切記在通風良好的地方使用，避免一氧化碳中毒。帳篷內嚴禁使用直火。
+            </p>
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              急救用品：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
+              除了常規急救包，冬季露營更要準備保溫毯、暖暖包等物品。了解失溫的症狀與處理方法，並告知同行者。
+            </p>
+            <h3
+              class="subsection-title mt-4 mb-3"
+              data-aos="fade-right"
+              data-aos-once="true"
+            >
+              雪地活動：
+            </h3>
+            <p class="old-hand-tip">
+              <strong>老手心法：</strong>
+              如果是雪地露營，準備雪釘、冰爪、雪杖等輔助裝備，並了解相關的雪地行走技巧。避免獨自行動，隨時注意周圍環境。
+            </p>
           </section>
 
           <!-- 大標題六：享受冬日靜謐 -->
-          <section id="section-6" class="mb-5" data-aos="fade-up" data-aos-once="true">
+          <section
+            id="infoSection-6"
+            class="mb-5 infosection6-bg"
+            data-aos="fade-up"
+            data-aos-once="true"
+          >
             <h2 class="section-title mb-4">六、享受冬日靜謐：慢活與體驗</h2>
             <div class="text-center mb-4">
-              <img src="/assets/images/info/info11.jpg" alt="享受冬日靜謐" class="img-fluid rounded article-image-sm"
-                data-aos="zoom-in" data-aos-once="true">
+              <img
+                src="/assets/images/info/info11.jpg"
+                alt="享受冬日靜謐"
+                class="img-fluid rounded article-image-sm"
+                data-aos="zoom-in"
+                data-aos-once="true"
+              />
             </div>
-            <p class="old-hand-tip">冬季露營，不再是追求大汗淋漓的戶外活動，更多的是一種慢活與體驗。</p>
+            <p class="old-hand-tip">
+              冬季露營，不再是追求大汗淋漓的戶外活動，更多的是一種慢活與體驗。
+            </p>
             <ul>
-              <li><strong>星空：</strong> 冬季的星空通常更加清澈明亮，躺在帳篷裡，仰望滿天繁星，你會感受到宇宙的浩瀚與自身的渺小。</li>
-              <li><strong>寧靜：</strong> 冬天的山林，少了蟲鳴鳥叫的喧囂，多了一份獨有的寧靜。踩在雪地上發出的沙沙聲，營火燃燒的劈啪聲，都是大自然最美的樂章。</li>
-              <li><strong>熱飲：</strong> 沖泡一杯熱咖啡或熱可可，坐在帳篷前，看著遠方的山巒被白雪覆蓋，享受片刻的悠閒。</li>
+              <li>
+                <strong>星空：</strong>
+                冬季的星空通常更加清澈明亮，躺在帳篷裡，仰望滿天繁星，你會感受到宇宙的浩瀚與自身的渺小。
+              </li>
+              <li>
+                <strong>寧靜：</strong>
+                冬天的山林，少了蟲鳴鳥叫的喧囂，多了一份獨有的寧靜。踩在雪地上發出的沙沙聲，營火燃燒的劈啪聲，都是大自然最美的樂章。
+              </li>
+              <li>
+                <strong>熱飲：</strong>
+                沖泡一杯熱咖啡或熱可可，坐在帳篷前，看著遠方的山巒被白雪覆蓋，享受片刻的悠閒。
+              </li>
             </ul>
-            <p class="fs-lg fw-medium mb-4" data-aos="fade-up" data-aos-once="true">
-              新手們，冬季露營或許聽起來有些挑戰，但那種在寒冷中尋求溫暖、在靜謐中感受生命的體驗，絕對會讓你上癮。準備好了嗎？一起來享受這份冬日限定的夢幻之旅吧！</p>
+            <p
+              class="fs-lg fw-medium mb-4"
+              data-aos="fade-up"
+              data-aos-once="true"
+            >
+              新手們，冬季露營或許聽起來有些挑戰，但那種在寒冷中尋求溫暖、在靜謐中感受生命的體驗，絕對會讓你上癮。準備好了嗎？一起來享受這份冬日限定的夢幻之旅吧！
+            </p>
           </section>
         </div>
       </div>
     </div>
     <%- include('./layout/footer'); -%>
 
-      <!-- 引入 AOS 動畫庫的 JS 檔案 -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script type="module" src="../main.js"></script>
-      <script type="module" src="../assets/js/info.js"></script>
-      
-
-
-
-
-</body>
-
+    <!-- 引入 AOS 動畫庫的 JS 檔案 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/info.js"></script>
+  </body>
 </html>

@@ -1,126 +1,174 @@
 <nav class="navbar navbar-expand-lg border-bottom border-neutral-50">
-    <div class="container d-flex justify-content-between align-items-center py-4">
-        <div class="d-flex justify-content-between align-items-center flex-nowrap w-100 w-lg-auto">
-            <a class=" me-8 navbar-brand" href="index.html">
-                <img src="/assets/images/LOGO_96x60.png" alt="logo">
+  <div class="container d-flex justify-content-between align-items-center py-4">
+    <div
+      class="d-flex justify-content-between align-items-center flex-nowrap w-100 w-lg-auto"
+    >
+      <a class="me-8 navbar-brand" href="index.html">
+        <img src="/assets/images/LOGO_96x60.png" alt="logo" />
+      </a>
+      <!-- 漢堡按鈕：在小螢幕出現 -->
+      <button
+        class="navbar-toggler ms-auto"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="切換導覽"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="nav">
+          <li class="nav-item border-primary ps-4 ps-lg-0 pe-4">
+            <a class="nav-link text-center" href="index.html#latest-posts">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
+              <p class="fs-ssm text-primary-300 mb-0">Newest</p>
             </a>
-            <!-- 漢堡按鈕：在小螢幕出現 -->
-            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="切換導覽">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="nav">
-                    <li class="nav-item  border-primary ps-4 ps-lg-0 pe-4">
-                        <a class="nav-link text-center" href="index.html#latest-posts">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">最新營地</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">Newest</p>
-                        </a>
-                    </li>
-                    <li class="nav-item border-primary-200 px-4">
-                        <a class="nav-link text-center" href="index.html#hottest-posts">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">Popular</p>
-                        </a>
-                    </li>
-                    <li class="nav-item border-lg-start border-primary-200 px-4">
-                        <a class="nav-link text-center" href="../pages/infoList.html">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
-                        </a>
-                    </li>
-                    <li class="nav-item border-primary-200 ps-4 pe-4">
-                        <a class="nav-link text-center" href="../pages/about.html">
-                            <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
-                            <p class="fs-ssm text-primary-300 mb-0">About Us</p>
-                        </a>
-                    </li>
-                    <li class="nav-item align-items-center mt-0 mt-lg-2 cta-btn" style="border: none;">
-                        <a href="searchList.html" class="btn btn-md btn-pr-outline ms-0 ms-lg-7">野fun去～</a>
-                    </li>
-                </ul>
-
-            </div>
-        </div>
-        <div class="d-flex justify-content-center align-items-center d-none d-lg-flex">
-            <a class="p-0 w-100" href="campDetail.html">
-                <button type="button" class="btn btn-md btn-pr-noneline" style="width:124px;"><img class="pe-2"
-                        src="/assets/images/chat.png" alt="">營地討論</button>
+          </li>
+          <li class="nav-item border-primary-200 px-4">
+            <a class="nav-link text-center" href="index.html#hottest-posts">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">熱門營地</h3>
+              <p class="fs-ssm text-primary-300 mb-0">Popular</p>
             </a>
-            <a class="p-0 w-100" href="#">
-                <button type="button" class="btn btn-md btn-pr-noneline" style="width:132px;"><img class="pe-2"
-                        src="/assets/images/user-circle.png" alt="">登入/註冊</button>
+          </li>
+          <li class="nav-item border-lg-start border-primary-200 px-4">
+            <a class="nav-link text-center" href="infoList.html">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">露營知識</h3>
+              <p class="fs-ssm text-primary-300 mb-0">Tips & Guides</p>
             </a>
-        </div>
+          </li>
+          <li class="nav-item border-primary-200 ps-4 pe-4">
+            <a class="nav-link text-center" href="about.html">
+              <h3 class="fs-lg fw-medium text-primary-300 mb-0">關於我們</h3>
+              <p class="fs-ssm text-primary-300 mb-0">About Us</p>
+            </a>
+          </li>
+          <li
+            class="nav-item align-items-center mt-0 mt-lg-2 cta-btn"
+            style="border: none"
+          >
+            <a
+              href="searchList.html"
+              class="btn btn-md btn-pr-outline ms-0 ms-lg-7"
+              >野fun去～</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
+    <div
+      class="d-flex justify-content-center align-items-center d-none d-lg-flex"
+    >
+      <a class="p-0 w-100" href="campDetail.html">
+        <button
+          type="button"
+          class="btn btn-md btn-pr-noneline"
+          style="width: 124px"
+        >
+          <img class="pe-2" src="/assets/images/chat.png" alt="" />營地討論
+        </button>
+      </a>
+      <a class="p-0 w-100" href="#">
+        <button
+          type="button"
+          class="btn btn-md btn-pr-noneline"
+          style="width: 132px"
+        >
+          <img
+            class="pe-2"
+            src="/assets/images/user-circle.png"
+            alt=""
+          />登入/註冊
+        </button>
+      </a>
+    </div>
+  </div>
 </nav>
 <script>
+  const navbar = document.getElementById("navbarNav");
+  const logo = document.querySelector(".navbar-brand");
 
-    const navbar = document.getElementById('navbarNav');
-    const logo = document.querySelector('.navbar-brand');
+  navbar.addEventListener("show.bs.collapse", () => {
+    logo.style.display = "none"; // 展開時隱藏 logo
+  });
 
-    navbar.addEventListener('show.bs.collapse', () => {
-        logo.style.display = 'none';   // 展開時隱藏 logo
+  navbar.addEventListener("hide.bs.collapse", () => {
+    logo.style.display = "block"; // 收起時顯示 logo
+  });
+
+  const BASE = import.meta?.env?.BASE_URL ?? "/";
+
+  if (latestLink) {
+    latestLink.addEventListener("click", function (e) {
+      const isHomePage =
+        location.pathname === BASE || location.pathname === BASE + "index.html";
+
+      e.preventDefault(); // 兩邊都先擋預設行為
+
+      if (isHomePage) {
+        document
+          .querySelector("#latest-posts")
+          ?.scrollIntoView({ behavior: "smooth" });
+      } else {
+        // ⚠️ 關鍵：用 BASE 拼，不要寫 '/index.html'
+        location.href = BASE + "index.html#latest-posts";
+        // 若你的主機支援目錄預設文件，也可用： location.href = BASE + '#latest-posts';
+      }
     });
+  }
 
-    navbar.addEventListener('hide.bs.collapse', () => {
-        logo.style.display = 'block';  // 收起時顯示 logo
-    });
-
-    const BASE = (import.meta?.env?.BASE_URL) ?? '/';
-
-
-    if (latestLink) {
-        latestLink.addEventListener('click', function (e) {
-            const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
-
-            e.preventDefault(); // 兩邊都先擋預設行為
-
-            if (isHomePage) {
-                document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                // ⚠️ 關鍵：用 BASE 拼，不要寫 '/index.html'
-                location.href = BASE + 'index.html#latest-posts';
-                // 若你的主機支援目錄預設文件，也可用： location.href = BASE + '#latest-posts';
-            }
-        });
+  // ✅ 首頁載入時偵測 hash，自動滾動（重整或跨頁返回都會啟動）
+  window.addEventListener("load", () => {
+    const isHomePage =
+      location.pathname === BASE || location.pathname === BASE + "index.html";
+    if (isHomePage && location.hash === "#latest-posts") {
+      document
+        .querySelector("#latest-posts")
+        ?.scrollIntoView({ behavior: "smooth" });
     }
+  });
 
-    // ✅ 首頁載入時偵測 hash，自動滾動（重整或跨頁返回都會啟動）
-    window.addEventListener('load', () => {
-        const isHomePage = location.pathname === BASE || location.pathname === BASE + 'index.html';
-        if (isHomePage && location.hash === '#latest-posts') {
-            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+  const latestLink = document.querySelector(
+    'a[href="#latest-posts"], a[href="/index.html#latest-posts"]'
+  );
 
-    const latestLink = document.querySelector('a[href="#latest-posts"], a[href="/index.html#latest-posts"]');
+  latestLink.addEventListener("click", function (e) {
+    const isHomePage =
+      window.location.pathname.endsWith("index.html") ||
+      window.location.pathname === "/";
+    if (isHomePage) {
+      e.preventDefault();
+      document
+        .querySelector("#latest-posts")
+        .scrollIntoView({ behavior: "smooth" });
+    } else {
+      e.preventDefault();
+      window.location.href = "/index.html#latest-posts";
+    }
+  });
+  // ✅ 首頁載入時偵測 hash，自動滾動（避免重整後 hash 無效）
+  window.addEventListener("load", () => {
+    if (window.location.hash === "#latest-posts") {
+      document
+        .querySelector("#latest-posts")
+        ?.scrollIntoView({ behavior: "smooth" });
+    }
+  });
 
-    latestLink.addEventListener('click', function (e) {
-        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
-        if (isHomePage) {
-            e.preventDefault();
-            document.querySelector('#latest-posts').scrollIntoView({ behavior: 'smooth' });
-        } else {
-            e.preventDefault();
-            window.location.href = '/index.html#latest-posts';
-        }
-    });
-    // ✅ 首頁載入時偵測 hash，自動滾動（避免重整後 hash 無效）
-    window.addEventListener('load', () => {
-        if (window.location.hash === '#latest-posts') {
-            document.querySelector('#latest-posts')?.scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+  const hottestLink = document.querySelector(
+    'a[href="#hottest-posts"], a[href="/index.html#hottest-posts"]'
+  );
 
-
-    const hottestLink = document.querySelector('a[href="#hottest-posts"], a[href="/index.html#hottest-posts"]');
-
-    hottestLink.addEventListener('click', function (r) {
-        const isHomePage = window.location.pathname.endsWith('index.html') || window.location.pathname === '/';
-        if (isHomePage) {
-            r.preventDefault();
-            document.querySelector('#hottest-posts').scrollIntoView({ behavior: 'smooth' });
-        }
-    });
+  hottestLink.addEventListener("click", function (r) {
+    const isHomePage =
+      window.location.pathname.endsWith("index.html") ||
+      window.location.pathname === "/";
+    if (isHomePage) {
+      r.preventDefault();
+      document
+        .querySelector("#hottest-posts")
+        .scrollIntoView({ behavior: "smooth" });
+    }
+  });
 </script>

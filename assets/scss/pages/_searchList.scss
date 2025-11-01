@@ -87,3 +87,72 @@
 .lh-15 {
     line-height: 1.5;
 }
+
+
+/* 手機先：可以橫滑 */
+.featured-articles {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    /* Firefox */
+    -webkit-overflow-scrolling: touch;
+    /* iOS 順滑 */
+}
+
+.featured-articles .featured-card {
+    /* 讓卡片不要被壓到只有一點點 */
+    flex: 0 0 auto;
+}
+
+/* 到 lg 之後，回到正常排版、不用橫滑 */
+@media (min-width: 992px) {
+    .featured-articles {
+        overflow-x: visible;
+        flex-wrap: wrap;
+    }
+
+    .featured-articles .featured-card {
+        flex: 0 0 calc(50% - 1rem);
+        /* 兩張一排 */
+    }
+}
+
+.region-card {
+    width: 100%;
+    max-width: 310px;
+    /* 保留你原本的寬度上限 */
+    height: 212px;
+    border: 0;
+    overflow: hidden;
+}
+
+.region-card .card-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.region-line {
+    height: 1px;
+    opacity: 1;
+}
+
+/* 手機時：hr 不要 516px 那種死寬 */
+@media (max-width: 991.98px) {
+    .region-card {
+        max-width: 100%;
+        /* 小螢幕就放到全寬，別卡 310 */
+    }
+
+    .region-line {
+        width: auto;
+    }
+
+
+}
+
+/* 到 md 以上：兩張卡片橫排 */
+@media (min-width: 768px) {
+    .region-card {
+        max-width: 100%;
+        /* 交給 flex 去分 */
+    }
+}

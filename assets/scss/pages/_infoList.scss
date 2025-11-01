@@ -32,8 +32,9 @@
     /* 上下左右內距，可調整 */
     max-width: 100%;
     overflow-x: hidden;
+    overflow-y: hidden;
     /* 防止橫向滾動 */
-    background-color: $primary-100;
+    background-color: $primary-300;
     /* 輕微的背景色讓內容更突出 */
 }
 
@@ -550,8 +551,72 @@
 // #section-2 { background-color: #50106e; }
 // #section-3 { background-color: #fff7e6; }
 
-.section2-bg {
-  margin: 4rem 0;
-  box-shadow: 0 4px 12px rgba(249, 188, 62,0.5);
-  background-color: #50106e;
+.infosection2-bg {
+  box-shadow: 0 4px 12px rgba(85, 57, 2,1);
 }
+
+.infosection4-bg {
+  box-shadow: 0 4px 12px rgb(2, 67, 24,1);
+}
+.infosection6-bg {
+  box-shadow: 0 4px 12px rgb(105, 81, 10);
+  background: linear-gradient(180deg,$primary-100 0%,$primary-50 60%);
+}
+
+
+/* SVG波浪背景 */
+.wave {
+  position: absolute;
+  left: 0;
+  max-width: 100vw;        /* 全螢幕寬 */
+  overflow: hidden;
+  display: block;
+  z-index: 1;
+}
+
+
+.wave.top {
+top: 0;
+transform: rotate(180deg);
+ }
+ 
+.wave.top.layer-1 {
+  top: 30px;
+  /* 第一層波浪，較為基礎 */
+}
+ .wave.top.layer-2 {
+  top: 50px; /* 稍微往下偏移，與第一層錯開 */
+  right: 100px;
+}
+
+.wave.bottom {
+bottom: 0;
+}
+
+.abouts {
+  position: relative;
+  z-index: 3;
+  margin-top: -50px; /* 可依需要微調讓文字靠近波浪 */
+}
+
+
+.aboutSection {
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
+      background: $primary-50;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      backdrop-filter: blur(6px);
+    }
+
+.aboutSection h2 {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-top: 2rem;
+    }
+
+.aboutSection p {
+      text-align: justify;
+      margin: 1rem 0;
+    }
