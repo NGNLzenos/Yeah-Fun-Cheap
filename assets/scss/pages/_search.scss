@@ -5,76 +5,90 @@
 }
 
 .searchImg {
-  height: 160px;
+  /* 預設: 寬版縮圖尺寸 */
   width: 160px;
+  height: 160px;
   border-radius: 8px;
 
-}
+  .searchImg {
+    height: 160px;
+    width: 160px;
+    border-radius: 8px;
+
+    /* 針對 RWD 手機版 (< 425px): 覆寫為滿版寬度 */
+    @media (max-width: 425px) {
+      width: 60%;
+      /* 滿版寬度 */
+      height: 80%;
+      /* 高度自適應，不鎖死 */
+      /* 如果您想在手機上保持方形比例 (1:1)，則需要配合 ratio 容器 */
+    }
+  }
 
 
-.camp-card {
-  width: 640px;
-}
-
-@media (max-width: 576px) {
   .camp-card {
-    width: 100%;
-    /* 或改成 100% 以滿版更好 */
-    margin-right: 0;
-    /* 避免手機太擠 */
-  }
-}
-
-/* 卡片外層：桌機才兩側撐開，手機就 100% */
-.camp-list .camp-card {
-  border: 1px solid #edf1f5;
-  border-radius: 16px;
-}
-
-/* 小螢幕時，卡片內的 tag 不要硬擠一行 */
-.camp-card-tags {
-  gap: .5rem;
-}
-
-/* 手機板：查看更多不要被擠掉，讓它自己一列或排最後 */
-@media (max-width: 767.98px) {
-  .camp-card .row {
-    /* 確保卡片內是直排的 */
-    flex-direction: column;
+    width: 640px;
   }
 
+  @media (max-width: 576px) {
+    .camp-card {
+      width: 100%;
+      /* 或改成 100% 以滿版更好 */
+      margin-right: 0;
+      /* 避免手機太擠 */
+    }
+  }
+
+  /* 卡片外層：桌機才兩側撐開，手機就 100% */
+  .camp-list .camp-card {
+    border: 1px solid #edf1f5;
+    border-radius: 16px;
+  }
+
+  /* 小螢幕時，卡片內的 tag 不要硬擠一行 */
   .camp-card-tags {
-    flex-direction: row;
+    gap: .5rem;
   }
 
-  .camp-card-tags .btn-pr {
-    width: 100%;
-    /* 看你要不要滿版按鈕，不要就拿掉 */
-    justify-content: center;
+  /* 手機板：查看更多不要被擠掉，讓它自己一列或排最後 */
+  @media (max-width: 767.98px) {
+    .camp-card .row {
+      /* 確保卡片內是直排的 */
+      flex-direction: column;
+    }
+
+    .camp-card-tags {
+      flex-direction: row;
+    }
+
+    .camp-card-tags .btn-pr {
+      width: 100%;
+      /* 看你要不要滿版按鈕，不要就拿掉 */
+      justify-content: center;
+    }
+
+    /* 假如 tag 太多，不要往右撐爆 */
+    .camp-card-tags .btn.tag {
+      white-space: nowrap;
+    }
+
+    /* 標題 + 切換按鈕，手機要能換行 */
+    .btn-toggle[role="group"] {
+      width: 100%;
+      justify-content: flex-start;
+    }
   }
 
-  /* 假如 tag 太多，不要往右撐爆 */
-  .camp-card-tags .btn.tag {
-    white-space: nowrap;
+  /* 平板以上：還原你原本想要的「tag 在左、按鈕靠右」 */
+  @media (min-width: 768px) {
+    .camp-card-tags {
+      flex-wrap: wrap;
+    }
+
+    .camp-card-tags .btn-pr {
+      margin-left: auto;
+      width: auto;
+    }
+
+
   }
-
-  /* 標題 + 切換按鈕，手機要能換行 */
-  .btn-toggle[role="group"] {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
-
-/* 平板以上：還原你原本想要的「tag 在左、按鈕靠右」 */
-@media (min-width: 768px) {
-  .camp-card-tags {
-    flex-wrap: wrap;
-  }
-
-  .camp-card-tags .btn-pr {
-    margin-left: auto;
-    width: auto;
-  }
-
-
-}
